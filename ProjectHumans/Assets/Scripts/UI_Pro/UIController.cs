@@ -34,6 +34,7 @@ public class UIController : MonoBehaviour
                 if (hitInfo.transform.gameObject.tag == "Human")
                 {
                     NetworkVisualizationPanel.transform.localScale = new Vector3(1, 1, 1);
+                    NetworkVisualizationPanel.GetComponent<Performance_Graph>().enabled = true;
                     selectedEntity = World.entityDict[hitInfo.transform.gameObject.transform.root.name];
                     networkVisualization.switchEntity = true;
                 }

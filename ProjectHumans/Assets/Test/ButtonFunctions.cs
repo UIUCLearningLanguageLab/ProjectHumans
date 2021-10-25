@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ButtonFunctions : MonoBehaviour
 {
+    [SerializeField] World world;
     public void CloseAndOpenCanvas(string name)
     {
         Transform targetTransform = GameObject.Find(name).transform;
@@ -15,5 +16,14 @@ public class ButtonFunctions : MonoBehaviour
         {
             GameObject.Find(name).transform.localScale = new Vector3(1, 1, 1);
         }
+    }
+    public void SwitchBetweenPanels(string name)
+    {
+        Transform targetTransform = GameObject.Find(name).transform;
+        targetTransform.SetAsLastSibling();
+    }
+    public void PauseUpdate()
+    {
+        world.paused = !world.paused;
     }
 }

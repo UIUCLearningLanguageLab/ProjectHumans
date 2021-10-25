@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using MathNet.Numerics.LinearAlgebra;
+using MathNet.Numerics.Distributions;
+using MathNet.Numerics.Random;
 using System;
 using UnityEngine;
 
@@ -14,6 +16,7 @@ public class Layer
     Dictionary<string, Connection> outputConnectionDict = new Dictionary<string, Connection>();
     Matrix<float> output;
     Matrix<float> cost;
+    float error = 0f;
     Dictionary<string, Matrix<float>> thisInputDict;
     Dictionary<string, Matrix<float>> thisRecurrentMemoryDict;
     Dictionary<string, Layer> thisLayerDict;
@@ -77,6 +80,11 @@ public class Layer
         get { return cost; }
         set { cost = value; }
     }
+    public float Error
+    {
+        get { return error; }
+        set { error = value; }
+    }
 
     public bool CalculatedThisUpdate
     {
@@ -91,9 +99,10 @@ public class Layer
 
     public void InitOutput()
     {
-        if(layerType == "output" || layerType == "hidden" || layerType == "recurrent")
+        
+        if (layerType == "output" || layerType == "hidden" || layerType == "recurrent")
         {
-            output = Matrix<float>.Build.Dense(shape[0], shape[1]);
+            output = Matrix<float>.Build.Random(shape[0], shape[1], new Normal(-1.0, 1.0));
         }
         else if (layerType == "bias")
         {
@@ -156,6 +165,7 @@ public class Layer
             { 
                 string inputLayerName = "input" + name.Substring(6);
                 Matrix<float> predictionError = thisLayerDict[inputLayerName].output - output;
+                error = predictionError.ColumnAbsoluteSums().Sum();
                 cost = predictionError;
             }
             else

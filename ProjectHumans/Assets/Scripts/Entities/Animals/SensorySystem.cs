@@ -35,7 +35,6 @@ public class SensorySystem {
             } else {
                 
                 visualResolution = visualInputCamera.targetTexture.width;
-                Debug.Log(visualResolution);
             }
         }
         visualInputArray = Matrix<float>.Build.Dense(3, visualResolution * visualResolution);

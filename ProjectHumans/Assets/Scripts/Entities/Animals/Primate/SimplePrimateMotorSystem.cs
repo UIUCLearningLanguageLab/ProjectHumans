@@ -60,7 +60,7 @@ public class SimplePrimateMotorSystem : MotorSystem {
     public override void TakeSteps()
     {
         CheckActionLegality();
-        Debug.Log("taking steps");
+        //Debug.Log("taking steps");
         float stepRange = states[stateIndexDict["take steps"]] * thisAnimal.GetPhenotype().GetTrait("max_step");
         bodyTrans.Translate(bodyTrans.forward * stepRange * Time.deltaTime, Space.World);
         skeletonInUse.Add(rightFemur.name);

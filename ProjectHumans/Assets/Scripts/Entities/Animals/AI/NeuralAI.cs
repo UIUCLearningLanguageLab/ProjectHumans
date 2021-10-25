@@ -8,6 +8,16 @@ using MathNet.Numerics.Distributions;
 
 public class NeuralAI : AI
 {
+    public Dictionary<string, List<float>> errorDicts = new Dictionary<string, List<float>>() 
+    {
+        { "outputVisionRedErrors", new List<float>(){ } },
+        { "outputVisionGreenErrors", new List<float>(){ } },
+        { "outputVisionBlueErrors", new List<float>(){ } },
+        { "outputBodyErrors", new List<float>(){ } },
+        { "outputDriveErrors", new List<float>(){ } },
+        { "outputActionErrors", new List<float>(){ } }
+    };
+    public List<float> allErrorList = new List<float>();
     // this is a dictionary of layer names points to lists of layer info, [layerType, layerShape]
     Dictionary<string, List<string>> networkLayerInfoDict; 
     
@@ -88,7 +98,6 @@ public class NeuralAI : AI
         GetOutputConnectionDict();
         InitInputs();
         InitOutputs();
-        BackPropagate();
         Feedforward();
     }
 
@@ -176,7 +185,6 @@ public class NeuralAI : AI
                 Matrix<float> currentInput = Matrix<float>.Build.Dense(shape[0], shape[1]);
                 inputDict.Add(layerInfo.Key, currentInput);
                 inputLayerDict.Add(layerInfo.Key, networkLayerDict[layerInfo.Key]);
-
             }
             if (layerInfo.Value[0] == "output")
             {
@@ -209,7 +217,7 @@ public class NeuralAI : AI
     void InitConnections()
     {
 
-        float weight_init_range = 0.0001f;
+        float weight_init_range = 0.00001f;
         foreach (KeyValuePair<string, Dictionary<string, string>> structureInfo in networkConnectionInfoDict)
         {
             Dictionary<string, Connection> thisLayerConnectionDict = new Dictionary<string, Connection>();
@@ -226,7 +234,7 @@ public class NeuralAI : AI
                     {
                         Connection dense = new Dense { ConnectionType = connectionInfo.Value, Sender = connectionInfo.Key, Recipient = structureInfo.Key };
                         // this should be in the dense constructor
-                        dense.ConnectionWeight = Matrix<float>.Build.Random(networkLayerDict[dense.Recipient].NumUnits, networkLayerDict[dense.Sender].NumUnits, new Normal(0, weight_init_range));
+                        dense.ConnectionWeight = Matrix<float>.Build.Random(networkLayerDict[dense.Recipient].NumUnits, networkLayerDict[dense.Sender].NumUnits, new Normal (0, weight_init_range));
                         networkLayerDict[structureInfo.Key].InputConnectionDict.Add(connectionInfo.Key, dense);
                     }
                     else if (connectionInfo.Value == "tanh")
@@ -328,10 +336,9 @@ public class NeuralAI : AI
         counter += 1;
         if (counter % 100 == 0)
         {
-            // the real choose action
-            Debug.Log("Got to this loop");
             InitInputs();
             BackPropagate();
+            GetError();
             Feedforward();
         }
 
@@ -367,5 +374,17 @@ public class NeuralAI : AI
     public Dictionary<string, Layer> GetNetworkLayerDict()
     {
         return networkLayerDict;
+    }
+    public void GetError()
+    {
+        float sumError = 0;
+        foreach(KeyValuePair<string, List<float>> x in errorDicts)
+        {
+            string layerName = x.Key.Remove(x.Key.IndexOf("Error"));
+            float predictionError = outputLayerDict[layerName + "Layer"].Error;
+            x.Value.Add(predictionError);
+            sumError += predictionError;
+        }
+        allErrorList.Add(sumError);
     }
 }

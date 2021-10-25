@@ -86,7 +86,7 @@ public abstract class MotorSystem
 
     public void TakeAction(Vector<float> actions) {
         skeletonInUse.Clear();
-        Debug.Log(illigalAction);
+        //Debug.Log(illigalAction);
         TakeSteps();
         
         if (Input.GetKey(KeyCode.Return))

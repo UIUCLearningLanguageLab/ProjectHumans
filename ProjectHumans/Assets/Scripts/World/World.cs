@@ -11,8 +11,10 @@ using MathNet.Numerics.Distributions;
 using Random = UnityEngine.Random;
 
 public class World: MonoBehaviour {
+    [SerializeField]
+    public bool paused;
     public GameObject mainCam;
-    public bool paused = false;
+    
     public static int humanAIParam;
     public static int maxEntities = 5000;
     public static string biomeName;
@@ -47,7 +49,7 @@ public class World: MonoBehaviour {
     public Dictionary < string, MotorSystem > allMotorDict;
 
     private static bool updateCompleted = false;
-    private static int updateCounter;
+    public int updateCounter;
 
     public static bool CheckUpdate() {
     return updateCompleted;
@@ -62,6 +64,7 @@ public class World: MonoBehaviour {
         
         if (initWorld) {
             initWorld = false;
+            paused = true;
             updateCounter = 0;
 
             LoadWorldConfig();
@@ -73,9 +76,10 @@ public class World: MonoBehaviour {
             CreateEntities();
             
             MainUI.WakeUp();
+            
         }
 
-        paused = MainUI.Check("isPaused");
+        //paused = MainUI.Check("isPaused");
         if (!paused)
         {
             if (updateCompleted)

@@ -11,6 +11,7 @@ public class NetworkVisualization : MonoBehaviour
     Camera FPSCamera;
     Entity selectedEntity;
     public bool switchEntity;
+    bool resetted;
     [SerializeField]
     RawImage displayImage;
     [SerializeField]
@@ -61,10 +62,18 @@ public class NetworkVisualization : MonoBehaviour
         selectedEntity = uicontroller.selectedEntity;
         if (switchEntity)
         {
-            BuildContent();
+            if (!resetted)
+            {
+                ResetAllContent();
+            }
+            else
+            {
+                BuildContent();
+            }
         }
         if(transform.GetChild(0).localScale.y == 1 && !switchEntity)
         {
+            resetted = false;
             Dictionary<string, Layer> networkLayerDict = ((NeuralAI)selectedAI).GetNetworkLayerDict();
             float[] inputRedColorArray = ConvertToColorArray(networkLayerDict["inputVisionRedLayer"].Output.Column(0));
             float[] inputGreenColorArray = ConvertToColorArray(networkLayerDict["inputVisionGreenLayer"].Output.Column(0));
@@ -97,7 +106,7 @@ public class NetworkVisualization : MonoBehaviour
             
         }
     }
-    public void ResetAllContet() 
+    public void ResetAllContent() 
     {
         ResetContent(driveInputContent, driveInputImages);
         ResetContent(bodyInputContent, bodyInputImages);
@@ -112,6 +121,7 @@ public class NetworkVisualization : MonoBehaviour
         ResetContent(redVisualOutputContent);
         ResetContent(greenVisualOutputContent);
         ResetContent(blueVisualOutputContent);
+        resetted = true;
     }
     void ResetContent(Transform passedContent, List<RawImage> passedImages)
     {
