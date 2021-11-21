@@ -138,7 +138,7 @@ public class AnimalBody : Body {
     public void RotateJointTo(string joint, Quaternion target) {
         if (this.jointDict.ContainsKey(joint)) {
             Quaternion initialRotation =  this.jointDict[joint].transform.localRotation;
-            this.jointDict[joint].SetTargetRotationLocal(target, initialRotation);
+            //this.jointDict[joint].SetTargetRotationLocal(target, initialRotation);
         }
     }
 
@@ -292,21 +292,21 @@ public class AnimalBody : Body {
 
     public virtual void EatObject(string holder) {
         GameObject toEat = holdings[holder];
-        Nutrition consumed = World.GetEntity(toEat.name).GetBody().freshStats;
+        //Nutrition consumed = World.GetEntity(toEat.name).GetBody().freshStats;
         
         //health hunger stamina thirst sleep
-        AdjustState("health", consumed.healthMod);
-        AdjustState("hunger", consumed.hungerMod);
-        AdjustState("stamina", consumed.staminaMod);
-        AdjustState("thirst", consumed.thirstMod);
-        AdjustState("health", consumed.sleepMod);
+        //AdjustState("health", consumed.healthMod);
+        //AdjustState("hunger", consumed.hungerMod);
+        //AdjustState("stamina", consumed.staminaMod);
+        //AdjustState("thirst", consumed.thirstMod);
+        //AdjustState("health", consumed.sleepMod);
 
-        World.RemoveEntity(toEat.name);
+        //World.RemoveEntity(toEat.name);
         holdings.Remove(holder);
     }
 
     public virtual void RemoveObject(string holder) {
-        World.DestroyComponent(holdings[holder].GetComponent<FixedJoint>());
+        //World.DestroyComponent(holdings[holder].GetComponent<FixedJoint>());
         holdings.Remove(holder);
     }
 

@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using MathNet.Numerics.Distributions;
 using Random=UnityEngine.Random;
 
 public class Plant : Entity {
 
-    public Plant(string objectType, int index, Genome motherGenome, Genome fatherGenome, Vector3 spawn) 
+    public Plant(string objectType, string index, Genome motherGenome, Genome fatherGenome, Vector3 spawn) 
     : base (objectType, index, motherGenome, fatherGenome, spawn, false) {
         body = new Body(this, spawn);
         SetTrunkSize(Random.Range(1.85f, 3f));
@@ -36,15 +37,14 @@ public class Plant : Entity {
 
     public void CreateFruit() {
         string fruitType = GetGenome().GetQualDict()["fruit_type"];
-
+        
         if (fruitType != "None") {
             // Figure out where the apple should appear
             float distance = GetPhenotype().GetTraitDict()["fruit_drop_distance"];
         
             Vector3 fruitDisplacement = new Vector3(Random.Range(-distance,distance),0,Random.Range(-distance,distance));                           
             Vector3 fruitLocation = GetBody().globalPos.position + fruitDisplacement;
-
-            World.AddEntity(fruitType, fruitLocation);
+            Population population = new Population(fruitType, 1, 1, 0, fruitLocation.x, fruitLocation.z, 0, 0, 0, 0);
         }
     }
 

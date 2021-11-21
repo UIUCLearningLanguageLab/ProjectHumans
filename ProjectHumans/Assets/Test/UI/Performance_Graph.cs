@@ -8,18 +8,20 @@ using TMPro;
 
 public class Performance_Graph : MonoBehaviour
 {
-    private static Performance_Graph instance;
+    //private static Performance_Graph instance;
     Entity selectedEntity;
     AI selectedAI;
     [SerializeField] UIController uicontroller;
     [SerializeField] World world;
     [SerializeField] private Sprite dotSprite;
+    [SerializeField] Transform dotPooling;
+    [SerializeField] Transform connectionPooling;
+    List<GameObject> dotList = new List<GameObject>();
+    List<GameObject> connectionList = new List<GameObject>();
 
     private Transform templates;
     private RectTransform lableTemplateX;
     private RectTransform lableTemplateY;
-    private RectTransform dashTemplateX;
-    private RectTransform dashTemplateY;
 
     private List<GameObject> redGameObjectList;
     private List<GameObject> greebGameObjectList;
@@ -27,7 +29,7 @@ public class Performance_Graph : MonoBehaviour
     private List<GameObject> bodyGameObjectList;
     private List<GameObject> driveGameObjectList;
     private List<GameObject> actionGameObjectList;
-    private List<GameObject> allGameObjectList;
+
 
     private RectTransform redPerformance;
     private RectTransform greenPerformance;
@@ -35,7 +37,7 @@ public class Performance_Graph : MonoBehaviour
     private RectTransform bodyPerformance;
     private RectTransform drivePerformance;
     private RectTransform actionPerformance;
-    private RectTransform allPerformance;
+
 
     private List<IGraphVisualObject> redGraphVisualObjectList;
     private List<IGraphVisualObject> greenGraphVisualObjectList;
@@ -43,7 +45,6 @@ public class Performance_Graph : MonoBehaviour
     private List<IGraphVisualObject> bodyGraphVisualObjectList;
     private List<IGraphVisualObject> driveGraphVisualObjectList;
     private List<IGraphVisualObject> actionGraphVisualObjectList;
-    private List<IGraphVisualObject> allGraphVisualObjectList;
 
     private IGraphVisual redLineGraphVisual;
     private IGraphVisual greenLineGraphVisual;
@@ -51,7 +52,6 @@ public class Performance_Graph : MonoBehaviour
     private IGraphVisual bodyLineGraphVisual;
     private IGraphVisual driveLineGraphVisual;
     private IGraphVisual actionLineGraphVisual;
-    private IGraphVisual allLineGraphVisual;
 
     private GameObject tooltipGameObject;
     private List<RectTransform> yLabelList;
@@ -71,13 +71,11 @@ public class Performance_Graph : MonoBehaviour
     private Func<float, string> getAxisLabelY;
     private void Awake()
     {
-        instance = this;
+        //instance = this;
         templates = GameObject.Find("Templates").GetComponent<RectTransform>();
         lableTemplateX = templates.Find("LableTemplateX").GetComponent<RectTransform>();
         lableTemplateY = templates.Find("LableTemplateY").GetComponent<RectTransform>();
-        dashTemplateX = templates.Find("DashTemplateX").GetComponent<RectTransform>();
-        dashTemplateY = templates.Find("DashTemplateY").GetComponent<RectTransform>();
-        tooltipGameObject = templates.Find("Tooltip").gameObject;
+        //tooltipGameObject = templates.Find("Tooltip").gameObject;
 
         redPerformance = GameObject.Find("RedPerformance").GetComponent<RectTransform>();
         greenPerformance = GameObject.Find("GreenPerformance").GetComponent<RectTransform>();
@@ -85,7 +83,7 @@ public class Performance_Graph : MonoBehaviour
         bodyPerformance = GameObject.Find("BodyPerformance").GetComponent<RectTransform>();
         drivePerformance = GameObject.Find("DrivePerformance").GetComponent<RectTransform>();
         actionPerformance = GameObject.Find("ActionPerformance").GetComponent<RectTransform>();
-        allPerformance = GameObject.Find("AllPerformance").GetComponent<RectTransform>();
+        //allPerformance = GameObject.Find("AllPerformance").GetComponent<RectTransform>();
 
         redGraphVisualObjectList = new List<IGraphVisualObject>();
         greenGraphVisualObjectList = new List<IGraphVisualObject>();
@@ -93,7 +91,7 @@ public class Performance_Graph : MonoBehaviour
         bodyGraphVisualObjectList = new List<IGraphVisualObject>();
         driveGraphVisualObjectList = new List<IGraphVisualObject>();
         actionGraphVisualObjectList = new List<IGraphVisualObject>();
-        allGraphVisualObjectList = new List<IGraphVisualObject>();
+        //allGraphVisualObjectList = new List<IGraphVisualObject>();
 
         redGameObjectList = new List<GameObject>();
         greebGameObjectList = new List<GameObject>();
@@ -101,75 +99,72 @@ public class Performance_Graph : MonoBehaviour
         bodyGameObjectList = new List<GameObject>();
         driveGameObjectList = new List<GameObject>();
         actionGameObjectList = new List<GameObject>();
-        allGameObjectList = new List<GameObject>();
+        //allGameObjectList = new List<GameObject>();
         yLabelList = new List<RectTransform>();
 
         startYScaleAtZero = true;
-        valueList = new List<float>() {1,2,3,4,5 };
-        HideTooltip();
+        //valueList = new List<float>() {1,2,3,4,5 };
+        //HideTooltip();
 
-        redLineGraphVisual = new LineGraphVisual(redPerformance, dotSprite, Color.red, new Color(1, 1, 1, .5f));
-        greenLineGraphVisual = new LineGraphVisual(greenPerformance, dotSprite, Color.green, new Color(1, 1, 1, .5f));
-        blueLineGraphVisual = new LineGraphVisual(bluePerformance, dotSprite, Color.cyan, new Color(1, 1, 1, .5f));
-        bodyLineGraphVisual = new LineGraphVisual(bodyPerformance, dotSprite, Color.white, new Color(1, 1, 1, .5f));
-        driveLineGraphVisual = new LineGraphVisual(drivePerformance, dotSprite, Color.white, new Color(1, 1, 1, .5f));
-        actionLineGraphVisual = new LineGraphVisual(actionPerformance, dotSprite, Color.white, new Color(1, 1, 1, .5f));
-        allLineGraphVisual = new LineGraphVisual(allPerformance, dotSprite, Color.white, new Color(1, 1, 1, .5f));
-
-        //ShowGraph(valueList, redLineGraphVisual, redPerformance, greenGraphVisualObjectList, redGameObjectList, 0, valueList.Count);
-        //ShowGraph(valueList, greenLineGraphVisual, greenPerformance, redGraphVisualObjectList, greebGameObjectList, 0, valueList.Count);
-        //ShowGraph(valueList, blueLineGraphVisual, bluePerformance, blueGraphVisualObjectList, blueGameObjectList, 0, valueList.Count);
-        //ShowGraph(valueList, bodyLineGraphVisual, bodyPerformance, bodyGraphVisualObjectList, bodyGameObjectList, 0, valueList.Count);
-        //ShowGraph(valueList, driveLineGraphVisual, drivePerformance, driveGraphVisualObjectList, driveGameObjectList , 0, valueList.Count);
-        //ShowGraph(valueList, actionLineGraphVisual, actionPerformance, actionGraphVisualObjectList, actionGameObjectList, 0, valueList.Count);
-        //ShowGraph(valueList, allLineGraphVisual, allPerformance, allGraphVisualObjectList, allGameObjectList, 0, valueList.Count);
-
-    }
-    private void Update()
-    {
-        selectedEntity = uicontroller.selectedEntity;
-        if (world.updateCounter != 0 && world.updateCounter % 100 == 0 && transform.localScale.y == 1)
+        for (int i = 0; i < 1200; i++)
         {
-            selectedAI = ((Animal)selectedEntity).GetAI();
-            Dictionary<string, List<float>> valueDict = ((NeuralAI)selectedAI).errorDicts;
-            List<float> allErrorList = ((NeuralAI)selectedAI).allErrorList;
-            ShowGraph(valueDict["outputVisionRedErrors"], redLineGraphVisual, redPerformance, greenGraphVisualObjectList, redGameObjectList, 0, valueDict["outputVisionRedErrors"].Count);
-            ShowGraph(valueDict["outputVisionGreenErrors"], greenLineGraphVisual, greenPerformance, redGraphVisualObjectList, greebGameObjectList, 0, valueDict["outputVisionGreenErrors"].Count);
-            ShowGraph(valueDict["outputVisionBlueErrors"], blueLineGraphVisual, bluePerformance, blueGraphVisualObjectList, blueGameObjectList, 0, valueDict["outputVisionBlueErrors"].Count);
-            ShowGraph(valueDict["outputBodyErrors"], bodyLineGraphVisual, bodyPerformance, bodyGraphVisualObjectList, bodyGameObjectList, 0, valueDict["outputBodyErrors"].Count);
-            ShowGraph(valueDict["outputDriveErrors"], driveLineGraphVisual, drivePerformance, driveGraphVisualObjectList, driveGameObjectList, 0, valueDict["outputDriveErrors"].Count);
-            ShowGraph(valueDict["outputActionErrors"], actionLineGraphVisual, actionPerformance, actionGraphVisualObjectList, actionGameObjectList, 0, valueDict["outputActionErrors"].Count);
-            ShowGraph(allErrorList, allLineGraphVisual, allPerformance, allGraphVisualObjectList, allGameObjectList, 0, allErrorList.Count);
-
+            GameObject dotGameObject = new GameObject("Dot", typeof(Image));
+            dotGameObject.transform.SetParent(dotPooling, false);
+            dotGameObject.SetActive(false);
+            dotList.Add(dotGameObject);
+            GameObject connectionGameObject = new GameObject("dotConnection", typeof(Image));
+            connectionGameObject.transform.SetParent(connectionPooling, false);
+            connectionGameObject.SetActive(false);
+            connectionList.Add(connectionGameObject);
         }
-    }
-    public static void ShowTooltip_Static(string tooltipText, Vector2 anchoredPosition)
-    {
-        instance.ShowTooltip(tooltipText, anchoredPosition);
-    }
-    private void ShowTooltip(string tooltipText, Vector2 anchoredPosition)
-    {
-        tooltipGameObject.SetActive(true);
-        tooltipGameObject.GetComponent<RectTransform>().anchoredPosition = anchoredPosition;
-        TextMeshProUGUI tooltipUIText = tooltipGameObject.transform.Find("Text").GetComponent<TextMeshProUGUI>();
-        tooltipUIText.text = tooltipText;
 
-        float textPaddingSize = 4f;
-        Vector2 backgroundSize = new Vector2(
-            tooltipUIText.preferredWidth + textPaddingSize * 2f,
-            tooltipUIText.preferredHeight + textPaddingSize * 2f);
+        redLineGraphVisual = new LineGraphVisual(redPerformance, dotSprite, Color.red, new Color(1, 1, 1, .5f), dotList, connectionList);
+        greenLineGraphVisual = new LineGraphVisual(greenPerformance, dotSprite, Color.green, new Color(1, 1, 1, .5f), dotList, connectionList);
+        blueLineGraphVisual = new LineGraphVisual(bluePerformance, dotSprite, Color.cyan, new Color(1, 1, 1, .5f), dotList, connectionList);
+        bodyLineGraphVisual = new LineGraphVisual(bodyPerformance, dotSprite, Color.white, new Color(1, 1, 1, .5f), dotList, connectionList);
+        driveLineGraphVisual = new LineGraphVisual(drivePerformance, dotSprite, Color.white, new Color(1, 1, 1, .5f), dotList, connectionList);
+        actionLineGraphVisual = new LineGraphVisual(actionPerformance, dotSprite, Color.white, new Color(1, 1, 1, .5f), dotList, connectionList);
+    }
+    public void ShowPerformanceGraphs()
+    {
+        world.paused = true;
+        selectedEntity = uicontroller.selectedEntity;
+        selectedAI = ((Animal)selectedEntity).GetAI();
+        Dictionary<string, List<float>> valueDict = ((NeuralAI)selectedAI).errorDicts;
+        ShowGraph(valueDict["outputVisionRedErrors"], redLineGraphVisual, redPerformance, greenGraphVisualObjectList, redGameObjectList, 0, valueDict["outputVisionRedErrors"].Count);
+        ShowGraph(valueDict["outputVisionGreenErrors"], greenLineGraphVisual, greenPerformance, redGraphVisualObjectList, greebGameObjectList, 0, valueDict["outputVisionGreenErrors"].Count);
+        ShowGraph(valueDict["outputVisionBlueErrors"], blueLineGraphVisual, bluePerformance, blueGraphVisualObjectList, blueGameObjectList, 0, valueDict["outputVisionBlueErrors"].Count);
+        ShowGraph(valueDict["outputBodyErrors"], bodyLineGraphVisual, bodyPerformance, bodyGraphVisualObjectList, bodyGameObjectList, 0, valueDict["outputBodyErrors"].Count);
+        ShowGraph(valueDict["outputDriveErrors"], driveLineGraphVisual, drivePerformance, driveGraphVisualObjectList, driveGameObjectList, 0, valueDict["outputDriveErrors"].Count);
+        ShowGraph(valueDict["outputActionErrors"], actionLineGraphVisual, actionPerformance, actionGraphVisualObjectList, actionGameObjectList, 0, valueDict["outputActionErrors"].Count);
+    }
+    //public static void ShowTooltip_Static(string tooltipText, Vector2 anchoredPosition)
+    //{
+    //    instance.ShowTooltip(tooltipText, anchoredPosition);
+    //}
+    //private void ShowTooltip(string tooltipText, Vector2 anchoredPosition)
+    //{
+    //    tooltipGameObject.SetActive(true);
+    //    tooltipGameObject.GetComponent<RectTransform>().anchoredPosition = anchoredPosition;
+    //    TextMeshProUGUI tooltipUIText = tooltipGameObject.transform.Find("Text").GetComponent<TextMeshProUGUI>();
+    //    tooltipUIText.text = tooltipText;
 
-        tooltipGameObject.transform.Find("Background").GetComponent<RectTransform>().sizeDelta = backgroundSize;
-        tooltipGameObject.transform.SetAsLastSibling();
-    }
-    public static void HideTooltip_Static()
-    {
-        instance.HideTooltip();
-    }
-    private void HideTooltip()
-    {
-        tooltipGameObject.SetActive(false);
-    }
+    //    float textPaddingSize = 4f;
+    //    Vector2 backgroundSize = new Vector2(
+    //        tooltipUIText.preferredWidth + textPaddingSize * 2f,
+    //        tooltipUIText.preferredHeight + textPaddingSize * 2f);
+
+    //    tooltipGameObject.transform.Find("Background").GetComponent<RectTransform>().sizeDelta = backgroundSize;
+    //    tooltipGameObject.transform.SetAsLastSibling();
+    //}
+    //public static void HideTooltip_Static()
+    //{
+    //    instance.HideTooltip();
+    //}
+    //private void HideTooltip()
+    //{
+    //    tooltipGameObject.SetActive(false);
+    //}
     private void ShowGraph(List<float> valueList, IGraphVisual graphVisual, RectTransform performancePanel, List<IGraphVisualObject> graphVisualObjectList, List<GameObject> gameObjectList, int startX, int endX, Func<int, string> getAxisLabelX = null, Func<float, string> getAxisLabelY = null)
     {
         this.graphVisual = graphVisual;
@@ -258,13 +253,6 @@ public class Performance_Graph : MonoBehaviour
                 labelX.GetComponent<TextMeshProUGUI>().text = getAxisLabelX(i);
                 gameObjectList.Add(labelX.gameObject);
             }
-            
-
-            //RectTransform dashX = Instantiate(dashTemplateY);
-            //dashX.SetParent(performance, false);
-            //dashX.gameObject.SetActive(true);
-            //dashX.anchoredPosition = new Vector2(xPosition, -4f);
-            //gameObjectList.Add(dashX.gameObject);
             index++;
         }
         int separatorCount = 5;
@@ -415,13 +403,17 @@ public class Performance_Graph : MonoBehaviour
         private LineGraphVisualObject lastLineGraphVisualObject;
         private Color dotColor;
         private Color dotConnectionColor;
+        private List<GameObject> dotList;
+        private List<GameObject> connectionList;
 
-        public LineGraphVisual(RectTransform performance, Sprite dotSprite, Color dotColor, Color dotConnectionColor)
+        public LineGraphVisual(RectTransform performance, Sprite dotSprite, Color dotColor, Color dotConnectionColor, List<GameObject> dotList, List<GameObject> connectionList)
         {
             this.performance = performance;
             this.dotSprite = dotSprite;
             this.dotColor = dotColor;
             this.dotConnectionColor = dotConnectionColor;
+            this.dotList = dotList;
+            this.connectionList = connectionList;
             lastLineGraphVisualObject = null;
         }
         public void CleanUp()
@@ -448,37 +440,52 @@ public class Performance_Graph : MonoBehaviour
         }
         private GameObject CreateDot(Vector2 anchoredPosition)
         {
-            GameObject gameObject = new GameObject("Dot", typeof(Image));
-            gameObject.transform.SetParent(performance, false);
-            gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(200, 200);
-            gameObject.GetComponent<Image>().sprite = dotSprite;
-            gameObject.GetComponent<Image>().color = dotColor;
-            RectTransform rectTransform = gameObject.GetComponent<RectTransform>();
-            rectTransform.anchoredPosition = anchoredPosition;
-            rectTransform.sizeDelta = new Vector2(11, 11);
-            rectTransform.anchorMin = new Vector2(0, 0);
-            rectTransform.anchorMax = new Vector2(0, 0);
-
-            Button_UI dotButtonUI = gameObject.AddComponent<Button_UI>();
-            return gameObject;
+            foreach (GameObject x in dotList)
+            {
+                if(!x.activeInHierarchy)
+                {
+                    x.SetActive(true);
+                    x.transform.SetParent(performance, false);
+                    x.GetComponent<RectTransform>().sizeDelta = new Vector2(200, 200);
+                    x.GetComponent<Image>().sprite = dotSprite;
+                    x.GetComponent<Image>().color = dotColor;
+                    RectTransform rectTransform = x.GetComponent<RectTransform>();
+                    rectTransform.anchoredPosition = anchoredPosition;
+                    rectTransform.sizeDelta = new Vector2(11, 11);
+                    rectTransform.anchorMin = new Vector2(0, 0);
+                    rectTransform.anchorMax = new Vector2(0, 0);
+                    dotList.Remove(x);
+                    //Button_UI dotButtonUI = x.AddComponent<Button_UI>();
+                    return x;
+                }
+            }
+            return null;
         }
 
         private GameObject CreateDotConnection(Vector2 dotPositionA, Vector2 dotPositionB)
         {
-            GameObject gameObject = new GameObject("dotConnection", typeof(Image));
-            gameObject.transform.SetParent(performance, false);
-            gameObject.GetComponent<Image>().color = dotConnectionColor;
-            RectTransform rectTransform = gameObject.GetComponent<RectTransform>();
-            Vector2 dir = (dotPositionB - dotPositionA).normalized;
-            float distance = Vector2.Distance(dotPositionA, dotPositionB);
+            foreach (GameObject x in connectionList)
+            {
+                if (!x.activeInHierarchy)
+                {
+                    x.SetActive(true);
+                    x.transform.SetParent(performance, false);
+                    x.GetComponent<Image>().color = dotConnectionColor;
+                    RectTransform rectTransform = x.GetComponent<RectTransform>();
+                    Vector2 dir = (dotPositionB - dotPositionA).normalized;
+                    float distance = Vector2.Distance(dotPositionA, dotPositionB);
 
-            rectTransform.anchorMin = new Vector2(0, 0);
-            rectTransform.anchorMax = new Vector2(0, 0);
-            rectTransform.sizeDelta = new Vector2(distance, 3f);
-            rectTransform.anchoredPosition = dotPositionA + dir * distance * .5f;
-            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            rectTransform.localEulerAngles = new Vector3(0, 0, angle);
-            return gameObject;
+                    rectTransform.anchorMin = new Vector2(0, 0);
+                    rectTransform.anchorMax = new Vector2(0, 0);
+                    rectTransform.sizeDelta = new Vector2(distance, 3f);
+                    rectTransform.anchoredPosition = dotPositionA + dir * distance * .5f;
+                    float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+                    rectTransform.localEulerAngles = new Vector3(0, 0, angle);
+                    connectionList.Remove(x);
+                    return x;
+                }
+            }
+            return null;
         }
 
         public class LineGraphVisualObject : IGraphVisualObject
@@ -513,21 +520,24 @@ public class Performance_Graph : MonoBehaviour
                 Button_UI dotButtonUI = dotGameObject.GetComponent<Button_UI>();
 
                 // Show Tooltip on Mouse Over
-                dotButtonUI.MouseOverOnceFunc = () => {
-                    ShowTooltip_Static(tooltipText, graphPosition);
-                };
+                //dotButtonUI.MouseOverOnceFunc = () => {
+                //    ShowTooltip_Static(tooltipText, graphPosition);
+                //};
 
-                // Hide Tooltip on Mouse Out
-                dotButtonUI.MouseOutOnceFunc = () => {
-                    HideTooltip_Static();
-                };
+                //// Hide Tooltip on Mouse Out
+                //dotButtonUI.MouseOutOnceFunc = () => {
+                //    HideTooltip_Static();
+                //};
 
                 if (OnChangedGraphVisualObjectInfo != null) OnChangedGraphVisualObjectInfo(this, EventArgs.Empty);
             }
             public void CleanUp()
             {
-                Destroy(dotGameObject);
-                Destroy(dotConnectionGameObject);
+                dotGameObject.SetActive(false);
+                if (dotConnectionGameObject != null)
+                {
+                    dotConnectionGameObject.SetActive(false);
+                }
             }
             public Vector2 GetGraphPosition()
             {

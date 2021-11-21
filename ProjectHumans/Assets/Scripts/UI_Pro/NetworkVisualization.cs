@@ -54,9 +54,6 @@ public class NetworkVisualization : MonoBehaviour
     RawImage blueOutputImage;
 
     Matrix<float> visualInputMatrix;
-    // Start is called before the first frame update
-    
-    // Update is called once per frame
     void Update()
     {
         selectedEntity = uicontroller.selectedEntity;

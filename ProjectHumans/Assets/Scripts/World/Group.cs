@@ -1,51 +1,53 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Configuration;
 using UnityEngine;
-using System.Linq;
-using Random=UnityEngine.Random;
+using MathNet.Numerics.Distributions;
 
 public class Group {
     protected string name;
+    World world;
     public string GetName() { return name; }
 
     protected static List<Entity> memberList = new List<Entity>();
     protected static Dictionary<string, Entity> memberDict = new Dictionary<string, Entity>();
     public static List<Entity> GetEntityList() { return memberList; }
-
-    public Group(Population population, int numEntities, float density, Vector3 origin) {
+    public Group(Population population, int numEntities, float groupX, float groupZ, float stdevEntityX, float stdevEntityZ, World World) {
         name = population.NameGroup();
-        SpawnMembers(population, numEntities, density, origin);
+        this.world = World;
+        SpawnMembers(population, numEntities, groupX, groupZ, stdevEntityX, stdevEntityX);
+    }
+    public Group(Population population, int numEntities, float groupX, float groupZ, float stdevEntityX, float stdevEntityZ)
+    {
+        name = population.NameGroup();
+        SpawnMembersAfter(population, numEntities, groupX, groupZ, stdevEntityX, stdevEntityX);
     }
 
-    public Group(List<Entity> passedList) {
-
-        foreach (Entity ent in passedList) {
-            memberList.Add(ent);
-            memberDict[ent.GetName()] = ent;
-        }
-    }
-
-    public static void SpawnMembers(Population population, int numEntities, float density, Vector3 origin) {
-        // Density in a 1x1 unit area
-        float range = numEntities / density;
+    public void SpawnMembers(Population population, int numEntities, float groupX, float groupZ,float stdevEntityX, float stdevEntityZ) {
 
         for (int i = 0; i < numEntities; i++) {
-            float xRan = Random.Range(origin.x - range, origin.x + range);
-            float zRan = Random.Range(origin.z - range, origin.z + range);
-            Vector3 memberPos = new Vector3 (0, 0, 0);
 
-            Entity newMember = World.AddEntity(population, memberPos);
-            World.SaveEntity(newMember, population);
-            SaveMember(newMember);
+            float entityX = (float)new Normal(groupX, stdevEntityX).Sample();
+            float entityZ = (float)new Normal(groupZ, stdevEntityZ).Sample();
+            string index = population.popIndex.ToString() + " " + i.ToString();
+            Entity newMember = population.AddEntity(new Vector3(entityX, 0, entityZ), index);
+            world.SaveEntity(newMember);
         }
     }
+    public void SpawnMembersAfter(Population population, int numEntities, float groupX, float groupZ, float stdevEntityX, float stdevEntityZ)
+    {
 
-    public static void SaveMember(Entity passed) {
-        memberList.Add(passed);
-        memberDict.Add(passed.GetName(), passed);
+        for (int i = 0; i < numEntities; i++)
+        {
+
+            float entityX = (float)new Normal(groupX, stdevEntityX).Sample();
+            float entityZ = (float)new Normal(groupZ, stdevEntityZ).Sample();
+            
+            Entity newMember = population.AddEntity(new Vector3(entityX, 0, entityZ), i.ToString());
+            if(newMember.GetGameObject() != null)
+            {
+                World world = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<World>();
+                world.SaveEntity(newMember);
+            }
+        }
     }
-
-    
 }

@@ -1,0 +1,4471 @@
+fileFormatVersion: 2
+guid: e5f6e3dc15fc9cd4686b90ec0a260dd7
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Ankle_IK.L
+  - first:
+      1: 100002
+    second: Ankle_IK.L_end
+  - first:
+      1: 100004
+    second: Ankle_IK.R
+  - first:
+      1: 100006
+    second: Ankle_IK.R_end
+  - first:
+      1: 100008
+    second: Arm.L
+  - first:
+      1: 100010
+    second: Arm.R
+  - first:
+      1: 100012
+    second: Armature_Prehistoric_Male_Avatar
+  - first:
+      1: 100014
+    second: Brow.L
+  - first:
+      1: 100016
+    second: Brow.L_end
+  - first:
+      1: 100018
+    second: Brow.R
+  - first:
+      1: 100020
+    second: Brow.R_end
+  - first:
+      1: 100022
+    second: Clavicle.L
+  - first:
+      1: 100024
+    second: Clavicle.R
+  - first:
+      1: 100026
+    second: Elbow_IK.L
+  - first:
+      1: 100028
+    second: Elbow_IK.L_end
+  - first:
+      1: 100030
+    second: Elbow_IK.R
+  - first:
+      1: 100032
+    second: Elbow_IK.R_end
+  - first:
+      1: 100034
+    second: Eye.L
+  - first:
+      1: 100036
+    second: Eye.L_end
+  - first:
+      1: 100038
+    second: Eye.R
+  - first:
+      1: 100040
+    second: Eye.R_end
+  - first:
+      1: 100042
+    second: Fingers.L
+  - first:
+      1: 100044
+    second: Fingers.R
+  - first:
+      1: 100046
+    second: Fingertips.L
+  - first:
+      1: 100048
+    second: Fingertips.L_end
+  - first:
+      1: 100050
+    second: Fingertips.R
+  - first:
+      1: 100052
+    second: Fingertips.R_end
+  - first:
+      1: 100054
+    second: Foot.L
+  - first:
+      1: 100056
+    second: Foot.R
+  - first:
+      1: 100058
+    second: Forearm.L
+  - first:
+      1: 100060
+    second: Forearm.R
+  - first:
+      1: 100062
+    second: Hand.L
+  - first:
+      1: 100064
+    second: Hand.R
+  - first:
+      1: 100066
+    second: Hand_Slot.L
+  - first:
+      1: 100068
+    second: Hand_Slot.L_end
+  - first:
+      1: 100070
+    second: Hand_Slot.R
+  - first:
+      1: 100072
+    second: Hand_Slot.R_end
+  - first:
+      1: 100074
+    second: Head
+  - first:
+      1: 100076
+    second: Hips
+  - first:
+      1: 100078
+    second: Knee_IK.L
+  - first:
+      1: 100080
+    second: Knee_IK.L_end
+  - first:
+      1: 100082
+    second: Knee_IK.R
+  - first:
+      1: 100084
+    second: Knee_IK.R_end
+  - first:
+      1: 100086
+    second: Neck
+  - first:
+      1: 100088
+    second: Prehistoric_Male_Arm_Wrap_1A.L
+  - first:
+      1: 100090
+    second: Prehistoric_Male_Arm_Wrap_1A.R
+  - first:
+      1: 100092
+    second: Prehistoric_Male_Arm_Wrap_1B.L
+  - first:
+      1: 100094
+    second: Prehistoric_Male_Arm_Wrap_1B.R
+  - first:
+      1: 100096
+    second: Prehistoric_Male_Arm_Wrap_1C.L
+  - first:
+      1: 100098
+    second: Prehistoric_Male_Arm_Wrap_1C.R
+  - first:
+      1: 100100
+    second: Prehistoric_Male_Arm_Wrap_1D.L
+  - first:
+      1: 100102
+    second: Prehistoric_Male_Arm_Wrap_1D.R
+  - first:
+      1: 100104
+    second: //RootNode
+  - first:
+      1: 100106
+    second: Prehistoric_Male_Avatar_1A
+  - first:
+      1: 100108
+    second: Prehistoric_Male_Avatar_1B
+  - first:
+      1: 100110
+    second: Prehistoric_Male_Avatar_1C
+  - first:
+      1: 100112
+    second: Prehistoric_Male_Avatar_1D
+  - first:
+      1: 100114
+    second: Prehistoric_Male_Beard_1A
+  - first:
+      1: 100116
+    second: Prehistoric_Male_Beard_1B
+  - first:
+      1: 100118
+    second: Prehistoric_Male_Beard_1C
+  - first:
+      1: 100120
+    second: Prehistoric_Male_Beard_1D
+  - first:
+      1: 100122
+    second: Prehistoric_Male_Beard_2A
+  - first:
+      1: 100124
+    second: Prehistoric_Male_Beard_2A_Addon
+  - first:
+      1: 100126
+    second: Prehistoric_Male_Beard_2B
+  - first:
+      1: 100128
+    second: Prehistoric_Male_Beard_2B_Addon
+  - first:
+      1: 100130
+    second: Prehistoric_Male_Beard_2C
+  - first:
+      1: 100132
+    second: Prehistoric_Male_Beard_2C_Addon
+  - first:
+      1: 100134
+    second: Prehistoric_Male_Beard_2D
+  - first:
+      1: 100136
+    second: Prehistoric_Male_Beard_2D_Addon
+  - first:
+      1: 100138
+    second: Prehistoric_Male_Beard_3A
+  - first:
+      1: 100140
+    second: Prehistoric_Male_Beard_3B
+  - first:
+      1: 100142
+    second: Prehistoric_Male_Beard_3C
+  - first:
+      1: 100144
+    second: Prehistoric_Male_Beard_3D
+  - first:
+      1: 100146
+    second: Prehistoric_Male_Beard_4A
+  - first:
+      1: 100148
+    second: Prehistoric_Male_Beard_4B
+  - first:
+      1: 100150
+    second: Prehistoric_Male_Beard_4C
+  - first:
+      1: 100152
+    second: Prehistoric_Male_Beard_4D
+  - first:
+      1: 100154
+    second: Prehistoric_Male_Beard_5A
+  - first:
+      1: 100156
+    second: Prehistoric_Male_Beard_5B
+  - first:
+      1: 100158
+    second: Prehistoric_Male_Beard_5C
+  - first:
+      1: 100160
+    second: Prehistoric_Male_Beard_5D
+  - first:
+      1: 100162
+    second: Prehistoric_Male_Boot_1A.L
+  - first:
+      1: 100164
+    second: Prehistoric_Male_Boot_1A.R
+  - first:
+      1: 100166
+    second: Prehistoric_Male_Boot_1B.L
+  - first:
+      1: 100168
+    second: Prehistoric_Male_Boot_1B.R
+  - first:
+      1: 100170
+    second: Prehistoric_Male_Boot_1C.L
+  - first:
+      1: 100172
+    second: Prehistoric_Male_Boot_1C.R
+  - first:
+      1: 100174
+    second: Prehistoric_Male_Boot_1D.L
+  - first:
+      1: 100176
+    second: Prehistoric_Male_Boot_1D.R
+  - first:
+      1: 100178
+    second: Prehistoric_Male_Boot_2A.L
+  - first:
+      1: 100180
+    second: Prehistoric_Male_Boot_2A.R
+  - first:
+      1: 100182
+    second: Prehistoric_Male_Boot_2B.L
+  - first:
+      1: 100184
+    second: Prehistoric_Male_Boot_2B.R
+  - first:
+      1: 100186
+    second: Prehistoric_Male_Boot_2C.L
+  - first:
+      1: 100188
+    second: Prehistoric_Male_Boot_2C.R
+  - first:
+      1: 100190
+    second: Prehistoric_Male_Boot_2D.L
+  - first:
+      1: 100192
+    second: Prehistoric_Male_Boot_2D.R
+  - first:
+      1: 100194
+    second: Prehistoric_Male_Forearm_Wrap_1A.L
+  - first:
+      1: 100196
+    second: Prehistoric_Male_Forearm_Wrap_1A.R
+  - first:
+      1: 100198
+    second: Prehistoric_Male_Forearm_Wrap_1B.L
+  - first:
+      1: 100200
+    second: Prehistoric_Male_Forearm_Wrap_1B.R
+  - first:
+      1: 100202
+    second: Prehistoric_Male_Forearm_Wrap_1C.L
+  - first:
+      1: 100204
+    second: Prehistoric_Male_Forearm_Wrap_1C.L.001
+  - first:
+      1: 100206
+    second: Prehistoric_Male_Forearm_Wrap_1C.R
+  - first:
+      1: 100208
+    second: Prehistoric_Male_Forearm_Wrap_1C.R.001
+  - first:
+      1: 100210
+    second: Prehistoric_Male_Forearm_Wrap_2A.L
+  - first:
+      1: 100212
+    second: Prehistoric_Male_Forearm_Wrap_2A.R
+  - first:
+      1: 100214
+    second: Prehistoric_Male_Forearm_Wrap_2B.L
+  - first:
+      1: 100216
+    second: Prehistoric_Male_Forearm_Wrap_2B.R
+  - first:
+      1: 100218
+    second: Prehistoric_Male_Forearm_Wrap_2C.L
+  - first:
+      1: 100220
+    second: Prehistoric_Male_Forearm_Wrap_2C.R
+  - first:
+      1: 100222
+    second: Prehistoric_Male_Forearm_Wrap_2D.L
+  - first:
+      1: 100224
+    second: Prehistoric_Male_Forearm_Wrap_2D.R
+  - first:
+      1: 100226
+    second: Prehistoric_Male_Hair_1A
+  - first:
+      1: 100228
+    second: Prehistoric_Male_Hair_1B
+  - first:
+      1: 100230
+    second: Prehistoric_Male_Hair_1C
+  - first:
+      1: 100232
+    second: Prehistoric_Male_Hair_1D
+  - first:
+      1: 100234
+    second: Prehistoric_Male_Hair_2A
+  - first:
+      1: 100236
+    second: Prehistoric_Male_Hair_2B
+  - first:
+      1: 100238
+    second: Prehistoric_Male_Hair_2C
+  - first:
+      1: 100240
+    second: Prehistoric_Male_Hair_2D
+  - first:
+      1: 100242
+    second: Prehistoric_Male_Hair_3A
+  - first:
+      1: 100244
+    second: Prehistoric_Male_Hair_3B
+  - first:
+      1: 100246
+    second: Prehistoric_Male_Hair_3C
+  - first:
+      1: 100248
+    second: Prehistoric_Male_Hair_3D
+  - first:
+      1: 100250
+    second: Prehistoric_Male_Hair_4A
+  - first:
+      1: 100252
+    second: Prehistoric_Male_Hair_4B
+  - first:
+      1: 100254
+    second: Prehistoric_Male_Hair_4C
+  - first:
+      1: 100256
+    second: Prehistoric_Male_Hair_4D
+  - first:
+      1: 100258
+    second: Prehistoric_Male_Hair_5A
+  - first:
+      1: 100260
+    second: Prehistoric_Male_Hair_5B
+  - first:
+      1: 100262
+    second: Prehistoric_Male_Hair_5C
+  - first:
+      1: 100264
+    second: Prehistoric_Male_Hair_5D
+  - first:
+      1: 100266
+    second: Prehistoric_Male_Hips_1A
+  - first:
+      1: 100268
+    second: Prehistoric_Male_Hips_1A_Addon
+  - first:
+      1: 100270
+    second: Prehistoric_Male_Hips_1B
+  - first:
+      1: 100272
+    second: Prehistoric_Male_Hips_1B_Addon
+  - first:
+      1: 100274
+    second: Prehistoric_Male_Hips_1C
+  - first:
+      1: 100276
+    second: Prehistoric_Male_Hips_1C_Addon
+  - first:
+      1: 100278
+    second: Prehistoric_Male_Hips_1D
+  - first:
+      1: 100280
+    second: Prehistoric_Male_Hips_1D_Addon
+  - first:
+      1: 100282
+    second: Prehistoric_Male_Shin_Wrap_1A.L
+  - first:
+      1: 100284
+    second: Prehistoric_Male_Shin_Wrap_1A.R
+  - first:
+      1: 100286
+    second: Prehistoric_Male_Shin_Wrap_1B.L
+  - first:
+      1: 100288
+    second: Prehistoric_Male_Shin_Wrap_1B.R
+  - first:
+      1: 100290
+    second: Prehistoric_Male_Shin_Wrap_1C.L
+  - first:
+      1: 100292
+    second: Prehistoric_Male_Shin_Wrap_1C.R
+  - first:
+      1: 100294
+    second: Prehistoric_Male_Shin_Wrap_1D.L
+  - first:
+      1: 100296
+    second: Prehistoric_Male_Shin_Wrap_1D.R
+  - first:
+      1: 100298
+    second: Prehistoric_Male_Shin_Wrap_2A.L
+  - first:
+      1: 100300
+    second: Prehistoric_Male_Shin_Wrap_2A.R
+  - first:
+      1: 100302
+    second: Prehistoric_Male_Shin_Wrap_2B.L
+  - first:
+      1: 100304
+    second: Prehistoric_Male_Shin_Wrap_2B.R
+  - first:
+      1: 100306
+    second: Prehistoric_Male_Shin_Wrap_2C.L
+  - first:
+      1: 100308
+    second: Prehistoric_Male_Shin_Wrap_2C.R
+  - first:
+      1: 100310
+    second: Prehistoric_Male_Shin_Wrap_2D.L
+  - first:
+      1: 100312
+    second: Prehistoric_Male_Shin_Wrap_2D.R
+  - first:
+      1: 100314
+    second: Prehistoric_Male_Torso_Fur_1A
+  - first:
+      1: 100316
+    second: Prehistoric_Male_Torso_Fur_1A_Addon
+  - first:
+      1: 100318
+    second: Prehistoric_Male_Torso_Fur_1B
+  - first:
+      1: 100320
+    second: Prehistoric_Male_Torso_Fur_1B_Addon
+  - first:
+      1: 100322
+    second: Prehistoric_Male_Torso_Fur_1C
+  - first:
+      1: 100324
+    second: Prehistoric_Male_Torso_Fur_1C_Addon
+  - first:
+      1: 100326
+    second: Prehistoric_Male_Torso_Fur_1D
+  - first:
+      1: 100328
+    second: Prehistoric_Male_Torso_Fur_1D_Addon
+  - first:
+      1: 100330
+    second: Prehistoric_Male_Torso_Necklace_1A
+  - first:
+      1: 100332
+    second: Prehistoric_Male_Torso_Necklace_1B
+  - first:
+      1: 100334
+    second: Prehistoric_Male_Torso_Necklace_1C
+  - first:
+      1: 100336
+    second: Prehistoric_Male_Torso_Necklace_1D
+  - first:
+      1: 100338
+    second: Quad.L
+  - first:
+      1: 100340
+    second: Quad.R
+  - first:
+      1: 100342
+    second: Root
+  - first:
+      1: 100344
+    second: Shin.L
+  - first:
+      1: 100346
+    second: Shin.R
+  - first:
+      1: 100348
+    second: Spine_01
+  - first:
+      1: 100350
+    second: Spine_02
+  - first:
+      1: 100352
+    second: Spine_03
+  - first:
+      1: 100354
+    second: Thumb.L
+  - first:
+      1: 100356
+    second: Thumb.R
+  - first:
+      1: 100358
+    second: Thumb_Tip.L
+  - first:
+      1: 100360
+    second: Thumb_Tip.L_end
+  - first:
+      1: 100362
+    second: Thumb_Tip.R
+  - first:
+      1: 100364
+    second: Thumb_Tip.R_end
+  - first:
+      1: 100366
+    second: Toes.L
+  - first:
+      1: 100368
+    second: Toes.L_end
+  - first:
+      1: 100370
+    second: Toes.R
+  - first:
+      1: 100372
+    second: Toes.R_end
+  - first:
+      1: 100374
+    second: Wrist_IK.L
+  - first:
+      1: 100376
+    second: Wrist_IK.L_end
+  - first:
+      1: 100378
+    second: Wrist_IK.R
+  - first:
+      1: 100380
+    second: Wrist_IK.R_end
+  - first:
+      1: 100382
+    second: Prehistoric_Male_Forearm_Wrap_1D.L
+  - first:
+      1: 100384
+    second: Prehistoric_Male_Forearm_Wrap_1D.R
+  - first:
+      1: 100386
+    second: Ankle_IK_L
+  - first:
+      1: 100388
+    second: Ankle_IK_R
+  - first:
+      1: 100390
+    second: Arm_L
+  - first:
+      1: 100392
+    second: Arm_R
+  - first:
+      1: 100394
+    second: Brow_L
+  - first:
+      1: 100396
+    second: Brow_R
+  - first:
+      1: 100398
+    second: Clavicle_L
+  - first:
+      1: 100400
+    second: Clavicle_R
+  - first:
+      1: 100402
+    second: Elbow_IK_L
+  - first:
+      1: 100404
+    second: Elbow_IK_R
+  - first:
+      1: 100406
+    second: Eye_L
+  - first:
+      1: 100408
+    second: Eye_R
+  - first:
+      1: 100410
+    second: Fingers_L
+  - first:
+      1: 100412
+    second: Fingers_R
+  - first:
+      1: 100414
+    second: Fingertips_L
+  - first:
+      1: 100416
+    second: Fingertips_R
+  - first:
+      1: 100418
+    second: Foot_L
+  - first:
+      1: 100420
+    second: Foot_R
+  - first:
+      1: 100422
+    second: Forearm_L
+  - first:
+      1: 100424
+    second: Forearm_R
+  - first:
+      1: 100426
+    second: Hand_L
+  - first:
+      1: 100428
+    second: Hand_R
+  - first:
+      1: 100430
+    second: Hand_Slot_L
+  - first:
+      1: 100432
+    second: Hand_Slot_R
+  - first:
+      1: 100434
+    second: Knee_IK_L
+  - first:
+      1: 100436
+    second: Knee_IK_R
+  - first:
+      1: 100438
+    second: Prehistoric_Male_Arm_Wrap_1A_L
+  - first:
+      1: 100440
+    second: Prehistoric_Male_Arm_Wrap_1A_R
+  - first:
+      1: 100442
+    second: Prehistoric_Male_Arm_Wrap_1B_L
+  - first:
+      1: 100444
+    second: Prehistoric_Male_Arm_Wrap_1B_R
+  - first:
+      1: 100446
+    second: Prehistoric_Male_Arm_Wrap_1C_L
+  - first:
+      1: 100448
+    second: Prehistoric_Male_Arm_Wrap_1C_R
+  - first:
+      1: 100450
+    second: Prehistoric_Male_Arm_Wrap_1D_L
+  - first:
+      1: 100452
+    second: Prehistoric_Male_Arm_Wrap_1D_R
+  - first:
+      1: 100454
+    second: Prehistoric_Male_Boot_1A_L
+  - first:
+      1: 100456
+    second: Prehistoric_Male_Boot_1A_R
+  - first:
+      1: 100458
+    second: Prehistoric_Male_Boot_1B_L
+  - first:
+      1: 100460
+    second: Prehistoric_Male_Boot_1B_R
+  - first:
+      1: 100462
+    second: Prehistoric_Male_Boot_1C_L
+  - first:
+      1: 100464
+    second: Prehistoric_Male_Boot_1C_R
+  - first:
+      1: 100466
+    second: Prehistoric_Male_Boot_1D_L
+  - first:
+      1: 100468
+    second: Prehistoric_Male_Boot_1D_R
+  - first:
+      1: 100470
+    second: Prehistoric_Male_Boot_2A_L
+  - first:
+      1: 100472
+    second: Prehistoric_Male_Boot_2A_R
+  - first:
+      1: 100474
+    second: Prehistoric_Male_Boot_2B_L
+  - first:
+      1: 100476
+    second: Prehistoric_Male_Boot_2B_R
+  - first:
+      1: 100478
+    second: Prehistoric_Male_Boot_2C_L
+  - first:
+      1: 100480
+    second: Prehistoric_Male_Boot_2C_R
+  - first:
+      1: 100482
+    second: Prehistoric_Male_Boot_2D_L
+  - first:
+      1: 100484
+    second: Prehistoric_Male_Boot_2D_R
+  - first:
+      1: 100486
+    second: Prehistoric_Male_Forearm_Wrap_1A_L
+  - first:
+      1: 100488
+    second: Prehistoric_Male_Forearm_Wrap_1A_R
+  - first:
+      1: 100490
+    second: Prehistoric_Male_Forearm_Wrap_1B_L
+  - first:
+      1: 100492
+    second: Prehistoric_Male_Forearm_Wrap_1B_R
+  - first:
+      1: 100494
+    second: Prehistoric_Male_Forearm_Wrap_1C_L
+  - first:
+      1: 100496
+    second: Prehistoric_Male_Forearm_Wrap_1C_R
+  - first:
+      1: 100498
+    second: Prehistoric_Male_Forearm_Wrap_1D_L
+  - first:
+      1: 100500
+    second: Prehistoric_Male_Forearm_Wrap_1D_R
+  - first:
+      1: 100502
+    second: Prehistoric_Male_Forearm_Wrap_2A_L
+  - first:
+      1: 100504
+    second: Prehistoric_Male_Forearm_Wrap_2A_R
+  - first:
+      1: 100506
+    second: Prehistoric_Male_Forearm_Wrap_2B_L
+  - first:
+      1: 100508
+    second: Prehistoric_Male_Forearm_Wrap_2B_R
+  - first:
+      1: 100510
+    second: Prehistoric_Male_Forearm_Wrap_2C_L
+  - first:
+      1: 100512
+    second: Prehistoric_Male_Forearm_Wrap_2C_R
+  - first:
+      1: 100514
+    second: Prehistoric_Male_Forearm_Wrap_2D_L
+  - first:
+      1: 100516
+    second: Prehistoric_Male_Forearm_Wrap_2D_R
+  - first:
+      1: 100518
+    second: Prehistoric_Male_Shin_Wrap_1A_L
+  - first:
+      1: 100520
+    second: Prehistoric_Male_Shin_Wrap_1A_R
+  - first:
+      1: 100522
+    second: Prehistoric_Male_Shin_Wrap_1B_L
+  - first:
+      1: 100524
+    second: Prehistoric_Male_Shin_Wrap_1B_R
+  - first:
+      1: 100526
+    second: Prehistoric_Male_Shin_Wrap_1C_L
+  - first:
+      1: 100528
+    second: Prehistoric_Male_Shin_Wrap_1C_R
+  - first:
+      1: 100530
+    second: Prehistoric_Male_Shin_Wrap_1D_L
+  - first:
+      1: 100532
+    second: Prehistoric_Male_Shin_Wrap_1D_R
+  - first:
+      1: 100534
+    second: Prehistoric_Male_Shin_Wrap_2A_L
+  - first:
+      1: 100536
+    second: Prehistoric_Male_Shin_Wrap_2A_R
+  - first:
+      1: 100538
+    second: Prehistoric_Male_Shin_Wrap_2B_L
+  - first:
+      1: 100540
+    second: Prehistoric_Male_Shin_Wrap_2B_R
+  - first:
+      1: 100542
+    second: Prehistoric_Male_Shin_Wrap_2C_L
+  - first:
+      1: 100544
+    second: Prehistoric_Male_Shin_Wrap_2C_R
+  - first:
+      1: 100546
+    second: Prehistoric_Male_Shin_Wrap_2D_L
+  - first:
+      1: 100548
+    second: Prehistoric_Male_Shin_Wrap_2D_R
+  - first:
+      1: 100550
+    second: Quad_L
+  - first:
+      1: 100552
+    second: Quad_R
+  - first:
+      1: 100554
+    second: Shin_L
+  - first:
+      1: 100556
+    second: Shin_R
+  - first:
+      1: 100558
+    second: Thumb_L
+  - first:
+      1: 100560
+    second: Thumb_R
+  - first:
+      1: 100562
+    second: Thumb_Tip_L
+  - first:
+      1: 100564
+    second: Thumb_Tip_R
+  - first:
+      1: 100566
+    second: Toes_L
+  - first:
+      1: 100568
+    second: Toes_R
+  - first:
+      1: 100570
+    second: Wrist_IK_L
+  - first:
+      1: 100572
+    second: Wrist_IK_R
+  - first:
+      4: 400000
+    second: Ankle_IK.L
+  - first:
+      4: 400002
+    second: Ankle_IK.L_end
+  - first:
+      4: 400004
+    second: Ankle_IK.R
+  - first:
+      4: 400006
+    second: Ankle_IK.R_end
+  - first:
+      4: 400008
+    second: Arm.L
+  - first:
+      4: 400010
+    second: Arm.R
+  - first:
+      4: 400012
+    second: Armature_Prehistoric_Male_Avatar
+  - first:
+      4: 400014
+    second: Brow.L
+  - first:
+      4: 400016
+    second: Brow.L_end
+  - first:
+      4: 400018
+    second: Brow.R
+  - first:
+      4: 400020
+    second: Brow.R_end
+  - first:
+      4: 400022
+    second: Clavicle.L
+  - first:
+      4: 400024
+    second: Clavicle.R
+  - first:
+      4: 400026
+    second: Elbow_IK.L
+  - first:
+      4: 400028
+    second: Elbow_IK.L_end
+  - first:
+      4: 400030
+    second: Elbow_IK.R
+  - first:
+      4: 400032
+    second: Elbow_IK.R_end
+  - first:
+      4: 400034
+    second: Eye.L
+  - first:
+      4: 400036
+    second: Eye.L_end
+  - first:
+      4: 400038
+    second: Eye.R
+  - first:
+      4: 400040
+    second: Eye.R_end
+  - first:
+      4: 400042
+    second: Fingers.L
+  - first:
+      4: 400044
+    second: Fingers.R
+  - first:
+      4: 400046
+    second: Fingertips.L
+  - first:
+      4: 400048
+    second: Fingertips.L_end
+  - first:
+      4: 400050
+    second: Fingertips.R
+  - first:
+      4: 400052
+    second: Fingertips.R_end
+  - first:
+      4: 400054
+    second: Foot.L
+  - first:
+      4: 400056
+    second: Foot.R
+  - first:
+      4: 400058
+    second: Forearm.L
+  - first:
+      4: 400060
+    second: Forearm.R
+  - first:
+      4: 400062
+    second: Hand.L
+  - first:
+      4: 400064
+    second: Hand.R
+  - first:
+      4: 400066
+    second: Hand_Slot.L
+  - first:
+      4: 400068
+    second: Hand_Slot.L_end
+  - first:
+      4: 400070
+    second: Hand_Slot.R
+  - first:
+      4: 400072
+    second: Hand_Slot.R_end
+  - first:
+      4: 400074
+    second: Head
+  - first:
+      4: 400076
+    second: Hips
+  - first:
+      4: 400078
+    second: Knee_IK.L
+  - first:
+      4: 400080
+    second: Knee_IK.L_end
+  - first:
+      4: 400082
+    second: Knee_IK.R
+  - first:
+      4: 400084
+    second: Knee_IK.R_end
+  - first:
+      4: 400086
+    second: Neck
+  - first:
+      4: 400088
+    second: Prehistoric_Male_Arm_Wrap_1A.L
+  - first:
+      4: 400090
+    second: Prehistoric_Male_Arm_Wrap_1A.R
+  - first:
+      4: 400092
+    second: Prehistoric_Male_Arm_Wrap_1B.L
+  - first:
+      4: 400094
+    second: Prehistoric_Male_Arm_Wrap_1B.R
+  - first:
+      4: 400096
+    second: Prehistoric_Male_Arm_Wrap_1C.L
+  - first:
+      4: 400098
+    second: Prehistoric_Male_Arm_Wrap_1C.R
+  - first:
+      4: 400100
+    second: Prehistoric_Male_Arm_Wrap_1D.L
+  - first:
+      4: 400102
+    second: Prehistoric_Male_Arm_Wrap_1D.R
+  - first:
+      4: 400104
+    second: //RootNode
+  - first:
+      4: 400106
+    second: Prehistoric_Male_Avatar_1A
+  - first:
+      4: 400108
+    second: Prehistoric_Male_Avatar_1B
+  - first:
+      4: 400110
+    second: Prehistoric_Male_Avatar_1C
+  - first:
+      4: 400112
+    second: Prehistoric_Male_Avatar_1D
+  - first:
+      4: 400114
+    second: Prehistoric_Male_Beard_1A
+  - first:
+      4: 400116
+    second: Prehistoric_Male_Beard_1B
+  - first:
+      4: 400118
+    second: Prehistoric_Male_Beard_1C
+  - first:
+      4: 400120
+    second: Prehistoric_Male_Beard_1D
+  - first:
+      4: 400122
+    second: Prehistoric_Male_Beard_2A
+  - first:
+      4: 400124
+    second: Prehistoric_Male_Beard_2A_Addon
+  - first:
+      4: 400126
+    second: Prehistoric_Male_Beard_2B
+  - first:
+      4: 400128
+    second: Prehistoric_Male_Beard_2B_Addon
+  - first:
+      4: 400130
+    second: Prehistoric_Male_Beard_2C
+  - first:
+      4: 400132
+    second: Prehistoric_Male_Beard_2C_Addon
+  - first:
+      4: 400134
+    second: Prehistoric_Male_Beard_2D
+  - first:
+      4: 400136
+    second: Prehistoric_Male_Beard_2D_Addon
+  - first:
+      4: 400138
+    second: Prehistoric_Male_Beard_3A
+  - first:
+      4: 400140
+    second: Prehistoric_Male_Beard_3B
+  - first:
+      4: 400142
+    second: Prehistoric_Male_Beard_3C
+  - first:
+      4: 400144
+    second: Prehistoric_Male_Beard_3D
+  - first:
+      4: 400146
+    second: Prehistoric_Male_Beard_4A
+  - first:
+      4: 400148
+    second: Prehistoric_Male_Beard_4B
+  - first:
+      4: 400150
+    second: Prehistoric_Male_Beard_4C
+  - first:
+      4: 400152
+    second: Prehistoric_Male_Beard_4D
+  - first:
+      4: 400154
+    second: Prehistoric_Male_Beard_5A
+  - first:
+      4: 400156
+    second: Prehistoric_Male_Beard_5B
+  - first:
+      4: 400158
+    second: Prehistoric_Male_Beard_5C
+  - first:
+      4: 400160
+    second: Prehistoric_Male_Beard_5D
+  - first:
+      4: 400162
+    second: Prehistoric_Male_Boot_1A.L
+  - first:
+      4: 400164
+    second: Prehistoric_Male_Boot_1A.R
+  - first:
+      4: 400166
+    second: Prehistoric_Male_Boot_1B.L
+  - first:
+      4: 400168
+    second: Prehistoric_Male_Boot_1B.R
+  - first:
+      4: 400170
+    second: Prehistoric_Male_Boot_1C.L
+  - first:
+      4: 400172
+    second: Prehistoric_Male_Boot_1C.R
+  - first:
+      4: 400174
+    second: Prehistoric_Male_Boot_1D.L
+  - first:
+      4: 400176
+    second: Prehistoric_Male_Boot_1D.R
+  - first:
+      4: 400178
+    second: Prehistoric_Male_Boot_2A.L
+  - first:
+      4: 400180
+    second: Prehistoric_Male_Boot_2A.R
+  - first:
+      4: 400182
+    second: Prehistoric_Male_Boot_2B.L
+  - first:
+      4: 400184
+    second: Prehistoric_Male_Boot_2B.R
+  - first:
+      4: 400186
+    second: Prehistoric_Male_Boot_2C.L
+  - first:
+      4: 400188
+    second: Prehistoric_Male_Boot_2C.R
+  - first:
+      4: 400190
+    second: Prehistoric_Male_Boot_2D.L
+  - first:
+      4: 400192
+    second: Prehistoric_Male_Boot_2D.R
+  - first:
+      4: 400194
+    second: Prehistoric_Male_Forearm_Wrap_1A.L
+  - first:
+      4: 400196
+    second: Prehistoric_Male_Forearm_Wrap_1A.R
+  - first:
+      4: 400198
+    second: Prehistoric_Male_Forearm_Wrap_1B.L
+  - first:
+      4: 400200
+    second: Prehistoric_Male_Forearm_Wrap_1B.R
+  - first:
+      4: 400202
+    second: Prehistoric_Male_Forearm_Wrap_1C.L
+  - first:
+      4: 400204
+    second: Prehistoric_Male_Forearm_Wrap_1C.L.001
+  - first:
+      4: 400206
+    second: Prehistoric_Male_Forearm_Wrap_1C.R
+  - first:
+      4: 400208
+    second: Prehistoric_Male_Forearm_Wrap_1C.R.001
+  - first:
+      4: 400210
+    second: Prehistoric_Male_Forearm_Wrap_2A.L
+  - first:
+      4: 400212
+    second: Prehistoric_Male_Forearm_Wrap_2A.R
+  - first:
+      4: 400214
+    second: Prehistoric_Male_Forearm_Wrap_2B.L
+  - first:
+      4: 400216
+    second: Prehistoric_Male_Forearm_Wrap_2B.R
+  - first:
+      4: 400218
+    second: Prehistoric_Male_Forearm_Wrap_2C.L
+  - first:
+      4: 400220
+    second: Prehistoric_Male_Forearm_Wrap_2C.R
+  - first:
+      4: 400222
+    second: Prehistoric_Male_Forearm_Wrap_2D.L
+  - first:
+      4: 400224
+    second: Prehistoric_Male_Forearm_Wrap_2D.R
+  - first:
+      4: 400226
+    second: Prehistoric_Male_Hair_1A
+  - first:
+      4: 400228
+    second: Prehistoric_Male_Hair_1B
+  - first:
+      4: 400230
+    second: Prehistoric_Male_Hair_1C
+  - first:
+      4: 400232
+    second: Prehistoric_Male_Hair_1D
+  - first:
+      4: 400234
+    second: Prehistoric_Male_Hair_2A
+  - first:
+      4: 400236
+    second: Prehistoric_Male_Hair_2B
+  - first:
+      4: 400238
+    second: Prehistoric_Male_Hair_2C
+  - first:
+      4: 400240
+    second: Prehistoric_Male_Hair_2D
+  - first:
+      4: 400242
+    second: Prehistoric_Male_Hair_3A
+  - first:
+      4: 400244
+    second: Prehistoric_Male_Hair_3B
+  - first:
+      4: 400246
+    second: Prehistoric_Male_Hair_3C
+  - first:
+      4: 400248
+    second: Prehistoric_Male_Hair_3D
+  - first:
+      4: 400250
+    second: Prehistoric_Male_Hair_4A
+  - first:
+      4: 400252
+    second: Prehistoric_Male_Hair_4B
+  - first:
+      4: 400254
+    second: Prehistoric_Male_Hair_4C
+  - first:
+      4: 400256
+    second: Prehistoric_Male_Hair_4D
+  - first:
+      4: 400258
+    second: Prehistoric_Male_Hair_5A
+  - first:
+      4: 400260
+    second: Prehistoric_Male_Hair_5B
+  - first:
+      4: 400262
+    second: Prehistoric_Male_Hair_5C
+  - first:
+      4: 400264
+    second: Prehistoric_Male_Hair_5D
+  - first:
+      4: 400266
+    second: Prehistoric_Male_Hips_1A
+  - first:
+      4: 400268
+    second: Prehistoric_Male_Hips_1A_Addon
+  - first:
+      4: 400270
+    second: Prehistoric_Male_Hips_1B
+  - first:
+      4: 400272
+    second: Prehistoric_Male_Hips_1B_Addon
+  - first:
+      4: 400274
+    second: Prehistoric_Male_Hips_1C
+  - first:
+      4: 400276
+    second: Prehistoric_Male_Hips_1C_Addon
+  - first:
+      4: 400278
+    second: Prehistoric_Male_Hips_1D
+  - first:
+      4: 400280
+    second: Prehistoric_Male_Hips_1D_Addon
+  - first:
+      4: 400282
+    second: Prehistoric_Male_Shin_Wrap_1A.L
+  - first:
+      4: 400284
+    second: Prehistoric_Male_Shin_Wrap_1A.R
+  - first:
+      4: 400286
+    second: Prehistoric_Male_Shin_Wrap_1B.L
+  - first:
+      4: 400288
+    second: Prehistoric_Male_Shin_Wrap_1B.R
+  - first:
+      4: 400290
+    second: Prehistoric_Male_Shin_Wrap_1C.L
+  - first:
+      4: 400292
+    second: Prehistoric_Male_Shin_Wrap_1C.R
+  - first:
+      4: 400294
+    second: Prehistoric_Male_Shin_Wrap_1D.L
+  - first:
+      4: 400296
+    second: Prehistoric_Male_Shin_Wrap_1D.R
+  - first:
+      4: 400298
+    second: Prehistoric_Male_Shin_Wrap_2A.L
+  - first:
+      4: 400300
+    second: Prehistoric_Male_Shin_Wrap_2A.R
+  - first:
+      4: 400302
+    second: Prehistoric_Male_Shin_Wrap_2B.L
+  - first:
+      4: 400304
+    second: Prehistoric_Male_Shin_Wrap_2B.R
+  - first:
+      4: 400306
+    second: Prehistoric_Male_Shin_Wrap_2C.L
+  - first:
+      4: 400308
+    second: Prehistoric_Male_Shin_Wrap_2C.R
+  - first:
+      4: 400310
+    second: Prehistoric_Male_Shin_Wrap_2D.L
+  - first:
+      4: 400312
+    second: Prehistoric_Male_Shin_Wrap_2D.R
+  - first:
+      4: 400314
+    second: Prehistoric_Male_Torso_Fur_1A
+  - first:
+      4: 400316
+    second: Prehistoric_Male_Torso_Fur_1A_Addon
+  - first:
+      4: 400318
+    second: Prehistoric_Male_Torso_Fur_1B
+  - first:
+      4: 400320
+    second: Prehistoric_Male_Torso_Fur_1B_Addon
+  - first:
+      4: 400322
+    second: Prehistoric_Male_Torso_Fur_1C
+  - first:
+      4: 400324
+    second: Prehistoric_Male_Torso_Fur_1C_Addon
+  - first:
+      4: 400326
+    second: Prehistoric_Male_Torso_Fur_1D
+  - first:
+      4: 400328
+    second: Prehistoric_Male_Torso_Fur_1D_Addon
+  - first:
+      4: 400330
+    second: Prehistoric_Male_Torso_Necklace_1A
+  - first:
+      4: 400332
+    second: Prehistoric_Male_Torso_Necklace_1B
+  - first:
+      4: 400334
+    second: Prehistoric_Male_Torso_Necklace_1C
+  - first:
+      4: 400336
+    second: Prehistoric_Male_Torso_Necklace_1D
+  - first:
+      4: 400338
+    second: Quad.L
+  - first:
+      4: 400340
+    second: Quad.R
+  - first:
+      4: 400342
+    second: Root
+  - first:
+      4: 400344
+    second: Shin.L
+  - first:
+      4: 400346
+    second: Shin.R
+  - first:
+      4: 400348
+    second: Spine_01
+  - first:
+      4: 400350
+    second: Spine_02
+  - first:
+      4: 400352
+    second: Spine_03
+  - first:
+      4: 400354
+    second: Thumb.L
+  - first:
+      4: 400356
+    second: Thumb.R
+  - first:
+      4: 400358
+    second: Thumb_Tip.L
+  - first:
+      4: 400360
+    second: Thumb_Tip.L_end
+  - first:
+      4: 400362
+    second: Thumb_Tip.R
+  - first:
+      4: 400364
+    second: Thumb_Tip.R_end
+  - first:
+      4: 400366
+    second: Toes.L
+  - first:
+      4: 400368
+    second: Toes.L_end
+  - first:
+      4: 400370
+    second: Toes.R
+  - first:
+      4: 400372
+    second: Toes.R_end
+  - first:
+      4: 400374
+    second: Wrist_IK.L
+  - first:
+      4: 400376
+    second: Wrist_IK.L_end
+  - first:
+      4: 400378
+    second: Wrist_IK.R
+  - first:
+      4: 400380
+    second: Wrist_IK.R_end
+  - first:
+      4: 400382
+    second: Prehistoric_Male_Forearm_Wrap_1D.L
+  - first:
+      4: 400384
+    second: Prehistoric_Male_Forearm_Wrap_1D.R
+  - first:
+      4: 400386
+    second: Ankle_IK_L
+  - first:
+      4: 400388
+    second: Ankle_IK_R
+  - first:
+      4: 400390
+    second: Arm_L
+  - first:
+      4: 400392
+    second: Arm_R
+  - first:
+      4: 400394
+    second: Brow_L
+  - first:
+      4: 400396
+    second: Brow_R
+  - first:
+      4: 400398
+    second: Clavicle_L
+  - first:
+      4: 400400
+    second: Clavicle_R
+  - first:
+      4: 400402
+    second: Elbow_IK_L
+  - first:
+      4: 400404
+    second: Elbow_IK_R
+  - first:
+      4: 400406
+    second: Eye_L
+  - first:
+      4: 400408
+    second: Eye_R
+  - first:
+      4: 400410
+    second: Fingers_L
+  - first:
+      4: 400412
+    second: Fingers_R
+  - first:
+      4: 400414
+    second: Fingertips_L
+  - first:
+      4: 400416
+    second: Fingertips_R
+  - first:
+      4: 400418
+    second: Foot_L
+  - first:
+      4: 400420
+    second: Foot_R
+  - first:
+      4: 400422
+    second: Forearm_L
+  - first:
+      4: 400424
+    second: Forearm_R
+  - first:
+      4: 400426
+    second: Hand_L
+  - first:
+      4: 400428
+    second: Hand_R
+  - first:
+      4: 400430
+    second: Hand_Slot_L
+  - first:
+      4: 400432
+    second: Hand_Slot_R
+  - first:
+      4: 400434
+    second: Knee_IK_L
+  - first:
+      4: 400436
+    second: Knee_IK_R
+  - first:
+      4: 400438
+    second: Prehistoric_Male_Arm_Wrap_1A_L
+  - first:
+      4: 400440
+    second: Prehistoric_Male_Arm_Wrap_1A_R
+  - first:
+      4: 400442
+    second: Prehistoric_Male_Arm_Wrap_1B_L
+  - first:
+      4: 400444
+    second: Prehistoric_Male_Arm_Wrap_1B_R
+  - first:
+      4: 400446
+    second: Prehistoric_Male_Arm_Wrap_1C_L
+  - first:
+      4: 400448
+    second: Prehistoric_Male_Arm_Wrap_1C_R
+  - first:
+      4: 400450
+    second: Prehistoric_Male_Arm_Wrap_1D_L
+  - first:
+      4: 400452
+    second: Prehistoric_Male_Arm_Wrap_1D_R
+  - first:
+      4: 400454
+    second: Prehistoric_Male_Boot_1A_L
+  - first:
+      4: 400456
+    second: Prehistoric_Male_Boot_1A_R
+  - first:
+      4: 400458
+    second: Prehistoric_Male_Boot_1B_L
+  - first:
+      4: 400460
+    second: Prehistoric_Male_Boot_1B_R
+  - first:
+      4: 400462
+    second: Prehistoric_Male_Boot_1C_L
+  - first:
+      4: 400464
+    second: Prehistoric_Male_Boot_1C_R
+  - first:
+      4: 400466
+    second: Prehistoric_Male_Boot_1D_L
+  - first:
+      4: 400468
+    second: Prehistoric_Male_Boot_1D_R
+  - first:
+      4: 400470
+    second: Prehistoric_Male_Boot_2A_L
+  - first:
+      4: 400472
+    second: Prehistoric_Male_Boot_2A_R
+  - first:
+      4: 400474
+    second: Prehistoric_Male_Boot_2B_L
+  - first:
+      4: 400476
+    second: Prehistoric_Male_Boot_2B_R
+  - first:
+      4: 400478
+    second: Prehistoric_Male_Boot_2C_L
+  - first:
+      4: 400480
+    second: Prehistoric_Male_Boot_2C_R
+  - first:
+      4: 400482
+    second: Prehistoric_Male_Boot_2D_L
+  - first:
+      4: 400484
+    second: Prehistoric_Male_Boot_2D_R
+  - first:
+      4: 400486
+    second: Prehistoric_Male_Forearm_Wrap_1A_L
+  - first:
+      4: 400488
+    second: Prehistoric_Male_Forearm_Wrap_1A_R
+  - first:
+      4: 400490
+    second: Prehistoric_Male_Forearm_Wrap_1B_L
+  - first:
+      4: 400492
+    second: Prehistoric_Male_Forearm_Wrap_1B_R
+  - first:
+      4: 400494
+    second: Prehistoric_Male_Forearm_Wrap_1C_L
+  - first:
+      4: 400496
+    second: Prehistoric_Male_Forearm_Wrap_1C_R
+  - first:
+      4: 400498
+    second: Prehistoric_Male_Forearm_Wrap_1D_L
+  - first:
+      4: 400500
+    second: Prehistoric_Male_Forearm_Wrap_1D_R
+  - first:
+      4: 400502
+    second: Prehistoric_Male_Forearm_Wrap_2A_L
+  - first:
+      4: 400504
+    second: Prehistoric_Male_Forearm_Wrap_2A_R
+  - first:
+      4: 400506
+    second: Prehistoric_Male_Forearm_Wrap_2B_L
+  - first:
+      4: 400508
+    second: Prehistoric_Male_Forearm_Wrap_2B_R
+  - first:
+      4: 400510
+    second: Prehistoric_Male_Forearm_Wrap_2C_L
+  - first:
+      4: 400512
+    second: Prehistoric_Male_Forearm_Wrap_2C_R
+  - first:
+      4: 400514
+    second: Prehistoric_Male_Forearm_Wrap_2D_L
+  - first:
+      4: 400516
+    second: Prehistoric_Male_Forearm_Wrap_2D_R
+  - first:
+      4: 400518
+    second: Prehistoric_Male_Shin_Wrap_1A_L
+  - first:
+      4: 400520
+    second: Prehistoric_Male_Shin_Wrap_1A_R
+  - first:
+      4: 400522
+    second: Prehistoric_Male_Shin_Wrap_1B_L
+  - first:
+      4: 400524
+    second: Prehistoric_Male_Shin_Wrap_1B_R
+  - first:
+      4: 400526
+    second: Prehistoric_Male_Shin_Wrap_1C_L
+  - first:
+      4: 400528
+    second: Prehistoric_Male_Shin_Wrap_1C_R
+  - first:
+      4: 400530
+    second: Prehistoric_Male_Shin_Wrap_1D_L
+  - first:
+      4: 400532
+    second: Prehistoric_Male_Shin_Wrap_1D_R
+  - first:
+      4: 400534
+    second: Prehistoric_Male_Shin_Wrap_2A_L
+  - first:
+      4: 400536
+    second: Prehistoric_Male_Shin_Wrap_2A_R
+  - first:
+      4: 400538
+    second: Prehistoric_Male_Shin_Wrap_2B_L
+  - first:
+      4: 400540
+    second: Prehistoric_Male_Shin_Wrap_2B_R
+  - first:
+      4: 400542
+    second: Prehistoric_Male_Shin_Wrap_2C_L
+  - first:
+      4: 400544
+    second: Prehistoric_Male_Shin_Wrap_2C_R
+  - first:
+      4: 400546
+    second: Prehistoric_Male_Shin_Wrap_2D_L
+  - first:
+      4: 400548
+    second: Prehistoric_Male_Shin_Wrap_2D_R
+  - first:
+      4: 400550
+    second: Quad_L
+  - first:
+      4: 400552
+    second: Quad_R
+  - first:
+      4: 400554
+    second: Shin_L
+  - first:
+      4: 400556
+    second: Shin_R
+  - first:
+      4: 400558
+    second: Thumb_L
+  - first:
+      4: 400560
+    second: Thumb_R
+  - first:
+      4: 400562
+    second: Thumb_Tip_L
+  - first:
+      4: 400564
+    second: Thumb_Tip_R
+  - first:
+      4: 400566
+    second: Toes_L
+  - first:
+      4: 400568
+    second: Toes_R
+  - first:
+      4: 400570
+    second: Wrist_IK_L
+  - first:
+      4: 400572
+    second: Wrist_IK_R
+  - first:
+      43: 4300000
+    second: Prehistoric_Male_Arm_Wrap_1D.R
+  - first:
+      43: 4300002
+    second: Prehistoric_Male_Arm_Wrap_1D.L
+  - first:
+      43: 4300004
+    second: Prehistoric_Male_Arm_Wrap_1C.L
+  - first:
+      43: 4300006
+    second: Prehistoric_Male_Arm_Wrap_1C.R
+  - first:
+      43: 4300008
+    second: Prehistoric_Male_Arm_Wrap_1B.R
+  - first:
+      43: 4300010
+    second: Prehistoric_Male_Arm_Wrap_1B.L
+  - first:
+      43: 4300012
+    second: Prehistoric_Male_Torso_Fur_1D_Addon
+  - first:
+      43: 4300014
+    second: Prehistoric_Male_Torso_Fur_1C_Addon
+  - first:
+      43: 4300016
+    second: Prehistoric_Male_Torso_Fur_1B_Addon
+  - first:
+      43: 4300018
+    second: Prehistoric_Male_Torso_Necklace_1D
+  - first:
+      43: 4300020
+    second: Prehistoric_Male_Torso_Necklace_1C
+  - first:
+      43: 4300022
+    second: Prehistoric_Male_Torso_Necklace_1B
+  - first:
+      43: 4300024
+    second: Prehistoric_Male_Torso_Fur_1D
+  - first:
+      43: 4300026
+    second: Prehistoric_Male_Torso_Fur_1C
+  - first:
+      43: 4300028
+    second: Prehistoric_Male_Torso_Fur_1B
+  - first:
+      43: 4300030
+    second: Prehistoric_Male_Forearm_Wrap_2D.R
+  - first:
+      43: 4300032
+    second: Prehistoric_Male_Forearm_Wrap_2D.L
+  - first:
+      43: 4300034
+    second: Prehistoric_Male_Forearm_Wrap_2C.L
+  - first:
+      43: 4300036
+    second: Prehistoric_Male_Forearm_Wrap_2C.R
+  - first:
+      43: 4300038
+    second: Prehistoric_Male_Forearm_Wrap_2B.R
+  - first:
+      43: 4300040
+    second: Prehistoric_Male_Forearm_Wrap_2B.L
+  - first:
+      43: 4300042
+    second: Prehistoric_Male_Forearm_Wrap_1C.R.001
+  - first:
+      43: 4300044
+    second: Prehistoric_Male_Forearm_Wrap_1C.L.001
+  - first:
+      43: 4300046
+    second: Prehistoric_Male_Forearm_Wrap_1C.L
+  - first:
+      43: 4300048
+    second: Prehistoric_Male_Forearm_Wrap_1C.R
+  - first:
+      43: 4300050
+    second: Prehistoric_Male_Forearm_Wrap_1B.R
+  - first:
+      43: 4300052
+    second: Prehistoric_Male_Forearm_Wrap_1B.L
+  - first:
+      43: 4300054
+    second: Prehistoric_Male_Shin_Wrap_1D.R
+  - first:
+      43: 4300056
+    second: Prehistoric_Male_Shin_Wrap_1D.L
+  - first:
+      43: 4300058
+    second: Prehistoric_Male_Shin_Wrap_1C.L
+  - first:
+      43: 4300060
+    second: Prehistoric_Male_Shin_Wrap_1C.R
+  - first:
+      43: 4300062
+    second: Prehistoric_Male_Shin_Wrap_1B.R
+  - first:
+      43: 4300064
+    second: Prehistoric_Male_Shin_Wrap_1B.L
+  - first:
+      43: 4300066
+    second: Prehistoric_Male_Boot_1D.R
+  - first:
+      43: 4300068
+    second: Prehistoric_Male_Boot_1D.L
+  - first:
+      43: 4300070
+    second: Prehistoric_Male_Boot_1C.L
+  - first:
+      43: 4300072
+    second: Prehistoric_Male_Boot_1C.R
+  - first:
+      43: 4300074
+    second: Prehistoric_Male_Boot_1B.R
+  - first:
+      43: 4300076
+    second: Prehistoric_Male_Boot_1B.L
+  - first:
+      43: 4300078
+    second: Prehistoric_Male_Boot_1A.L
+  - first:
+      43: 4300080
+    second: Prehistoric_Male_Hips_1A
+  - first:
+      43: 4300082
+    second: Prehistoric_Male_Hips_1B
+  - first:
+      43: 4300084
+    second: Prehistoric_Male_Hips_1C
+  - first:
+      43: 4300086
+    second: Prehistoric_Male_Hips_1D
+  - first:
+      43: 4300088
+    second: Prehistoric_Male_Boot_2D.L
+  - first:
+      43: 4300090
+    second: Prehistoric_Male_Boot_2C.L
+  - first:
+      43: 4300092
+    second: Prehistoric_Male_Boot_2B.L
+  - first:
+      43: 4300094
+    second: Prehistoric_Male_Hips_1A_Addon
+  - first:
+      43: 4300096
+    second: Prehistoric_Male_Hips_1B_Addon
+  - first:
+      43: 4300098
+    second: Prehistoric_Male_Hips_1C_Addon
+  - first:
+      43: 4300100
+    second: Prehistoric_Male_Avatar_1D
+  - first:
+      43: 4300102
+    second: Prehistoric_Male_Avatar_1C
+  - first:
+      43: 4300104
+    second: Prehistoric_Male_Avatar_1B
+  - first:
+      43: 4300106
+    second: Prehistoric_Male_Arm_Wrap_1A.L
+  - first:
+      43: 4300108
+    second: Prehistoric_Male_Arm_Wrap_1A.R
+  - first:
+      43: 4300110
+    second: Prehistoric_Male_Boot_1A.R
+  - first:
+      43: 4300112
+    second: Prehistoric_Male_Boot_2A.L
+  - first:
+      43: 4300114
+    second: Prehistoric_Male_Forearm_Wrap_1A.L
+  - first:
+      43: 4300116
+    second: Prehistoric_Male_Forearm_Wrap_1A.R
+  - first:
+      43: 4300118
+    second: Prehistoric_Male_Forearm_Wrap_2A.L
+  - first:
+      43: 4300120
+    second: Prehistoric_Male_Forearm_Wrap_2A.R
+  - first:
+      43: 4300122
+    second: Prehistoric_Male_Hips_1D_Addon
+  - first:
+      43: 4300124
+    second: Prehistoric_Male_Shin_Wrap_1A.L
+  - first:
+      43: 4300126
+    second: Prehistoric_Male_Shin_Wrap_1A.R
+  - first:
+      43: 4300128
+    second: Prehistoric_Male_Avatar_1A
+  - first:
+      43: 4300130
+    second: Prehistoric_Male_Torso_Fur_1A
+  - first:
+      43: 4300132
+    second: Prehistoric_Male_Torso_Fur_1A_Addon
+  - first:
+      43: 4300134
+    second: Prehistoric_Male_Torso_Necklace_1A
+  - first:
+      43: 4300136
+    second: Prehistoric_Male_Beard_5A
+  - first:
+      43: 4300138
+    second: Prehistoric_Male_Hair_5A
+  - first:
+      43: 4300140
+    second: Prehistoric_Male_Beard_5B
+  - first:
+      43: 4300142
+    second: Prehistoric_Male_Hair_5B
+  - first:
+      43: 4300144
+    second: Prehistoric_Male_Beard_5C
+  - first:
+      43: 4300146
+    second: Prehistoric_Male_Hair_5C
+  - first:
+      43: 4300148
+    second: Prehistoric_Male_Hair_5D
+  - first:
+      43: 4300150
+    second: Prehistoric_Male_Beard_5D
+  - first:
+      43: 4300152
+    second: Prehistoric_Male_Beard_4D
+  - first:
+      43: 4300154
+    second: Prehistoric_Male_Hair_4D
+  - first:
+      43: 4300156
+    second: Prehistoric_Male_Beard_4C
+  - first:
+      43: 4300158
+    second: Prehistoric_Male_Hair_4C
+  - first:
+      43: 4300160
+    second: Prehistoric_Male_Hair_4B
+  - first:
+      43: 4300162
+    second: Prehistoric_Male_Beard_4B
+  - first:
+      43: 4300164
+    second: Prehistoric_Male_Hair_4A
+  - first:
+      43: 4300166
+    second: Prehistoric_Male_Beard_4A
+  - first:
+      43: 4300168
+    second: Prehistoric_Male_Beard_3A
+  - first:
+      43: 4300170
+    second: Prehistoric_Male_Hair_3A
+  - first:
+      43: 4300172
+    second: Prehistoric_Male_Beard_3B
+  - first:
+      43: 4300174
+    second: Prehistoric_Male_Hair_3B
+  - first:
+      43: 4300176
+    second: Prehistoric_Male_Beard_3C
+  - first:
+      43: 4300178
+    second: Prehistoric_Male_Hair_3C
+  - first:
+      43: 4300180
+    second: Prehistoric_Male_Hair_3D
+  - first:
+      43: 4300182
+    second: Prehistoric_Male_Beard_3D
+  - first:
+      43: 4300184
+    second: Prehistoric_Male_Beard_2D
+  - first:
+      43: 4300186
+    second: Prehistoric_Male_Hair_2D
+  - first:
+      43: 4300188
+    second: Prehistoric_Male_Hair_2C
+  - first:
+      43: 4300190
+    second: Prehistoric_Male_Beard_2C
+  - first:
+      43: 4300192
+    second: Prehistoric_Male_Hair_2B
+  - first:
+      43: 4300194
+    second: Prehistoric_Male_Beard_2B
+  - first:
+      43: 4300196
+    second: Prehistoric_Male_Hair_2A
+  - first:
+      43: 4300198
+    second: Prehistoric_Male_Beard_2A
+  - first:
+      43: 4300200
+    second: Prehistoric_Male_Beard_1B
+  - first:
+      43: 4300202
+    second: Prehistoric_Male_Hair_1B
+  - first:
+      43: 4300204
+    second: Prehistoric_Male_Hair_1C
+  - first:
+      43: 4300206
+    second: Prehistoric_Male_Beard_1C
+  - first:
+      43: 4300208
+    second: Prehistoric_Male_Beard_1D
+  - first:
+      43: 4300210
+    second: Prehistoric_Male_Hair_1D
+  - first:
+      43: 4300212
+    second: Prehistoric_Male_Beard_2D_Addon
+  - first:
+      43: 4300214
+    second: Prehistoric_Male_Beard_2C_Addon
+  - first:
+      43: 4300216
+    second: Prehistoric_Male_Beard_2B_Addon
+  - first:
+      43: 4300218
+    second: Prehistoric_Male_Beard_2A_Addon
+  - first:
+      43: 4300220
+    second: Prehistoric_Male_Beard_1A
+  - first:
+      43: 4300222
+    second: Prehistoric_Male_Hair_1A
+  - first:
+      43: 4300224
+    second: Prehistoric_Male_Shin_Wrap_2D.L
+  - first:
+      43: 4300226
+    second: Prehistoric_Male_Shin_Wrap_2D.R
+  - first:
+      43: 4300228
+    second: Prehistoric_Male_Shin_Wrap_2C.R
+  - first:
+      43: 4300230
+    second: Prehistoric_Male_Shin_Wrap_2C.L
+  - first:
+      43: 4300232
+    second: Prehistoric_Male_Shin_Wrap_2B.L
+  - first:
+      43: 4300234
+    second: Prehistoric_Male_Shin_Wrap_2B.R
+  - first:
+      43: 4300236
+    second: Prehistoric_Male_Boot_2D.R
+  - first:
+      43: 4300238
+    second: Prehistoric_Male_Boot_2C.R
+  - first:
+      43: 4300240
+    second: Prehistoric_Male_Boot_2B.R
+  - first:
+      43: 4300242
+    second: Prehistoric_Male_Boot_2A.R
+  - first:
+      43: 4300244
+    second: Prehistoric_Male_Shin_Wrap_2A.R
+  - first:
+      43: 4300246
+    second: Prehistoric_Male_Shin_Wrap_2A.L
+  - first:
+      43: 4300248
+    second: Prehistoric_Male_Forearm_Wrap_1D.R
+  - first:
+      43: 4300250
+    second: Prehistoric_Male_Forearm_Wrap_1D.L
+  - first:
+      43: 4300252
+    second: Prehistoric_Male_Arm_Wrap_1D_R
+  - first:
+      43: 4300254
+    second: Prehistoric_Male_Arm_Wrap_1D_L
+  - first:
+      43: 4300256
+    second: Prehistoric_Male_Arm_Wrap_1C_L
+  - first:
+      43: 4300258
+    second: Prehistoric_Male_Arm_Wrap_1C_R
+  - first:
+      43: 4300260
+    second: Prehistoric_Male_Arm_Wrap_1B_R
+  - first:
+      43: 4300262
+    second: Prehistoric_Male_Arm_Wrap_1B_L
+  - first:
+      43: 4300264
+    second: Prehistoric_Male_Forearm_Wrap_2D_R
+  - first:
+      43: 4300266
+    second: Prehistoric_Male_Forearm_Wrap_2D_L
+  - first:
+      43: 4300268
+    second: Prehistoric_Male_Forearm_Wrap_2C_L
+  - first:
+      43: 4300270
+    second: Prehistoric_Male_Forearm_Wrap_2C_R
+  - first:
+      43: 4300272
+    second: Prehistoric_Male_Forearm_Wrap_2B_R
+  - first:
+      43: 4300274
+    second: Prehistoric_Male_Forearm_Wrap_2B_L
+  - first:
+      43: 4300276
+    second: Prehistoric_Male_Forearm_Wrap_1D_R
+  - first:
+      43: 4300278
+    second: Prehistoric_Male_Forearm_Wrap_1D_L
+  - first:
+      43: 4300280
+    second: Prehistoric_Male_Forearm_Wrap_1C_L
+  - first:
+      43: 4300282
+    second: Prehistoric_Male_Forearm_Wrap_1C_R
+  - first:
+      43: 4300284
+    second: Prehistoric_Male_Forearm_Wrap_1B_R
+  - first:
+      43: 4300286
+    second: Prehistoric_Male_Forearm_Wrap_1B_L
+  - first:
+      43: 4300288
+    second: Prehistoric_Male_Shin_Wrap_1D_R
+  - first:
+      43: 4300290
+    second: Prehistoric_Male_Shin_Wrap_1D_L
+  - first:
+      43: 4300292
+    second: Prehistoric_Male_Shin_Wrap_1C_L
+  - first:
+      43: 4300294
+    second: Prehistoric_Male_Shin_Wrap_1C_R
+  - first:
+      43: 4300296
+    second: Prehistoric_Male_Shin_Wrap_1B_R
+  - first:
+      43: 4300298
+    second: Prehistoric_Male_Shin_Wrap_1B_L
+  - first:
+      43: 4300300
+    second: Prehistoric_Male_Boot_1D_R
+  - first:
+      43: 4300302
+    second: Prehistoric_Male_Boot_1D_L
+  - first:
+      43: 4300304
+    second: Prehistoric_Male_Boot_1C_L
+  - first:
+      43: 4300306
+    second: Prehistoric_Male_Boot_1C_R
+  - first:
+      43: 4300308
+    second: Prehistoric_Male_Boot_1B_R
+  - first:
+      43: 4300310
+    second: Prehistoric_Male_Boot_1B_L
+  - first:
+      43: 4300312
+    second: Prehistoric_Male_Boot_1A_L
+  - first:
+      43: 4300314
+    second: Prehistoric_Male_Boot_2D_L
+  - first:
+      43: 4300316
+    second: Prehistoric_Male_Boot_2C_L
+  - first:
+      43: 4300318
+    second: Prehistoric_Male_Boot_2B_L
+  - first:
+      43: 4300320
+    second: Prehistoric_Male_Arm_Wrap_1A_L
+  - first:
+      43: 4300322
+    second: Prehistoric_Male_Arm_Wrap_1A_R
+  - first:
+      43: 4300324
+    second: Prehistoric_Male_Boot_1A_R
+  - first:
+      43: 4300326
+    second: Prehistoric_Male_Boot_2A_L
+  - first:
+      43: 4300328
+    second: Prehistoric_Male_Forearm_Wrap_1A_L
+  - first:
+      43: 4300330
+    second: Prehistoric_Male_Forearm_Wrap_1A_R
+  - first:
+      43: 4300332
+    second: Prehistoric_Male_Forearm_Wrap_2A_L
+  - first:
+      43: 4300334
+    second: Prehistoric_Male_Forearm_Wrap_2A_R
+  - first:
+      43: 4300336
+    second: Prehistoric_Male_Shin_Wrap_1A_L
+  - first:
+      43: 4300338
+    second: Prehistoric_Male_Shin_Wrap_1A_R
+  - first:
+      43: 4300340
+    second: Prehistoric_Male_Shin_Wrap_2D_L
+  - first:
+      43: 4300342
+    second: Prehistoric_Male_Shin_Wrap_2D_R
+  - first:
+      43: 4300344
+    second: Prehistoric_Male_Shin_Wrap_2C_R
+  - first:
+      43: 4300346
+    second: Prehistoric_Male_Shin_Wrap_2C_L
+  - first:
+      43: 4300348
+    second: Prehistoric_Male_Shin_Wrap_2B_L
+  - first:
+      43: 4300350
+    second: Prehistoric_Male_Shin_Wrap_2B_R
+  - first:
+      43: 4300352
+    second: Prehistoric_Male_Boot_2D_R
+  - first:
+      43: 4300354
+    second: Prehistoric_Male_Boot_2C_R
+  - first:
+      43: 4300356
+    second: Prehistoric_Male_Boot_2B_R
+  - first:
+      43: 4300358
+    second: Prehistoric_Male_Boot_2A_R
+  - first:
+      43: 4300360
+    second: Prehistoric_Male_Shin_Wrap_2A_R
+  - first:
+      43: 4300362
+    second: Prehistoric_Male_Shin_Wrap_2A_L
+  - first:
+      74: 7400000
+    second: Armature_Prehistoric_Male_Avatar|Action
+  - first:
+      74: 7400002
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Female_Idle_1
+  - first:
+      74: 7400004
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Female_Idle_1.001
+  - first:
+      74: 7400006
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Female_Idle_1.002
+  - first:
+      74: 7400008
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Female_Idle_2
+  - first:
+      74: 7400010
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Female_Idle_3
+  - first:
+      74: 7400012
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Female_Pray_1
+  - first:
+      74: 7400014
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Female_Sitting_1
+  - first:
+      74: 7400016
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Female_Walk_1
+  - first:
+      74: 7400018
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Female_Worship_1
+  - first:
+      74: 7400020
+    second: Prehistoric_Male_Idle_1
+  - first:
+      74: 7400022
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Idle_1.001
+  - first:
+      74: 7400024
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Idle_1.003
+  - first:
+      74: 7400026
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Idle_1.004
+  - first:
+      74: 7400028
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Idle_1.005
+  - first:
+      74: 7400030
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Idle_1.006
+  - first:
+      74: 7400032
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Idle_1.007
+  - first:
+      74: 7400034
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Idle_1.008
+  - first:
+      74: 7400036
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Idle_1.009
+  - first:
+      74: 7400038
+    second: Prehistoric_Male_Idle_2
+  - first:
+      74: 7400040
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Idle_2.001
+  - first:
+      74: 7400042
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Idle_2.002
+  - first:
+      74: 7400044
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Idle_2.003
+  - first:
+      74: 7400046
+    second: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Idle_2.004
+  - first:
+      74: 7400048
+    second: Prehistoric_Male_Idle_3
+  - first:
+      74: 7400050
+    second: Prehistoric_Male_Pray_1
+  - first:
+      74: 7400052
+    second: Prehistoric_Male_Walk_1
+  - first:
+      74: 7400054
+    second: Prehistoric_Male_Work_1
+  - first:
+      74: 7400056
+    second: Prehistoric_Male_Work_2
+  - first:
+      74: 7400058
+    second: Prehistoric_Male_Worship_1
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Prehistoric_Male_Arm_Wrap_1A.L
+  - first:
+      137: 13700002
+    second: Prehistoric_Male_Arm_Wrap_1A.R
+  - first:
+      137: 13700004
+    second: Prehistoric_Male_Arm_Wrap_1B.L
+  - first:
+      137: 13700006
+    second: Prehistoric_Male_Arm_Wrap_1B.R
+  - first:
+      137: 13700008
+    second: Prehistoric_Male_Arm_Wrap_1C.L
+  - first:
+      137: 13700010
+    second: Prehistoric_Male_Arm_Wrap_1C.R
+  - first:
+      137: 13700012
+    second: Prehistoric_Male_Arm_Wrap_1D.L
+  - first:
+      137: 13700014
+    second: Prehistoric_Male_Arm_Wrap_1D.R
+  - first:
+      137: 13700016
+    second: Prehistoric_Male_Avatar_1A
+  - first:
+      137: 13700018
+    second: Prehistoric_Male_Avatar_1B
+  - first:
+      137: 13700020
+    second: Prehistoric_Male_Avatar_1C
+  - first:
+      137: 13700022
+    second: Prehistoric_Male_Avatar_1D
+  - first:
+      137: 13700024
+    second: Prehistoric_Male_Beard_1A
+  - first:
+      137: 13700026
+    second: Prehistoric_Male_Beard_1B
+  - first:
+      137: 13700028
+    second: Prehistoric_Male_Beard_1C
+  - first:
+      137: 13700030
+    second: Prehistoric_Male_Beard_1D
+  - first:
+      137: 13700032
+    second: Prehistoric_Male_Beard_2A
+  - first:
+      137: 13700034
+    second: Prehistoric_Male_Beard_2A_Addon
+  - first:
+      137: 13700036
+    second: Prehistoric_Male_Beard_2B
+  - first:
+      137: 13700038
+    second: Prehistoric_Male_Beard_2B_Addon
+  - first:
+      137: 13700040
+    second: Prehistoric_Male_Beard_2C
+  - first:
+      137: 13700042
+    second: Prehistoric_Male_Beard_2C_Addon
+  - first:
+      137: 13700044
+    second: Prehistoric_Male_Beard_2D
+  - first:
+      137: 13700046
+    second: Prehistoric_Male_Beard_2D_Addon
+  - first:
+      137: 13700048
+    second: Prehistoric_Male_Beard_3A
+  - first:
+      137: 13700050
+    second: Prehistoric_Male_Beard_3B
+  - first:
+      137: 13700052
+    second: Prehistoric_Male_Beard_3C
+  - first:
+      137: 13700054
+    second: Prehistoric_Male_Beard_3D
+  - first:
+      137: 13700056
+    second: Prehistoric_Male_Beard_4A
+  - first:
+      137: 13700058
+    second: Prehistoric_Male_Beard_4B
+  - first:
+      137: 13700060
+    second: Prehistoric_Male_Beard_4C
+  - first:
+      137: 13700062
+    second: Prehistoric_Male_Beard_4D
+  - first:
+      137: 13700064
+    second: Prehistoric_Male_Beard_5A
+  - first:
+      137: 13700066
+    second: Prehistoric_Male_Beard_5B
+  - first:
+      137: 13700068
+    second: Prehistoric_Male_Beard_5C
+  - first:
+      137: 13700070
+    second: Prehistoric_Male_Beard_5D
+  - first:
+      137: 13700072
+    second: Prehistoric_Male_Boot_1A.L
+  - first:
+      137: 13700074
+    second: Prehistoric_Male_Boot_1A.R
+  - first:
+      137: 13700076
+    second: Prehistoric_Male_Boot_1B.L
+  - first:
+      137: 13700078
+    second: Prehistoric_Male_Boot_1B.R
+  - first:
+      137: 13700080
+    second: Prehistoric_Male_Boot_1C.L
+  - first:
+      137: 13700082
+    second: Prehistoric_Male_Boot_1C.R
+  - first:
+      137: 13700084
+    second: Prehistoric_Male_Boot_1D.L
+  - first:
+      137: 13700086
+    second: Prehistoric_Male_Boot_1D.R
+  - first:
+      137: 13700088
+    second: Prehistoric_Male_Boot_2A.L
+  - first:
+      137: 13700090
+    second: Prehistoric_Male_Boot_2A.R
+  - first:
+      137: 13700092
+    second: Prehistoric_Male_Boot_2B.L
+  - first:
+      137: 13700094
+    second: Prehistoric_Male_Boot_2B.R
+  - first:
+      137: 13700096
+    second: Prehistoric_Male_Boot_2C.L
+  - first:
+      137: 13700098
+    second: Prehistoric_Male_Boot_2C.R
+  - first:
+      137: 13700100
+    second: Prehistoric_Male_Boot_2D.L
+  - first:
+      137: 13700102
+    second: Prehistoric_Male_Boot_2D.R
+  - first:
+      137: 13700104
+    second: Prehistoric_Male_Forearm_Wrap_1A.L
+  - first:
+      137: 13700106
+    second: Prehistoric_Male_Forearm_Wrap_1A.R
+  - first:
+      137: 13700108
+    second: Prehistoric_Male_Forearm_Wrap_1B.L
+  - first:
+      137: 13700110
+    second: Prehistoric_Male_Forearm_Wrap_1B.R
+  - first:
+      137: 13700112
+    second: Prehistoric_Male_Forearm_Wrap_1C.L
+  - first:
+      137: 13700114
+    second: Prehistoric_Male_Forearm_Wrap_1C.L.001
+  - first:
+      137: 13700116
+    second: Prehistoric_Male_Forearm_Wrap_1C.R
+  - first:
+      137: 13700118
+    second: Prehistoric_Male_Forearm_Wrap_1C.R.001
+  - first:
+      137: 13700120
+    second: Prehistoric_Male_Forearm_Wrap_2A.L
+  - first:
+      137: 13700122
+    second: Prehistoric_Male_Forearm_Wrap_2A.R
+  - first:
+      137: 13700124
+    second: Prehistoric_Male_Forearm_Wrap_2B.L
+  - first:
+      137: 13700126
+    second: Prehistoric_Male_Forearm_Wrap_2B.R
+  - first:
+      137: 13700128
+    second: Prehistoric_Male_Forearm_Wrap_2C.L
+  - first:
+      137: 13700130
+    second: Prehistoric_Male_Forearm_Wrap_2C.R
+  - first:
+      137: 13700132
+    second: Prehistoric_Male_Forearm_Wrap_2D.L
+  - first:
+      137: 13700134
+    second: Prehistoric_Male_Forearm_Wrap_2D.R
+  - first:
+      137: 13700136
+    second: Prehistoric_Male_Hair_1A
+  - first:
+      137: 13700138
+    second: Prehistoric_Male_Hair_1B
+  - first:
+      137: 13700140
+    second: Prehistoric_Male_Hair_1C
+  - first:
+      137: 13700142
+    second: Prehistoric_Male_Hair_1D
+  - first:
+      137: 13700144
+    second: Prehistoric_Male_Hair_2A
+  - first:
+      137: 13700146
+    second: Prehistoric_Male_Hair_2B
+  - first:
+      137: 13700148
+    second: Prehistoric_Male_Hair_2C
+  - first:
+      137: 13700150
+    second: Prehistoric_Male_Hair_2D
+  - first:
+      137: 13700152
+    second: Prehistoric_Male_Hair_3A
+  - first:
+      137: 13700154
+    second: Prehistoric_Male_Hair_3B
+  - first:
+      137: 13700156
+    second: Prehistoric_Male_Hair_3C
+  - first:
+      137: 13700158
+    second: Prehistoric_Male_Hair_3D
+  - first:
+      137: 13700160
+    second: Prehistoric_Male_Hair_4A
+  - first:
+      137: 13700162
+    second: Prehistoric_Male_Hair_4B
+  - first:
+      137: 13700164
+    second: Prehistoric_Male_Hair_4C
+  - first:
+      137: 13700166
+    second: Prehistoric_Male_Hair_4D
+  - first:
+      137: 13700168
+    second: Prehistoric_Male_Hair_5A
+  - first:
+      137: 13700170
+    second: Prehistoric_Male_Hair_5B
+  - first:
+      137: 13700172
+    second: Prehistoric_Male_Hair_5C
+  - first:
+      137: 13700174
+    second: Prehistoric_Male_Hair_5D
+  - first:
+      137: 13700176
+    second: Prehistoric_Male_Hips_1A
+  - first:
+      137: 13700178
+    second: Prehistoric_Male_Hips_1A_Addon
+  - first:
+      137: 13700180
+    second: Prehistoric_Male_Hips_1B
+  - first:
+      137: 13700182
+    second: Prehistoric_Male_Hips_1B_Addon
+  - first:
+      137: 13700184
+    second: Prehistoric_Male_Hips_1C
+  - first:
+      137: 13700186
+    second: Prehistoric_Male_Hips_1C_Addon
+  - first:
+      137: 13700188
+    second: Prehistoric_Male_Hips_1D
+  - first:
+      137: 13700190
+    second: Prehistoric_Male_Hips_1D_Addon
+  - first:
+      137: 13700192
+    second: Prehistoric_Male_Shin_Wrap_1A.L
+  - first:
+      137: 13700194
+    second: Prehistoric_Male_Shin_Wrap_1A.R
+  - first:
+      137: 13700196
+    second: Prehistoric_Male_Shin_Wrap_1B.L
+  - first:
+      137: 13700198
+    second: Prehistoric_Male_Shin_Wrap_1B.R
+  - first:
+      137: 13700200
+    second: Prehistoric_Male_Shin_Wrap_1C.L
+  - first:
+      137: 13700202
+    second: Prehistoric_Male_Shin_Wrap_1C.R
+  - first:
+      137: 13700204
+    second: Prehistoric_Male_Shin_Wrap_1D.L
+  - first:
+      137: 13700206
+    second: Prehistoric_Male_Shin_Wrap_1D.R
+  - first:
+      137: 13700208
+    second: Prehistoric_Male_Shin_Wrap_2A.L
+  - first:
+      137: 13700210
+    second: Prehistoric_Male_Shin_Wrap_2A.R
+  - first:
+      137: 13700212
+    second: Prehistoric_Male_Shin_Wrap_2B.L
+  - first:
+      137: 13700214
+    second: Prehistoric_Male_Shin_Wrap_2B.R
+  - first:
+      137: 13700216
+    second: Prehistoric_Male_Shin_Wrap_2C.L
+  - first:
+      137: 13700218
+    second: Prehistoric_Male_Shin_Wrap_2C.R
+  - first:
+      137: 13700220
+    second: Prehistoric_Male_Shin_Wrap_2D.L
+  - first:
+      137: 13700222
+    second: Prehistoric_Male_Shin_Wrap_2D.R
+  - first:
+      137: 13700224
+    second: Prehistoric_Male_Torso_Fur_1A
+  - first:
+      137: 13700226
+    second: Prehistoric_Male_Torso_Fur_1A_Addon
+  - first:
+      137: 13700228
+    second: Prehistoric_Male_Torso_Fur_1B
+  - first:
+      137: 13700230
+    second: Prehistoric_Male_Torso_Fur_1B_Addon
+  - first:
+      137: 13700232
+    second: Prehistoric_Male_Torso_Fur_1C
+  - first:
+      137: 13700234
+    second: Prehistoric_Male_Torso_Fur_1C_Addon
+  - first:
+      137: 13700236
+    second: Prehistoric_Male_Torso_Fur_1D
+  - first:
+      137: 13700238
+    second: Prehistoric_Male_Torso_Fur_1D_Addon
+  - first:
+      137: 13700240
+    second: Prehistoric_Male_Torso_Necklace_1A
+  - first:
+      137: 13700242
+    second: Prehistoric_Male_Torso_Necklace_1B
+  - first:
+      137: 13700244
+    second: Prehistoric_Male_Torso_Necklace_1C
+  - first:
+      137: 13700246
+    second: Prehistoric_Male_Torso_Necklace_1D
+  - first:
+      137: 13700248
+    second: Prehistoric_Male_Forearm_Wrap_1D.L
+  - first:
+      137: 13700250
+    second: Prehistoric_Male_Forearm_Wrap_1D.R
+  - first:
+      137: 13700252
+    second: Prehistoric_Male_Arm_Wrap_1A_L
+  - first:
+      137: 13700254
+    second: Prehistoric_Male_Arm_Wrap_1A_R
+  - first:
+      137: 13700256
+    second: Prehistoric_Male_Arm_Wrap_1B_L
+  - first:
+      137: 13700258
+    second: Prehistoric_Male_Arm_Wrap_1B_R
+  - first:
+      137: 13700260
+    second: Prehistoric_Male_Arm_Wrap_1C_L
+  - first:
+      137: 13700262
+    second: Prehistoric_Male_Arm_Wrap_1C_R
+  - first:
+      137: 13700264
+    second: Prehistoric_Male_Arm_Wrap_1D_L
+  - first:
+      137: 13700266
+    second: Prehistoric_Male_Arm_Wrap_1D_R
+  - first:
+      137: 13700268
+    second: Prehistoric_Male_Boot_1A_L
+  - first:
+      137: 13700270
+    second: Prehistoric_Male_Boot_1A_R
+  - first:
+      137: 13700272
+    second: Prehistoric_Male_Boot_1B_L
+  - first:
+      137: 13700274
+    second: Prehistoric_Male_Boot_1B_R
+  - first:
+      137: 13700276
+    second: Prehistoric_Male_Boot_1C_L
+  - first:
+      137: 13700278
+    second: Prehistoric_Male_Boot_1C_R
+  - first:
+      137: 13700280
+    second: Prehistoric_Male_Boot_1D_L
+  - first:
+      137: 13700282
+    second: Prehistoric_Male_Boot_1D_R
+  - first:
+      137: 13700284
+    second: Prehistoric_Male_Boot_2A_L
+  - first:
+      137: 13700286
+    second: Prehistoric_Male_Boot_2A_R
+  - first:
+      137: 13700288
+    second: Prehistoric_Male_Boot_2B_L
+  - first:
+      137: 13700290
+    second: Prehistoric_Male_Boot_2B_R
+  - first:
+      137: 13700292
+    second: Prehistoric_Male_Boot_2C_L
+  - first:
+      137: 13700294
+    second: Prehistoric_Male_Boot_2C_R
+  - first:
+      137: 13700296
+    second: Prehistoric_Male_Boot_2D_L
+  - first:
+      137: 13700298
+    second: Prehistoric_Male_Boot_2D_R
+  - first:
+      137: 13700300
+    second: Prehistoric_Male_Forearm_Wrap_1A_L
+  - first:
+      137: 13700302
+    second: Prehistoric_Male_Forearm_Wrap_1A_R
+  - first:
+      137: 13700304
+    second: Prehistoric_Male_Forearm_Wrap_1B_L
+  - first:
+      137: 13700306
+    second: Prehistoric_Male_Forearm_Wrap_1B_R
+  - first:
+      137: 13700308
+    second: Prehistoric_Male_Forearm_Wrap_1C_L
+  - first:
+      137: 13700310
+    second: Prehistoric_Male_Forearm_Wrap_1C_R
+  - first:
+      137: 13700312
+    second: Prehistoric_Male_Forearm_Wrap_1D_L
+  - first:
+      137: 13700314
+    second: Prehistoric_Male_Forearm_Wrap_1D_R
+  - first:
+      137: 13700316
+    second: Prehistoric_Male_Forearm_Wrap_2A_L
+  - first:
+      137: 13700318
+    second: Prehistoric_Male_Forearm_Wrap_2A_R
+  - first:
+      137: 13700320
+    second: Prehistoric_Male_Forearm_Wrap_2B_L
+  - first:
+      137: 13700322
+    second: Prehistoric_Male_Forearm_Wrap_2B_R
+  - first:
+      137: 13700324
+    second: Prehistoric_Male_Forearm_Wrap_2C_L
+  - first:
+      137: 13700326
+    second: Prehistoric_Male_Forearm_Wrap_2C_R
+  - first:
+      137: 13700328
+    second: Prehistoric_Male_Forearm_Wrap_2D_L
+  - first:
+      137: 13700330
+    second: Prehistoric_Male_Forearm_Wrap_2D_R
+  - first:
+      137: 13700332
+    second: Prehistoric_Male_Shin_Wrap_1A_L
+  - first:
+      137: 13700334
+    second: Prehistoric_Male_Shin_Wrap_1A_R
+  - first:
+      137: 13700336
+    second: Prehistoric_Male_Shin_Wrap_1B_L
+  - first:
+      137: 13700338
+    second: Prehistoric_Male_Shin_Wrap_1B_R
+  - first:
+      137: 13700340
+    second: Prehistoric_Male_Shin_Wrap_1C_L
+  - first:
+      137: 13700342
+    second: Prehistoric_Male_Shin_Wrap_1C_R
+  - first:
+      137: 13700344
+    second: Prehistoric_Male_Shin_Wrap_1D_L
+  - first:
+      137: 13700346
+    second: Prehistoric_Male_Shin_Wrap_1D_R
+  - first:
+      137: 13700348
+    second: Prehistoric_Male_Shin_Wrap_2A_L
+  - first:
+      137: 13700350
+    second: Prehistoric_Male_Shin_Wrap_2A_R
+  - first:
+      137: 13700352
+    second: Prehistoric_Male_Shin_Wrap_2B_L
+  - first:
+      137: 13700354
+    second: Prehistoric_Male_Shin_Wrap_2B_R
+  - first:
+      137: 13700356
+    second: Prehistoric_Male_Shin_Wrap_2C_L
+  - first:
+      137: 13700358
+    second: Prehistoric_Male_Shin_Wrap_2C_R
+  - first:
+      137: 13700360
+    second: Prehistoric_Male_Shin_Wrap_2D_L
+  - first:
+      137: 13700362
+    second: Prehistoric_Male_Shin_Wrap_2D_R
+  - first:
+      41386430: 2186277476908879412
+    second: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Avatar_1A_D
+    second: {fileID: 2100000, guid: b132675b7e0319e47a7a2f27d81a90cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Avatar_1A_D__Prehistoric_Avatar_1A_D_tif
+    second: {fileID: 2100000, guid: b132675b7e0319e47a7a2f27d81a90cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Prehistoric_Avatar_1A_D
+    second: {fileID: 2100000, guid: b132675b7e0319e47a7a2f27d81a90cf, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Work_1'
+      has import animation warnings that might lower retargeting quality:\n\t'Arm.R'
+      has scale animation that will be discarded.\n\t'Forearm.R' has scale animation
+      that will be discarded.\n\nClip 'Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Work_2'
+      has import animation warnings that might lower retargeting quality:\n\t'Arm.L'
+      has scale animation that will be discarded.\n\t'Forearm.L' has scale animation
+      that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Prehistoric_Male_Idle_1
+      takeName: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Idle_1
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 192
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Prehistoric_Male_Idle_2
+      takeName: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Idle_2
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 96
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Prehistoric_Male_Idle_3
+      takeName: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Idle_3
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 192
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Prehistoric_Male_Pray_1
+      takeName: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Pray_1
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 96
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Prehistoric_Male_Walk_1
+      takeName: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Walk_1
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Prehistoric_Male_Work_1
+      takeName: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Work_1
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Prehistoric_Male_Work_2
+      takeName: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Work_2
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Prehistoric_Male_Worship_1
+      takeName: Armature_Prehistoric_Male_Avatar|Prehistoric_Male_Worship_1
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 192
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Quad.L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Quad.R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Shin.L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Shin.R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot.L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot.R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_01
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_02
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Clavicle.L
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Clavicle.R
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Arm.L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Arm.R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Forearm.L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Forearm.R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hand.L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hand.R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Toes.L
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Toes.R
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Eye.L
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Eye.R
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Thumb.L
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Thumb_Tip.L
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Fingers.L
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Fingertips.L
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Thumb.R
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Thumb_Tip.R
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Fingers.R
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Fingertips.R
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_03
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Prehistoric_Male_Avatar(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature_Prehistoric_Male_Avatar
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: 0, y: 0.031329032, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root
+      parentName: Armature_Prehistoric_Male_Avatar
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.7071067, y: 0.000000029802322, z: 0.7071068, w: -0.000000029802322}
+      scale: {x: 0.9999409, y: 0.99999994, z: 0.99999994}
+    - name: Wrist_IK.R
+      parentName: Root
+      position: {x: 0.9611901, y: -0.0042513027, z: 0.25732356}
+      rotation: {x: -0.70693845, y: -0.0096191745, z: -0.70701, w: -0.016804665}
+      scale: {x: 0.9999702, y: 0.99999154, z: 1.0001712}
+    - name: Wrist_IK.R_end
+      parentName: Wrist_IK.R
+      position: {x: -0, y: 0.19501844, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Wrist_IK.L
+      parentName: Root
+      position: {x: 0.9582119, y: 0.0728666, z: -0.24856636}
+      rotation: {x: -0.7069574, y: 0.016804483, z: -0.706991, w: 0.009618658}
+      scale: {x: 0.9999349, y: 0.9999867, z: 0.9999142}
+    - name: Wrist_IK.L_end
+      parentName: Wrist_IK.L
+      position: {x: -0, y: 0.19501823, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Elbow_IK.L
+      parentName: Root
+      position: {x: 1.4147398, y: -0.5471223, z: -0.39779297}
+      rotation: {x: -0.7071067, y: -0.000000024056018, z: -0.7071068, w: -0.000000024056018}
+      scale: {x: 0.99994093, y: 0.99991137, z: 0.9999261}
+    - name: Elbow_IK.L_end
+      parentName: Elbow_IK.L
+      position: {x: -0, y: 0.19528405, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Elbow_IK.R
+      parentName: Root
+      position: {x: 1.4147396, y: -0.5471226, z: 0.3977932}
+      rotation: {x: -0.7071067, y: -0.00000045570252, z: -0.7071068, w: -0.00000045570258}
+      scale: {x: 0.99994093, y: 0.99991137, z: 0.9999261}
+    - name: Elbow_IK.R_end
+      parentName: Elbow_IK.R
+      position: {x: -0, y: 0.19528405, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Knee_IK.L
+      parentName: Root
+      position: {x: 0.5690956, y: 0.64620167, z: -0.13253066}
+      rotation: {x: -0.00000010938806, y: 0.7071067, z: 0.000000017052486, w: 0.7071068}
+      scale: {x: 1.0000149, y: 1, z: 1}
+    - name: Knee_IK.L_end
+      parentName: Knee_IK.L
+      position: {x: -0, y: 0.23826014, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Knee_IK.R
+      parentName: Root
+      position: {x: 0.5690956, y: 0.6462017, z: 0.13253072}
+      rotation: {x: -0.00000023582862, y: 0.70710665, z: 0.00000014349304, w: 0.7071069}
+      scale: {x: 0.9999415, y: 0.99991184, z: 0.9999266}
+    - name: Knee_IK.R_end
+      parentName: Knee_IK.R
+      position: {x: -0, y: 0.23826009, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ankle_IK.L
+      parentName: Root
+      position: {x: 0.0882813, y: -0.070828915, z: -0.13666072}
+      rotation: {x: 1, y: 0.00000016858718, z: -0.000004172325, w: 0.00000029502795}
+      scale: {x: 0.9999856, y: 0.999956, z: 0.999956}
+    - name: Ankle_IK.L_end
+      parentName: Ankle_IK.L
+      position: {x: -0, y: 0.15740049, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ankle_IK.R
+      parentName: Root
+      position: {x: 0.088281274, y: -0.07082893, z: 0.13666081}
+      rotation: {x: -0.0000033676624, y: 0.000000042146844, z: 1, w: 0.000000042146706}
+      scale: {x: 1.0000292, y: 0.9999997, z: 0.9999997}
+    - name: Ankle_IK.R_end
+      parentName: Ankle_IK.R
+      position: {x: -0, y: 0.15740049, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hips
+      parentName: Armature_Prehistoric_Male_Avatar
+      position: {x: 0.0000001072946, y: -0.0023690537, z: 1.0168014}
+      rotation: {x: 0.5346823, y: -0.46272558, z: 0.5346821, w: -0.46272564}
+      scale: {x: 0.9999978, y: 0.9999969, z: 0.9999778}
+    - name: Spine_01
+      parentName: Hips
+      position: {x: 0.008849846, y: -0.065810084, z: -0.0000000016712992}
+      rotation: {x: -0.7052739, y: -0.050881207, z: -0.7052737, w: 0.050880883}
+      scale: {x: 1.0000259, y: 1.0000437, z: 1.0000399}
+    - name: Spine_02
+      parentName: Spine_01
+      position: {x: 6.4028427e-10, y: 0.10896481, z: 9.458745e-10}
+      rotation: {x: -0.15178414, y: 0.000000027939677, z: 0.000000067055225, w: 0.9884137}
+      scale: {x: 1, y: 1.000022, z: 0.9999994}
+    - name: Spine_03
+      parentName: Spine_02
+      position: {x: -0.0000000018044375, y: 0.13981186, z: 0.000000016203556}
+      rotation: {x: 0.1148828, y: -0.000000009606799, z: -0.0000000015476282, w: 0.9933791}
+      scale: {x: 1, y: 0.99994934, z: 1.0000299}
+    - name: Neck
+      parentName: Spine_03
+      position: {x: 0.000000023283064, y: 0.14409648, z: 0.020840205}
+      rotation: {x: -0.001332648, y: 0.000000055361724, z: -0.00000011726382, w: 0.99999917}
+      scale: {x: 1.0000037, y: 1.0000002, z: 1.0000185}
+    - name: Head
+      parentName: Neck
+      position: {x: -8.541823e-11, y: 0.08641942, z: -0.000000014979637}
+      rotation: {x: 0.01798361, y: 0.000000005196117, z: 0.0000000034340917, w: 0.99983835}
+      scale: {x: 1.0000184, y: 1.0000385, z: 0.9999839}
+    - name: Brow.L
+      parentName: Head
+      position: {x: -0.03057337, y: 0.04864076, z: 0.089255415}
+      rotation: {x: -0.042596444, y: 0.69109124, z: 0.7201445, w: 0.044388283}
+      scale: {x: 1.0000981, y: 1.000011, z: 1.000051}
+    - name: Brow.L_end
+      parentName: Brow.L
+      position: {x: -0, y: 0.07414295, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Brow.R
+      parentName: Head
+      position: {x: 0.030573172, y: 0.049048953, z: 0.089051604}
+      rotation: {x: 0.04259723, y: 0.69109136, z: 0.72014445, w: -0.044387475}
+      scale: {x: 1.0001462, y: 1.0000249, z: 1.0000322}
+    - name: Brow.R_end
+      parentName: Brow.R
+      position: {x: -0, y: 0.07414296, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Eye.L
+      parentName: Head
+      position: {x: -0.029541163, y: 0.034499608, z: 0.09034967}
+      rotation: {x: -0.00000012619942, y: 0.6924028, z: 0.7215111, w: -0.000000028789621}
+      scale: {x: 1.0000006, y: 0.99997824, z: 1.0000017}
+    - name: Eye.L_end
+      parentName: Eye.L
+      position: {x: -0, y: 0.040096104, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Eye.R
+      parentName: Head
+      position: {x: 0.029540963, y: 0.034737773, z: 0.09025439}
+      rotation: {x: -0.00000012619942, y: 0.6924028, z: 0.7215111, w: -0.000000028789621}
+      scale: {x: 1.0000006, y: 0.99997824, z: 1.0000017}
+    - name: Eye.R_end
+      parentName: Eye.R
+      position: {x: -0, y: 0.040096104, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Clavicle.L
+      parentName: Spine_03
+      position: {x: -2.1827871e-10, y: 0.1337404, z: 0.0000000017734578}
+      rotation: {x: 0.58959985, y: -0.40976194, z: -0.55782574, w: -0.41629043}
+      scale: {x: 1.0000383, y: 1.0000407, z: 1.0000057}
+    - name: Arm.L
+      parentName: Clavicle.L
+      position: {x: 0.0000000055879354, y: 0.18010685, z: 0.00000020302832}
+      rotation: {x: 0.19271448, y: 0.10127144, z: 0.027456157, w: 0.97562873}
+      scale: {x: 1.0001118, y: 1.0001866, z: 0.9995655}
+    - name: Forearm.L
+      parentName: Arm.L
+      position: {x: 0.000000011175871, y: 0.20988244, z: 0.0000000037252903}
+      rotation: {x: -0.005117608, y: 0.7857608, z: -0.057117958, w: -0.6158663}
+      scale: {x: 1.0006611, y: 1.0002584, z: 0.9993728}
+    - name: Hand.L
+      parentName: Forearm.L
+      position: {x: -0.000000024214387, y: 0.2496454, z: 0.00000006938353}
+      rotation: {x: -0.05625374, y: -0.14409076, z: 0.0028349229, w: 0.9879603}
+      scale: {x: 0.9972617, y: 0.9996368, z: 1.0032961}
+    - name: Fingers.L
+      parentName: Hand.L
+      position: {x: -0.000000033527613, y: 0.10319346, z: -0.000000029802322}
+      rotation: {x: -0.020577338, y: 0.058157787, z: 0.06476046, w: 0.9959922}
+      scale: {x: 0.998201, y: 1.0024083, z: 0.99944264}
+    - name: Fingertips.L
+      parentName: Fingers.L
+      position: {x: 0.000000026077032, y: 0.03617591, z: -0.000000011175871}
+      rotation: {x: -0.006711367, y: -0.0571361, z: 0.034514565, w: 0.99774706}
+      scale: {x: 0.98103774, y: 1.0223838, z: 0.9971816}
+    - name: Fingertips.L_end
+      parentName: Fingertips.L
+      position: {x: -0, y: 0.056399614, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Thumb.L
+      parentName: Hand.L
+      position: {x: -0.016005464, y: 0.007286405, z: 0.024139091}
+      rotation: {x: 0.20979796, y: 0.7924185, z: 0.33022988, w: 0.4679809}
+      scale: {x: 1.0029148, y: 1.000074, z: 0.99753094}
+    - name: Thumb_Tip.L
+      parentName: Thumb.L
+      position: {x: -0.0000000037252903, y: 0.053113803, z: -0.0000000037252903}
+      rotation: {x: -0.013835968, y: -0.6459099, z: -0.02765577, w: 0.7627871}
+      scale: {x: 1.0040506, y: 1.0400901, z: 0.95753837}
+    - name: Thumb_Tip.L_end
+      parentName: Thumb_Tip.L
+      position: {x: -0, y: 0.07544475, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand_Slot.L
+      parentName: Hand.L
+      position: {x: -0.04518611, y: 0.08514573, z: -0.0042067165}
+      rotation: {x: 0.40890998, y: -0.46039385, z: -0.4843789, w: 0.6214557}
+      scale: {x: 1.0011227, y: 0.9998087, z: 0.99911726}
+    - name: Hand_Slot.L_end
+      parentName: Hand_Slot.L
+      position: {x: -0, y: 0.080158114, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Clavicle.R
+      parentName: Spine_03
+      position: {x: -2.1827871e-10, y: 0.1337404, z: 0.0000000017734578}
+      rotation: {x: 0.5895993, y: 0.4097632, z: 0.5578248, w: -0.4162912}
+      scale: {x: 1.0000433, y: 1.0000709, z: 0.99999994}
+    - name: Arm.R
+      parentName: Clavicle.R
+      position: {x: -0.000000012805685, y: 0.18010668, z: -0.00000003585592}
+      rotation: {x: 0.19272174, y: -0.10127253, z: -0.027456364, w: 0.9756272}
+      scale: {x: 1.0000986, y: 1.0002619, z: 0.99967635}
+    - name: Forearm.R
+      parentName: Arm.R
+      position: {x: -0, y: 0.20988236, z: 0.0000001117587}
+      rotation: {x: -0.0051327622, y: -0.78576124, z: 0.057132695, w: -0.6158644}
+      scale: {x: 1.0006738, y: 1.0000798, z: 0.999387}
+    - name: Hand.R
+      parentName: Forearm.R
+      position: {x: -0.00000000896398, y: 0.24964508, z: 6.9849193e-10}
+      rotation: {x: -0.056243747, y: 0.1470383, z: -0.0030019577, w: 0.98752594}
+      scale: {x: 0.997996, y: 0.99915475, z: 1.003039}
+    - name: Fingers.R
+      parentName: Hand.R
+      position: {x: -0.000000017345883, y: 0.1031934, z: 0.000000011175871}
+      rotation: {x: -0.0203417, y: -0.06115394, z: -0.064626224, w: 0.9958263}
+      scale: {x: 0.9987607, y: 1.0005473, z: 1.0008533}
+    - name: Fingertips.R
+      parentName: Fingers.R
+      position: {x: -0.0000000043364707, y: 0.036175847, z: 0}
+      rotation: {x: 0.006732545, y: -0.052810665, z: 0.033850007, w: -0.998008}
+      scale: {x: 0.99500877, y: 1.0079846, z: 0.99725974}
+    - name: Fingertips.R_end
+      parentName: Fingertips.R
+      position: {x: -0, y: 0.05639962, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Thumb.R
+      parentName: Hand.R
+      position: {x: 0.015861187, y: 0.007286451, z: 0.02423416}
+      rotation: {x: -0.210966, y: 0.79391384, z: 0.3294057, w: -0.4654956}
+      scale: {x: 1.0022211, y: 0.99854946, z: 0.99970305}
+    - name: Thumb_Tip.R
+      parentName: Thumb.R
+      position: {x: -0.000000029802322, y: 0.053113718, z: -0.000000010244548}
+      rotation: {x: -0.013793756, y: 0.645916, z: 0.027386064, w: 0.76279247}
+      scale: {x: 0.9981595, y: 1.0415182, z: 0.9619311}
+    - name: Thumb_Tip.R_end
+      parentName: Thumb_Tip.R
+      position: {x: -0, y: 0.07544466, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand_Slot.R
+      parentName: Hand.R
+      position: {x: 0.045210157, y: 0.08514562, z: -0.0039373245}
+      rotation: {x: 0.40746373, y: 0.4585389, z: 0.48559642, w: 0.6228255}
+      scale: {x: 0.9999516, y: 1.0018594, z: 0.9980846}
+    - name: Hand_Slot.R_end
+      parentName: Hand_Slot.R
+      position: {x: -0, y: 0.080158114, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Quad.L
+      parentName: Hips
+      position: {x: -0.006332655, y: 0.043781456, z: -0.08169977}
+      rotation: {x: -0.0889888, y: 0.736411, z: 0.044669062, w: 0.66916716}
+      scale: {x: 1.0001688, y: 1.0000825, z: 1.0000914}
+    - name: Shin.L
+      parentName: Quad.L
+      position: {x: -0.000000002561137, y: 0.44199908, z: -0.000000057742}
+      rotation: {x: -0.032779306, y: -0.04452455, z: -0.0098954365, w: 0.9984214}
+      scale: {x: 1.000037, y: 1.0000714, z: 0.9999958}
+    - name: Foot.L
+      parentName: Shin.L
+      position: {x: -0.000000006519258, y: 0.4535705, z: 0}
+      rotation: {x: 0.5554832, y: 0.03121724, z: 0.016967725, w: 0.8307683}
+      scale: {x: 1.0001022, y: 1.000105, z: 1.0000188}
+    - name: Toes.L
+      parentName: Foot.L
+      position: {x: 0.000000004485628, y: 0.17410445, z: 8.1490725e-10}
+      rotation: {x: 0.24969307, y: -0.00022201051, z: 0.02455176, w: 0.9680137}
+      scale: {x: 1.0001822, y: 1.0010793, z: 0.99907}
+    - name: Toes.L_end
+      parentName: Toes.L
+      position: {x: -0, y: 0.0971887, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Quad.R
+      parentName: Hips
+      position: {x: -0.0063326326, y: 0.04378096, z: 0.08169964}
+      rotation: {x: -0.04467121, y: 0.66916656, z: 0.08899041, w: 0.73641115}
+      scale: {x: 1.0002123, y: 1.0001354, z: 1.0000304}
+    - name: Shin.R
+      parentName: Quad.R
+      position: {x: -0.00000001862645, y: 0.44199908, z: -0.00000006426126}
+      rotation: {x: -0.03277404, y: 0.044523623, z: 0.009895992, w: 0.99842155}
+      scale: {x: 1.0000782, y: 1.0000825, z: 0.9999768}
+    - name: Foot.R
+      parentName: Shin.R
+      position: {x: -0.000000007450581, y: 0.45357057, z: -4.656613e-10}
+      rotation: {x: 0.5554812, y: -0.031218052, z: -0.016969891, w: 0.8307696}
+      scale: {x: 0.9999582, y: 0.99978656, z: 1.0003347}
+    - name: Toes.R
+      parentName: Foot.R
+      position: {x: -0.000000007366907, y: 0.17410442, z: 4.656613e-10}
+      rotation: {x: 0.24969277, y: 0.0002243519, z: -0.02455239, w: 0.9680138}
+      scale: {x: 1.0001507, y: 1.0040864, z: 0.99592406}
+    - name: Toes.R_end
+      parentName: Toes.R
+      position: {x: -0, y: 0.0971887, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Arm_Wrap_1A.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Arm_Wrap_1A.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Arm_Wrap_1B.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Arm_Wrap_1B.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Arm_Wrap_1C.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Arm_Wrap_1C.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Arm_Wrap_1D.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Arm_Wrap_1D.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Avatar_1A
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Avatar_1B
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Avatar_1C
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Avatar_1D
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_1A
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_1B
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_1C
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_1D
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_2A
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_2A_Addon
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_2B
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_2B_Addon
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_2C
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_2C_Addon
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_2D
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_2D_Addon
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_3A
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_3B
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_3C
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_3D
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_4A
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_4B
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_4C
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_4D
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_5A
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_5B
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_5C
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Beard_5D
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Boot_1A.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Boot_1A.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Boot_1B.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Boot_1B.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Boot_1C.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Boot_1C.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Boot_1D.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Boot_1D.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Boot_2A.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Boot_2A.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Boot_2B.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Boot_2B.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Boot_2C.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Boot_2C.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Boot_2D.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Boot_2D.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Forearm_Wrap_1A.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Forearm_Wrap_1A.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Forearm_Wrap_1B.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Forearm_Wrap_1B.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Forearm_Wrap_1C.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Forearm_Wrap_1C.L.001
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Forearm_Wrap_1C.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Forearm_Wrap_1C.R.001
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Forearm_Wrap_2A.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Forearm_Wrap_2A.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Forearm_Wrap_2B.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Forearm_Wrap_2B.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Forearm_Wrap_2C.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Forearm_Wrap_2C.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Forearm_Wrap_2D.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Forearm_Wrap_2D.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_1A
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_1B
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_1C
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_1D
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_2A
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_2B
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_2C
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_2D
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_3A
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_3B
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_3C
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_3D
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_4A
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_4B
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_4C
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_4D
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_5A
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_5B
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_5C
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hair_5D
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hips_1A
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hips_1A_Addon
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hips_1B
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hips_1B_Addon
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hips_1C
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hips_1C_Addon
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hips_1D
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Hips_1D_Addon
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Shin_Wrap_1A.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Shin_Wrap_1A.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Shin_Wrap_1B.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Shin_Wrap_1B.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Shin_Wrap_1C.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Shin_Wrap_1C.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Shin_Wrap_1D.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Shin_Wrap_1D.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Shin_Wrap_2A.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Shin_Wrap_2A.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Shin_Wrap_2B.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Shin_Wrap_2B.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Shin_Wrap_2C.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Shin_Wrap_2C.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Shin_Wrap_2D.L
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Shin_Wrap_2D.R
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Torso_Fur_1A
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Torso_Fur_1A_Addon
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Torso_Fur_1B
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Torso_Fur_1B_Addon
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Torso_Fur_1C
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Torso_Fur_1C_Addon
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Torso_Fur_1D
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Torso_Fur_1D_Addon
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Torso_Necklace_1A
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Torso_Necklace_1B
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Torso_Necklace_1C
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Male_Torso_Necklace_1D
+      parentName: Prehistoric_Male_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 1
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -7,14 +7,14 @@ using UnityEngine;
 
 
 public class Item : Entity {
-    public Item(string objectType, int index, Genome motherGenome, Vector3 spawn) 
+    public Item(string objectType, string index, Genome motherGenome, Vector3 spawn) 
     : base (objectType, index, motherGenome, spawn, false) {
         body = new Body(this, spawn);
     }
 
     public override void UpdateEntity() {
-        if (this.GetSpecies() == "Crabapple") {
-            this.gameObject.GetComponent<MeshRenderer>().material.color = new Color(1f,0.75f,.25f,1f);
-        }
+        //if (this.GetSpecies() == "Crabapple") {
+        //    this.gameObject.GetComponent<MeshRenderer>().material.color = new Color(1f,0.75f,.25f,1f);
+        //}
     }
 }

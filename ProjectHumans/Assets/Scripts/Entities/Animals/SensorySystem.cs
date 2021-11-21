@@ -11,7 +11,7 @@ public class SensorySystem {
     public Camera visualInputCamera;
     Matrix<float> visualInputArray;
 
-    int visualResolution;
+    public int visualResolution;
 
     public SensorySystem(Animal animal) {
         
@@ -33,7 +33,6 @@ public class SensorySystem {
                 visualInputCamera.targetTexture = new RenderTexture(visualResolution, visualResolution, 24);
                 /* 24 is the depth buffer, or depth texture, is actually just a render texture that contains values of how far objects in the scene are from the camera.*/
             } else {
-                
                 visualResolution = visualInputCamera.targetTexture.width;
             }
         }

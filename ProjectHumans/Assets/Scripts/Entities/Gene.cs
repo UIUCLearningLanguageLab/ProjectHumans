@@ -14,7 +14,7 @@ public class Gene {
     public float specifiedMean; 
     public float specifiedStdev;
 
-    public float mutationRate = World.worldConfigDict["Mutation_Rate"];
+    public float mutationRate = 0;//World.worldConfigDict["Mutation_Rate"];
 
     //I am not sure if this is working, need test later;
     public Gene ShallowCopy() {

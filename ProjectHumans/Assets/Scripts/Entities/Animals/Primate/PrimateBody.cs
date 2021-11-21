@@ -29,9 +29,10 @@ public class PrimateBody : AnimalBody {
 
     public override void InitGameObject(Vector3 pos) {
         string filePath;
-        string bodyPlan = World.anthroBody;
+        string bodyPlan = "None";//World.anthroBody;
         thisAnimal = (Animal) thisEntity;
-        filePath = "Prefabs/SimpleHuman" + thisAnimal.GetSex() + "Prefab";
+        //filePath = "Prefabs/Human";
+        filePath = "Prefabs/SimpleHuman" + thisAnimal.GetSex();
         //filePath = "Prefabs/" + bodyPlan + thisAnimal.GetSex() + "Prefab";
         // if (bodyPlan == "ComplexHuman") { 
         //     float variant = thisAnimal.GetPhenotype().GetTraitDict()["variant"];

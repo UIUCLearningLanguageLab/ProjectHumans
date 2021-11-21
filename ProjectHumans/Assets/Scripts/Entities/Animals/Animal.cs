@@ -16,52 +16,51 @@ public class Animal : Entity {
     public static void SetMotorSystem(MotorSystem motor) { motorSystem = motor; }
     private static SensorySystem sensorySystem;
     private bool finishedUpdate = true;
-    protected AI activeAI;
+    protected object activeAI;
     protected string action;
 
     public static List<int> timeList = new List<int>();
     public static List<string> timeEventList = new List<string>();
 
-    public Animal(string objectType, int index, Genome motherGenome, Genome fatherGenome, Vector3 spawn) 
+    public Animal(string objectType, string index, Genome motherGenome, Genome fatherGenome, Vector3 spawn) 
     : base (objectType, index, motherGenome, fatherGenome, spawn, true) {
         
         InitBodyControl(spawn);
         
         driveSystem = new DriveSystem(this);
-        
         sensorySystem = new SensorySystem(this);
         InitBrain();
         
     }
 
     void InitBodyControl(Vector3 spawn) {
-        animalBody = World.GetAnimalBody(this, spawn, species);
-        motorSystem = World.GetMotor(this, species);
+        if(species == "Human")
+        {
+            animalBody = new PrimateBody(this, spawn);
+            motorSystem = new SimplePrimateMotorSystem(this);
+        }
+        else
+        {
+            animalBody = new AnimalBody(this, spawn);
+            motorSystem = new SimpleMotorSystem(this);
+        }
         body = animalBody;
         visualInputCamera = animalBody.GetGameObject().GetComponentInChildren<Camera>();
     }
     
     void InitBrain() {
-        if (World.humanAIParam == 0) {
-            activeAI = new SimpleAI(this, GetBody(), GetDriveSystem(), GetMotorSystem(), GetSensorySystem(), GetPhenotype());
-        } else { activeAI = new NeuralAI(this, GetBody(), GetDriveSystem(), GetMotorSystem(), GetSensorySystem(), GetPhenotype()); }
+        Type type = Type.GetType(World.aISelected);
+        activeAI = Activator.CreateInstance(type, this, GetBody(), GetDriveSystem(), GetMotorSystem(), GetSensorySystem(), GetPhenotype());
     }
 
     public override void UpdateEntity() {
-        if (finishedUpdate) {
+        GetDriveSystem().UpdateDrives();
+        Matrix<float> visualInputMatrix = GetSensorySystem().GetVisualInput();
+        Vector<float> temp = ((AI)activeAI).ChooseAction().Column(0);
+        GetMotorSystem().TakeAction(temp);
+        action = "In progress!";
 
-            finishedUpdate = false;
-            GetDriveSystem().UpdateDrives();
-            Matrix<float> visualInputMatrix = GetSensorySystem().GetVisualInput();
-            
-            Vector<float> temp = activeAI.ChooseAction().Column(0);
-            GetMotorSystem().TakeAction(temp);
-            action = "In progress!";
-
-            IncreaseAge(1);
-
-            finishedUpdate = true;
-        }
+        IncreaseAge(1);
     }
     public void ToggleBodyPart(string part, bool toggle) {
         GetBody().GetSkeletonDict()[part].gameObject.SetActive(toggle);
@@ -78,9 +77,9 @@ public class Animal : Entity {
 
     public SensorySystem GetSensorySystem() { return sensorySystem; }
 
-    public AI GetAI() { return activeAI; }
+    public AI GetAI() { return ((AI)activeAI); }
 
-    public string GetAction() { return activeAI.GetAction(); }
+    public string GetAction() { return ((AI)activeAI).GetAction(); }
 
     public string GetSex() { 
         if(GetPhenotype().GetTrait("sex") == 1.0) {

@@ -44,9 +44,9 @@ public class Body {
     }
 
     public virtual void InitGameObject(Vector3 pos) {
-        string filePath = "Prefabs/" + thisEntity.GetSpecies() + "Prefab";
+        string filePath = "Prefabs/" + thisEntity.GetSpecies();
         GameObject loadedPrefab = Resources.Load(filePath, typeof(GameObject)) as GameObject;
-        this.gameObject = (GameObject.Instantiate(loadedPrefab, pos, World.CreateRandomRotation()) as GameObject);
+        this.gameObject = (GameObject.Instantiate(loadedPrefab, pos, Quaternion.identity) as GameObject);
         this.gameObject.name = thisEntity.GetName();
 
         rigidbody = GetGameObject().GetComponent<Rigidbody>();
@@ -86,8 +86,8 @@ public class Body {
     }
 
     public void InitMass() {
-        currentMass = thisEntity.GetPhenotype().GetTrait("mass"); 
-        rigidbody.mass = currentMass;
+        //currentMass = thisEntity.GetPhenotype().GetTrait("mass"); 
+        //rigidbody.mass = currentMass;
     }
 
     public float GetHeight() { return height; }

@@ -14,9 +14,9 @@ abstract public class Entity {
     public string GetName() { return name; }
     public void SetName(String passed) { name = passed; }
 
-    protected int index;
-    public int GetIndex() { return index; }
-    public void SetIndex(int passed) { index = passed; }
+    protected string index;
+    public string GetIndex() { return index; }
+    public void SetIndex(string passed) { index = passed; }
 
     protected int age;
     public int GetAge(){ return this.age; }
@@ -50,7 +50,7 @@ abstract public class Entity {
     public virtual string GetNetworkName(){ return networkName; }
 
     // Sexual reproduction constructor
-    public Entity(string objType, int id, Genome motherGenome, Genome fatherGenome, Vector3 spawn, bool isAnimal) {
+    public Entity(string objType, string id, Genome motherGenome, Genome fatherGenome, Vector3 spawn, bool isAnimal) {
         species = objType;
         index = id;
         name = (species + " " + index.ToString());
@@ -62,7 +62,7 @@ abstract public class Entity {
     }
 
     // Asexual reproduction constructor
-    public Entity(string objType, int id, Genome motherGenome, Vector3 spawn, bool isAnimal) {
+    public Entity(string objType, string id, Genome motherGenome, Vector3 spawn, bool isAnimal) {
         species = objType;
         index = id;
         name = (species + " " + index.ToString());

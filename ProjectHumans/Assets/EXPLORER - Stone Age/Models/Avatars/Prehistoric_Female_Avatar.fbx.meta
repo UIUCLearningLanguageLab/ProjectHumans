@@ -1,0 +1,1733 @@
+fileFormatVersion: 2
+guid: 32bc35ffa641b2b4bbd0414ada5fbab9
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ankle_IK.L
+    100002: Ankle_IK.L_end
+    100004: Ankle_IK.R
+    100006: Ankle_IK.R_end
+    100008: Arm.L
+    100010: Arm.R
+    100012: Armature_Prehistoric_Female_Avatar
+    100014: Brow.L
+    100016: Brow.L_end
+    100018: Brow.R
+    100020: Brow.R_end
+    100022: Clavicle.L
+    100024: Clavicle.R
+    100026: Elbow_IK.L
+    100028: Elbow_IK.L_end
+    100030: Elbow_IK.R
+    100032: Elbow_IK.R_end
+    100034: Eye.L
+    100036: Eye.L_end
+    100038: Eye.R
+    100040: Eye.R_end
+    100042: Fingers.L
+    100044: Fingers.R
+    100046: Fingertips.L
+    100048: Fingertips.L_end
+    100050: Fingertips.R
+    100052: Fingertips.R_end
+    100054: Foot.L
+    100056: Foot.R
+    100058: Forearm.L
+    100060: Forearm.R
+    100062: Hand.L
+    100064: Hand.R
+    100066: Hand_Slot.L
+    100068: Hand_Slot.L_end
+    100070: Hand_Slot.R
+    100072: Hand_Slot.R_end
+    100074: Head
+    100076: Hips
+    100078: Knee_IK.L
+    100080: Knee_IK.L_end
+    100082: Knee_IK.R
+    100084: Knee_IK.R_end
+    100086: Neck
+    100088: Prehistoric_Female_Arm_Wrap_1A.L
+    100090: Prehistoric_Female_Arm_Wrap_1A.R
+    100092: Prehistoric_Female_Arm_Wrap_1B.L
+    100094: Prehistoric_Female_Arm_Wrap_1B.R
+    100096: Prehistoric_Female_Arm_Wrap_1C.L
+    100098: Prehistoric_Female_Arm_Wrap_1C.R
+    100100: Prehistoric_Female_Arm_Wrap_1D.L
+    100102: Prehistoric_Female_Arm_Wrap_1D.R
+    100104: //RootNode
+    100106: Prehistoric_Female_Avatar_1A
+    100108: Prehistoric_Female_Avatar_1B
+    100110: Prehistoric_Female_Avatar_1C
+    100112: Prehistoric_Female_Avatar_1D
+    100114: Prehistoric_Female_Belt_1A
+    100116: Prehistoric_Female_Belt_1B
+    100118: Prehistoric_Female_Belt_1C
+    100120: Prehistoric_Female_Belt_1D
+    100122: Prehistoric_Female_Belt_2A
+    100124: Prehistoric_Female_Belt_2B
+    100126: Prehistoric_Female_Belt_2C
+    100128: Prehistoric_Female_Belt_2D
+    100130: Prehistoric_Female_Boot_1A.L
+    100132: Prehistoric_Female_Boot_1A.R
+    100134: Prehistoric_Female_Boot_1B.L
+    100136: Prehistoric_Female_Boot_1B.R
+    100138: Prehistoric_Female_Boot_1C.L
+    100140: Prehistoric_Female_Boot_1C.R
+    100142: Prehistoric_Female_Boot_1D.L
+    100144: Prehistoric_Female_Boot_1D.R
+    100146: Prehistoric_Female_Forearm_Wrap_1A.L
+    100148: Prehistoric_Female_Forearm_Wrap_1A.R
+    100150: Prehistoric_Female_Forearm_Wrap_1B.L
+    100152: Prehistoric_Female_Forearm_Wrap_1B.R
+    100154: Prehistoric_Female_Forearm_Wrap_1C.L
+    100156: Prehistoric_Female_Forearm_Wrap_1C.R
+    100158: Prehistoric_Female_Forearm_Wrap_1D.L
+    100160: Prehistoric_Female_Forearm_Wrap_1D.R
+    100162: Prehistoric_Female_Hair_1A
+    100164: Prehistoric_Female_Hair_1B
+    100166: Prehistoric_Female_Hair_1C
+    100168: Prehistoric_Female_Hair_1D
+    100170: Prehistoric_Female_Hair_2A
+    100172: Prehistoric_Female_Hair_2B
+    100174: Prehistoric_Female_Hair_2C
+    100176: Prehistoric_Female_Hair_2D
+    100178: Prehistoric_Female_Hair_3A
+    100180: Prehistoric_Female_Hair_3B
+    100182: Prehistoric_Female_Hair_3C
+    100184: Prehistoric_Female_Hair_3D
+    100186: Prehistoric_Female_Hair_4A
+    100188: Prehistoric_Female_Hair_4B
+    100190: Prehistoric_Female_Hair_4C
+    100192: Prehistoric_Female_Hair_4D
+    100194: Prehistoric_Female_Quad_Wrap_1A.L
+    100196: Prehistoric_Female_Quad_Wrap_1A.R
+    100198: Prehistoric_Female_Quad_Wrap_1B.L
+    100200: Prehistoric_Female_Quad_Wrap_1B.R
+    100202: Prehistoric_Female_Quad_Wrap_1C.L
+    100204: Prehistoric_Female_Quad_Wrap_1C.R
+    100206: Prehistoric_Female_Quad_Wrap_1D.L
+    100208: Prehistoric_Female_Quad_Wrap_1D.R
+    100210: Prehistoric_Female_Shin_Wrap_1A.L
+    100212: Prehistoric_Female_Shin_Wrap_1A.R
+    100214: Prehistoric_Female_Shin_Wrap_1B.L
+    100216: Prehistoric_Female_Shin_Wrap_1B.R
+    100218: Prehistoric_Female_Shin_Wrap_1C.L
+    100220: Prehistoric_Female_Shin_Wrap_1C.R
+    100222: Prehistoric_Female_Shin_Wrap_1D.L
+    100224: Prehistoric_Female_Shin_Wrap_1D.R
+    100226: Prehistoric_Female_Torso_1A
+    100228: Prehistoric_Female_Torso_1A_Addon
+    100230: Prehistoric_Female_Torso_1B
+    100232: Prehistoric_Female_Torso_1B_Addon
+    100234: Prehistoric_Female_Torso_1C
+    100236: Prehistoric_Female_Torso_1C_Addon
+    100238: Prehistoric_Female_Torso_1D
+    100240: Prehistoric_Female_Torso_1D_Addon
+    100242: Quad.L
+    100244: Quad.R
+    100246: Root
+    100248: Shin.L
+    100250: Shin.R
+    100252: Spine_01
+    100254: Spine_02
+    100256: Spine_03
+    100258: Thumb.L
+    100260: Thumb.R
+    100262: Thumb_Tip.L
+    100264: Thumb_Tip.L_end
+    100266: Thumb_Tip.R
+    100268: Thumb_Tip.R_end
+    100270: Toes.L
+    100272: Toes.L_end
+    100274: Toes.R
+    100276: Toes.R_end
+    100278: Wrist_IK.L
+    100280: Wrist_IK.L_end
+    100282: Wrist_IK.R
+    100284: Wrist_IK.R_end
+    400000: Ankle_IK.L
+    400002: Ankle_IK.L_end
+    400004: Ankle_IK.R
+    400006: Ankle_IK.R_end
+    400008: Arm.L
+    400010: Arm.R
+    400012: Armature_Prehistoric_Female_Avatar
+    400014: Brow.L
+    400016: Brow.L_end
+    400018: Brow.R
+    400020: Brow.R_end
+    400022: Clavicle.L
+    400024: Clavicle.R
+    400026: Elbow_IK.L
+    400028: Elbow_IK.L_end
+    400030: Elbow_IK.R
+    400032: Elbow_IK.R_end
+    400034: Eye.L
+    400036: Eye.L_end
+    400038: Eye.R
+    400040: Eye.R_end
+    400042: Fingers.L
+    400044: Fingers.R
+    400046: Fingertips.L
+    400048: Fingertips.L_end
+    400050: Fingertips.R
+    400052: Fingertips.R_end
+    400054: Foot.L
+    400056: Foot.R
+    400058: Forearm.L
+    400060: Forearm.R
+    400062: Hand.L
+    400064: Hand.R
+    400066: Hand_Slot.L
+    400068: Hand_Slot.L_end
+    400070: Hand_Slot.R
+    400072: Hand_Slot.R_end
+    400074: Head
+    400076: Hips
+    400078: Knee_IK.L
+    400080: Knee_IK.L_end
+    400082: Knee_IK.R
+    400084: Knee_IK.R_end
+    400086: Neck
+    400088: Prehistoric_Female_Arm_Wrap_1A.L
+    400090: Prehistoric_Female_Arm_Wrap_1A.R
+    400092: Prehistoric_Female_Arm_Wrap_1B.L
+    400094: Prehistoric_Female_Arm_Wrap_1B.R
+    400096: Prehistoric_Female_Arm_Wrap_1C.L
+    400098: Prehistoric_Female_Arm_Wrap_1C.R
+    400100: Prehistoric_Female_Arm_Wrap_1D.L
+    400102: Prehistoric_Female_Arm_Wrap_1D.R
+    400104: //RootNode
+    400106: Prehistoric_Female_Avatar_1A
+    400108: Prehistoric_Female_Avatar_1B
+    400110: Prehistoric_Female_Avatar_1C
+    400112: Prehistoric_Female_Avatar_1D
+    400114: Prehistoric_Female_Belt_1A
+    400116: Prehistoric_Female_Belt_1B
+    400118: Prehistoric_Female_Belt_1C
+    400120: Prehistoric_Female_Belt_1D
+    400122: Prehistoric_Female_Belt_2A
+    400124: Prehistoric_Female_Belt_2B
+    400126: Prehistoric_Female_Belt_2C
+    400128: Prehistoric_Female_Belt_2D
+    400130: Prehistoric_Female_Boot_1A.L
+    400132: Prehistoric_Female_Boot_1A.R
+    400134: Prehistoric_Female_Boot_1B.L
+    400136: Prehistoric_Female_Boot_1B.R
+    400138: Prehistoric_Female_Boot_1C.L
+    400140: Prehistoric_Female_Boot_1C.R
+    400142: Prehistoric_Female_Boot_1D.L
+    400144: Prehistoric_Female_Boot_1D.R
+    400146: Prehistoric_Female_Forearm_Wrap_1A.L
+    400148: Prehistoric_Female_Forearm_Wrap_1A.R
+    400150: Prehistoric_Female_Forearm_Wrap_1B.L
+    400152: Prehistoric_Female_Forearm_Wrap_1B.R
+    400154: Prehistoric_Female_Forearm_Wrap_1C.L
+    400156: Prehistoric_Female_Forearm_Wrap_1C.R
+    400158: Prehistoric_Female_Forearm_Wrap_1D.L
+    400160: Prehistoric_Female_Forearm_Wrap_1D.R
+    400162: Prehistoric_Female_Hair_1A
+    400164: Prehistoric_Female_Hair_1B
+    400166: Prehistoric_Female_Hair_1C
+    400168: Prehistoric_Female_Hair_1D
+    400170: Prehistoric_Female_Hair_2A
+    400172: Prehistoric_Female_Hair_2B
+    400174: Prehistoric_Female_Hair_2C
+    400176: Prehistoric_Female_Hair_2D
+    400178: Prehistoric_Female_Hair_3A
+    400180: Prehistoric_Female_Hair_3B
+    400182: Prehistoric_Female_Hair_3C
+    400184: Prehistoric_Female_Hair_3D
+    400186: Prehistoric_Female_Hair_4A
+    400188: Prehistoric_Female_Hair_4B
+    400190: Prehistoric_Female_Hair_4C
+    400192: Prehistoric_Female_Hair_4D
+    400194: Prehistoric_Female_Quad_Wrap_1A.L
+    400196: Prehistoric_Female_Quad_Wrap_1A.R
+    400198: Prehistoric_Female_Quad_Wrap_1B.L
+    400200: Prehistoric_Female_Quad_Wrap_1B.R
+    400202: Prehistoric_Female_Quad_Wrap_1C.L
+    400204: Prehistoric_Female_Quad_Wrap_1C.R
+    400206: Prehistoric_Female_Quad_Wrap_1D.L
+    400208: Prehistoric_Female_Quad_Wrap_1D.R
+    400210: Prehistoric_Female_Shin_Wrap_1A.L
+    400212: Prehistoric_Female_Shin_Wrap_1A.R
+    400214: Prehistoric_Female_Shin_Wrap_1B.L
+    400216: Prehistoric_Female_Shin_Wrap_1B.R
+    400218: Prehistoric_Female_Shin_Wrap_1C.L
+    400220: Prehistoric_Female_Shin_Wrap_1C.R
+    400222: Prehistoric_Female_Shin_Wrap_1D.L
+    400224: Prehistoric_Female_Shin_Wrap_1D.R
+    400226: Prehistoric_Female_Torso_1A
+    400228: Prehistoric_Female_Torso_1A_Addon
+    400230: Prehistoric_Female_Torso_1B
+    400232: Prehistoric_Female_Torso_1B_Addon
+    400234: Prehistoric_Female_Torso_1C
+    400236: Prehistoric_Female_Torso_1C_Addon
+    400238: Prehistoric_Female_Torso_1D
+    400240: Prehistoric_Female_Torso_1D_Addon
+    400242: Quad.L
+    400244: Quad.R
+    400246: Root
+    400248: Shin.L
+    400250: Shin.R
+    400252: Spine_01
+    400254: Spine_02
+    400256: Spine_03
+    400258: Thumb.L
+    400260: Thumb.R
+    400262: Thumb_Tip.L
+    400264: Thumb_Tip.L_end
+    400266: Thumb_Tip.R
+    400268: Thumb_Tip.R_end
+    400270: Toes.L
+    400272: Toes.L_end
+    400274: Toes.R
+    400276: Toes.R_end
+    400278: Wrist_IK.L
+    400280: Wrist_IK.L_end
+    400282: Wrist_IK.R
+    400284: Wrist_IK.R_end
+    4300000: Prehistoric_Female_Arm_Wrap_1D.R
+    4300002: Prehistoric_Female_Belt_2D
+    4300004: Prehistoric_Female_Shin_Wrap_1D.R
+    4300006: Prehistoric_Female_Shin_Wrap_1D.L
+    4300008: Prehistoric_Female_Quad_Wrap_1D.R
+    4300010: Prehistoric_Female_Quad_Wrap_1D.L
+    4300012: Prehistoric_Female_Torso_1D
+    4300014: Prehistoric_Female_Belt_1D
+    4300016: Prehistoric_Female_Torso_1D_Addon
+    4300018: Prehistoric_Female_Forearm_Wrap_1D.R
+    4300020: Prehistoric_Female_Arm_Wrap_1D.L
+    4300022: Prehistoric_Female_Forearm_Wrap_1D.L
+    4300024: Prehistoric_Female_Boot_1D.R
+    4300026: Prehistoric_Female_Boot_1D.L
+    4300028: Prehistoric_Female_Boot_1C.L
+    4300030: Prehistoric_Female_Boot_1C.R
+    4300032: Prehistoric_Female_Forearm_Wrap_1C.L
+    4300034: Prehistoric_Female_Arm_Wrap_1C.L
+    4300036: Prehistoric_Female_Forearm_Wrap_1C.R
+    4300038: Prehistoric_Female_Arm_Wrap_1C.R
+    4300040: Prehistoric_Female_Torso_1C_Addon
+    4300042: Prehistoric_Female_Belt_1C
+    4300044: Prehistoric_Female_Torso_1C
+    4300046: Prehistoric_Female_Quad_Wrap_1C.L
+    4300048: Prehistoric_Female_Quad_Wrap_1C.R
+    4300050: Prehistoric_Female_Shin_Wrap_1C.L
+    4300052: Prehistoric_Female_Shin_Wrap_1C.R
+    4300054: Prehistoric_Female_Belt_2C
+    4300056: Prehistoric_Female_Belt_2B
+    4300058: Prehistoric_Female_Shin_Wrap_1B.R
+    4300060: Prehistoric_Female_Shin_Wrap_1B.L
+    4300062: Prehistoric_Female_Quad_Wrap_1B.R
+    4300064: Prehistoric_Female_Quad_Wrap_1B.L
+    4300066: Prehistoric_Female_Torso_1B
+    4300068: Prehistoric_Female_Belt_1B
+    4300070: Prehistoric_Female_Torso_1B_Addon
+    4300072: Prehistoric_Female_Arm_Wrap_1B.R
+    4300074: Prehistoric_Female_Forearm_Wrap_1B.R
+    4300076: Prehistoric_Female_Arm_Wrap_1B.L
+    4300078: Prehistoric_Female_Forearm_Wrap_1B.L
+    4300080: Prehistoric_Female_Boot_1B.R
+    4300082: Prehistoric_Female_Boot_1B.L
+    4300084: Prehistoric_Female_Avatar_1D
+    4300086: Prehistoric_Female_Avatar_1C
+    4300088: Prehistoric_Female_Avatar_1B
+    4300090: Prehistoric_Female_Boot_1A.L
+    4300092: Prehistoric_Female_Boot_1A.R
+    4300094: Prehistoric_Female_Forearm_Wrap_1A.L
+    4300096: Prehistoric_Female_Arm_Wrap_1A.L
+    4300098: Prehistoric_Female_Forearm_Wrap_1A.R
+    4300100: Prehistoric_Female_Arm_Wrap_1A.R
+    4300102: Prehistoric_Female_Torso_1A_Addon
+    4300104: Prehistoric_Female_Belt_1A
+    4300106: Prehistoric_Female_Torso_1A
+    4300108: Prehistoric_Female_Quad_Wrap_1A.L
+    4300110: Prehistoric_Female_Quad_Wrap_1A.R
+    4300112: Prehistoric_Female_Shin_Wrap_1A.L
+    4300114: Prehistoric_Female_Shin_Wrap_1A.R
+    4300116: Prehistoric_Female_Belt_2A
+    4300118: Prehistoric_Female_Avatar_1A
+    4300120: Prehistoric_Female_Hair_4D
+    4300122: Prehistoric_Female_Hair_4C
+    4300124: Prehistoric_Female_Hair_4B
+    4300126: Prehistoric_Female_Hair_2D
+    4300128: Prehistoric_Female_Hair_2C
+    4300130: Prehistoric_Female_Hair_2B
+    4300132: Prehistoric_Female_Hair_3D
+    4300134: Prehistoric_Female_Hair_3C
+    4300136: Prehistoric_Female_Hair_3B
+    4300138: Prehistoric_Female_Hair_1D
+    4300140: Prehistoric_Female_Hair_1A
+    4300142: Prehistoric_Female_Hair_1B
+    4300144: Prehistoric_Female_Hair_1C
+    4300146: Prehistoric_Female_Hair_2A
+    4300148: Prehistoric_Female_Hair_4A
+    4300150: Prehistoric_Female_Hair_3A
+    7400000: Armature_Prehistoric_Female_Avatar|Action
+    7400002: Prehistoric_Female_Idle_1
+    7400004: Armature_Prehistoric_Female_Avatar|Prehistoric_Female_Idle_1.001
+    7400006: Armature_Prehistoric_Female_Avatar|Prehistoric_Female_Idle_1.002
+    7400008: Prehistoric_Female_Idle_2
+    7400010: Prehistoric_Female_Idle_3
+    7400012: Prehistoric_Female_Pray_1
+    7400014: Prehistoric_Female_Sitting_1
+    7400016: Prehistoric_Female_Walk_1
+    7400018: Prehistoric_Female_Worship_1
+    7400020: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Idle_1
+    7400022: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Idle_1.001
+    7400024: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Idle_1.003
+    7400026: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Idle_1.004
+    7400028: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Idle_1.005
+    7400030: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Idle_1.006
+    7400032: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Idle_1.007
+    7400034: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Idle_1.008
+    7400036: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Idle_1.009
+    7400038: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Idle_2
+    7400040: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Idle_2.001
+    7400042: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Idle_2.002
+    7400044: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Idle_2.003
+    7400046: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Idle_2.004
+    7400048: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Idle_3
+    7400050: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Pray_1
+    7400052: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Walk_1
+    7400054: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Work_1
+    7400056: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Work_2
+    7400058: Armature_Prehistoric_Female_Avatar|Prehistoric_Male_Worship_1
+    9500000: //RootNode
+    13700000: Prehistoric_Female_Arm_Wrap_1A.L
+    13700002: Prehistoric_Female_Arm_Wrap_1A.R
+    13700004: Prehistoric_Female_Arm_Wrap_1B.L
+    13700006: Prehistoric_Female_Arm_Wrap_1B.R
+    13700008: Prehistoric_Female_Arm_Wrap_1C.L
+    13700010: Prehistoric_Female_Arm_Wrap_1C.R
+    13700012: Prehistoric_Female_Arm_Wrap_1D.L
+    13700014: Prehistoric_Female_Arm_Wrap_1D.R
+    13700016: Prehistoric_Female_Avatar_1A
+    13700018: Prehistoric_Female_Avatar_1B
+    13700020: Prehistoric_Female_Avatar_1C
+    13700022: Prehistoric_Female_Avatar_1D
+    13700024: Prehistoric_Female_Belt_1A
+    13700026: Prehistoric_Female_Belt_1B
+    13700028: Prehistoric_Female_Belt_1C
+    13700030: Prehistoric_Female_Belt_1D
+    13700032: Prehistoric_Female_Belt_2A
+    13700034: Prehistoric_Female_Belt_2B
+    13700036: Prehistoric_Female_Belt_2C
+    13700038: Prehistoric_Female_Belt_2D
+    13700040: Prehistoric_Female_Boot_1A.L
+    13700042: Prehistoric_Female_Boot_1A.R
+    13700044: Prehistoric_Female_Boot_1B.L
+    13700046: Prehistoric_Female_Boot_1B.R
+    13700048: Prehistoric_Female_Boot_1C.L
+    13700050: Prehistoric_Female_Boot_1C.R
+    13700052: Prehistoric_Female_Boot_1D.L
+    13700054: Prehistoric_Female_Boot_1D.R
+    13700056: Prehistoric_Female_Forearm_Wrap_1A.L
+    13700058: Prehistoric_Female_Forearm_Wrap_1A.R
+    13700060: Prehistoric_Female_Forearm_Wrap_1B.L
+    13700062: Prehistoric_Female_Forearm_Wrap_1B.R
+    13700064: Prehistoric_Female_Forearm_Wrap_1C.L
+    13700066: Prehistoric_Female_Forearm_Wrap_1C.R
+    13700068: Prehistoric_Female_Forearm_Wrap_1D.L
+    13700070: Prehistoric_Female_Forearm_Wrap_1D.R
+    13700072: Prehistoric_Female_Hair_1A
+    13700074: Prehistoric_Female_Hair_1B
+    13700076: Prehistoric_Female_Hair_1C
+    13700078: Prehistoric_Female_Hair_1D
+    13700080: Prehistoric_Female_Hair_2A
+    13700082: Prehistoric_Female_Hair_2B
+    13700084: Prehistoric_Female_Hair_2C
+    13700086: Prehistoric_Female_Hair_2D
+    13700088: Prehistoric_Female_Hair_3A
+    13700090: Prehistoric_Female_Hair_3B
+    13700092: Prehistoric_Female_Hair_3C
+    13700094: Prehistoric_Female_Hair_3D
+    13700096: Prehistoric_Female_Hair_4A
+    13700098: Prehistoric_Female_Hair_4B
+    13700100: Prehistoric_Female_Hair_4C
+    13700102: Prehistoric_Female_Hair_4D
+    13700104: Prehistoric_Female_Quad_Wrap_1A.L
+    13700106: Prehistoric_Female_Quad_Wrap_1A.R
+    13700108: Prehistoric_Female_Quad_Wrap_1B.L
+    13700110: Prehistoric_Female_Quad_Wrap_1B.R
+    13700112: Prehistoric_Female_Quad_Wrap_1C.L
+    13700114: Prehistoric_Female_Quad_Wrap_1C.R
+    13700116: Prehistoric_Female_Quad_Wrap_1D.L
+    13700118: Prehistoric_Female_Quad_Wrap_1D.R
+    13700120: Prehistoric_Female_Shin_Wrap_1A.L
+    13700122: Prehistoric_Female_Shin_Wrap_1A.R
+    13700124: Prehistoric_Female_Shin_Wrap_1B.L
+    13700126: Prehistoric_Female_Shin_Wrap_1B.R
+    13700128: Prehistoric_Female_Shin_Wrap_1C.L
+    13700130: Prehistoric_Female_Shin_Wrap_1C.R
+    13700132: Prehistoric_Female_Shin_Wrap_1D.L
+    13700134: Prehistoric_Female_Shin_Wrap_1D.R
+    13700136: Prehistoric_Female_Torso_1A
+    13700138: Prehistoric_Female_Torso_1A_Addon
+    13700140: Prehistoric_Female_Torso_1B
+    13700142: Prehistoric_Female_Torso_1B_Addon
+    13700144: Prehistoric_Female_Torso_1C
+    13700146: Prehistoric_Female_Torso_1C_Addon
+    13700148: Prehistoric_Female_Torso_1D
+    13700150: Prehistoric_Female_Torso_1D_Addon
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Avatar_1A_D
+    second: {fileID: 2100000, guid: b132675b7e0319e47a7a2f27d81a90cf, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Prehistoric_Female_Idle_1
+      takeName: Armature_Prehistoric_Female_Avatar|Prehistoric_Female_Idle_1
+      firstFrame: 0
+      lastFrame: 96
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Prehistoric_Female_Idle_2
+      takeName: Armature_Prehistoric_Female_Avatar|Prehistoric_Female_Idle_2
+      firstFrame: 0
+      lastFrame: 96
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Prehistoric_Female_Idle_3
+      takeName: Armature_Prehistoric_Female_Avatar|Prehistoric_Female_Idle_3
+      firstFrame: 0
+      lastFrame: 96
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Prehistoric_Female_Pray_1
+      takeName: Armature_Prehistoric_Female_Avatar|Prehistoric_Female_Pray_1
+      firstFrame: 0
+      lastFrame: 96
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Prehistoric_Female_Sitting_1
+      takeName: Armature_Prehistoric_Female_Avatar|Prehistoric_Female_Sitting_1
+      firstFrame: 0
+      lastFrame: 96
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Prehistoric_Female_Walk_1
+      takeName: Armature_Prehistoric_Female_Avatar|Prehistoric_Female_Walk_1
+      firstFrame: 0
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Prehistoric_Female_Worship_1
+      takeName: Armature_Prehistoric_Female_Avatar|Prehistoric_Female_Worship_1
+      firstFrame: 0
+      lastFrame: 192
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Quad.L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Quad.R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Shin.L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Shin.R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot.L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot.R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_01
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_02
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Clavicle.L
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Clavicle.R
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Arm.L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Arm.R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Forearm.L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Forearm.R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hand.L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hand.R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Toes.L
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Toes.R
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Eye.L
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Eye.R
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Thumb.L
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Thumb_Tip.L
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Fingers.L
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Fingertips.L
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Thumb.R
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Thumb_Tip.R
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Fingers.R
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Fingertips.R
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_03
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Prehistoric_Female_Avatar(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature_Prehistoric_Female_Avatar
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root
+      parentName: Armature_Prehistoric_Female_Avatar
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.7071067, y: 0.000000029802322, z: 0.7071068, w: -0.000000029802322}
+      scale: {x: 0.99996376, y: 0.99999994, z: 0.99999994}
+    - name: Wrist_IK.R
+      parentName: Root
+      position: {x: 0.9664594, y: -0.01906017, z: 0.17580839}
+      rotation: {x: -0.70695865, y: -0.01010182, z: -0.7069714, w: -0.017289884}
+      scale: {x: 0.9999858, y: 1.0000272, z: 1.0000616}
+    - name: Wrist_IK.R_end
+      parentName: Wrist_IK.R
+      position: {x: -0, y: 0.18077157, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Wrist_IK.L
+      parentName: Root
+      position: {x: 0.9666427, y: 0.0053554657, z: -0.16662548}
+      rotation: {x: -0.706947, y: 0.017287938, z: -0.70698303, w: 0.01010224}
+      scale: {x: 0.9999712, y: 1.0000092, z: 0.99990773}
+    - name: Wrist_IK.L_end
+      parentName: Wrist_IK.L
+      position: {x: -0, y: 0.18077141, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Elbow_IK.L
+      parentName: Root
+      position: {x: 1.3113194, y: -0.4599401, z: -0.604487}
+      rotation: {x: -0.7071067, y: -0.000000040120337, z: -0.7071068, w: -0.00000012441404}
+      scale: {x: 0.9999638, y: 0.9999462, z: 0.99995524}
+    - name: Elbow_IK.L_end
+      parentName: Elbow_IK.L
+      position: {x: -0, y: 0.1810084, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Elbow_IK.R
+      parentName: Root
+      position: {x: 1.2495872, y: -0.4654106, z: 0.5443281}
+      rotation: {x: -0.7071067, y: 0.00000046166986, z: -0.7071068, w: -0.000000044092275}
+      scale: {x: 0.999964, y: 0.9999463, z: 0.9999553}
+    - name: Elbow_IK.R_end
+      parentName: Elbow_IK.R
+      position: {x: -0, y: 0.18100834, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Knee_IK.L
+      parentName: Root
+      position: {x: 0.52749354, y: 0.6062732, z: -0.122842394}
+      rotation: {x: 0.00000001809083, y: 0.7071067, z: -0.000000066202865, w: 0.7071068}
+      scale: {x: 0.9999638, y: 0.9999457, z: 0.9999547}
+    - name: Knee_IK.L_end
+      parentName: Knee_IK.L
+      position: {x: -0, y: 0.22084278, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Knee_IK.R
+      parentName: Root
+      position: {x: 0.52749354, y: 0.6062732, z: 0.12284242}
+      rotation: {x: -0.00000021371683, y: 0.70710653, z: 0.00000016560485, w: 0.707107}
+      scale: {x: 0.9999643, y: 0.99994606, z: 0.9999552}
+    - name: Knee_IK.R_end
+      parentName: Knee_IK.R
+      position: {x: -0, y: 0.22084272, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ankle_IK.L
+      parentName: Root
+      position: {x: 0.08182777, y: -0.12089467, z: -0.12667051}
+      rotation: {x: 1, y: -0.000000084293895, z: -0.0000041127205, w: 0.00000029502792}
+      scale: {x: 0.9999909, y: 0.99997264, z: 0.9999728}
+    - name: Ankle_IK.L_end
+      parentName: Ankle_IK.L
+      position: {x: -0, y: 0.16509354, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ankle_IK.R
+      parentName: Root
+      position: {x: 0.08182771, y: 0.08136082, z: 0.12667061}
+      rotation: {x: -0.0000033676624, y: 0.000000042146844, z: 1, w: 0.000000042146706}
+      scale: {x: 1.0000178, y: 0.9999997, z: 0.9999997}
+    - name: Ankle_IK.R_end
+      parentName: Ankle_IK.R
+      position: {x: -0, y: 0.16509354, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hips
+      parentName: Armature_Prehistoric_Female_Avatar
+      position: {x: 0.00000009984754, y: 0.008822995, z: 0.96143955}
+      rotation: {x: 0.5346821, y: -0.46272564, z: 0.5346822, w: -0.46272567}
+      scale: {x: 1.0000482, y: 1.0000782, z: 1.0000451}
+    - name: Spine_01
+      parentName: Hips
+      position: {x: 0.015670072, y: -0.0358653, z: 0.000036952257}
+      rotation: {x: -0.7052739, y: -0.05088124, z: -0.70527375, w: 0.050880764}
+      scale: {x: 0.9999948, y: 0.99998856, z: 0.9999972}
+    - name: Spine_02
+      parentName: Spine_01
+      position: {x: 0.0000000071013346, y: 0.100999065, z: 0.0000000012805685}
+      rotation: {x: -0.15178415, y: 0.00000010733493, z: 0.00000013783574, w: 0.98841375}
+      scale: {x: 1.0000032, y: 0.9999268, z: 1.0001097}
+    - name: Spine_03
+      parentName: Spine_02
+      position: {x: -0.0000000013969839, y: 0.12959126, z: -0.0000000071013346}
+      rotation: {x: 0.11488275, y: 0.00000005468086, z: -0.00000001777832, w: 0.99337906}
+      scale: {x: 1.0000035, y: 0.99995685, z: 1.0000238}
+    - name: Neck
+      parentName: Spine_03
+      position: {x: 0.000000022700988, y: 0.13645306, z: 0.019532397}
+      rotation: {x: -0.010185271, y: 0.00000002330427, z: -0.0000001229861, w: 0.99994814}
+      scale: {x: 1.0000057, y: 1.0000434, z: 0.9999669}
+    - name: Head
+      parentName: Neck
+      position: {x: 2.9270653e-10, y: 0.065181315, z: 0.000000017085636}
+      rotation: {x: 0.02683419, y: 0.000000010993824, z: 0.000000045749893, w: 0.9996399}
+      scale: {x: 1.0000122, y: 0.9999183, z: 1.000096}
+    - name: Brow.L
+      parentName: Head
+      position: {x: -0.028339237, y: 0.07217062, z: 0.083744064}
+      rotation: {x: -0.042597305, y: 0.6910912, z: 0.7201445, w: 0.044387344}
+      scale: {x: 1.0000129, y: 1.0000838, z: 0.9999018}
+    - name: Brow.L_end
+      parentName: Brow.L
+      position: {x: -0, y: 0.068722926, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Brow.R
+      parentName: Head
+      position: {x: 0.028339047, y: 0.072170675, z: 0.08374407}
+      rotation: {x: 0.042597283, y: 0.69109124, z: 0.7201446, w: -0.044387423}
+      scale: {x: 1.0001295, y: 1.0001373, z: 0.99997574}
+    - name: Brow.R_end
+      parentName: Brow.R
+      position: {x: -0, y: 0.06872294, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Eye.L
+      parentName: Head
+      position: {x: -0.028845549, y: 0.056840185, z: 0.089316145}
+      rotation: {x: -0.000000016173805, y: 0.6924028, z: 0.7215113, w: 0.00000000836581}
+      scale: {x: 1.0001622, y: 1.0001438, z: 0.9999808}
+    - name: Eye.L_end
+      parentName: Eye.L
+      position: {x: -0, y: 0.032573055, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Eye.R
+      parentName: Head
+      position: {x: 0.02884536, y: 0.0568402, z: 0.08931615}
+      rotation: {x: -0.000000016173805, y: 0.6924028, z: 0.7215113, w: 0.00000000836581}
+      scale: {x: 1.0001622, y: 1.0001438, z: 0.9999808}
+    - name: Eye.R_end
+      parentName: Eye.R
+      position: {x: -0, y: 0.032573055, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Clavicle.L
+      parentName: Spine_03
+      position: {x: 5.820766e-10, y: 0.123963594, z: 1.1641532e-10}
+      rotation: {x: 0.5896056, y: -0.40975216, z: -0.55783474, w: -0.41627967}
+      scale: {x: 1.0000508, y: 1.0000495, z: 1.0001404}
+    - name: Arm.L
+      parentName: Clavicle.L
+      position: {x: 0.000000012572855, y: 0.16694064, z: 0.00000014537363}
+      rotation: {x: -0.19238113, y: -0.08768465, z: -0.049625475, w: -0.97613436}
+      scale: {x: 0.9996911, y: 0.999332, z: 1.0010327}
+    - name: Forearm.L
+      parentName: Arm.L
+      position: {x: -0.000000029802322, y: 0.21311167, z: -0.000000022351742}
+      rotation: {x: -0.011973168, y: -0.7868044, z: 0.038905025, w: 0.61585873}
+      scale: {x: 1.0000172, y: 1.0000088, z: 1.0001172}
+    - name: Hand.L
+      parentName: Forearm.L
+      position: {x: 0.0000000016334525, y: 0.24761243, z: 0.0000000023283064}
+      rotation: {x: -0.07977589, y: -0.14457361, z: 0.032828912, w: 0.98572636}
+      scale: {x: 1.0023323, y: 1.0012418, z: 0.99648345}
+    - name: Fingers.L
+      parentName: Hand.L
+      position: {x: 0.000000011175871, y: 0.08312186, z: -0.000000037252903}
+      rotation: {x: 0.031967428, y: 0.09880415, z: 0.035456426, w: 0.9939611}
+      scale: {x: 0.99720794, y: 0.9992563, z: 1.0036057}
+    - name: Fingertips.L
+      parentName: Fingers.L
+      position: {x: 0.000000016530976, y: 0.036121693, z: 0.0000000037252903}
+      rotation: {x: -0.006053274, y: -0.060819898, z: 0.037652668, w: 0.99742}
+      scale: {x: 0.9994313, y: 0.9978607, z: 1.0025828}
+    - name: Fingertips.L_end
+      parentName: Fingertips.L
+      position: {x: -0, y: 0.047892928, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Thumb.L
+      parentName: Hand.L
+      position: {x: 0.00008277036, y: 0.0314862, z: 0.038803745}
+      rotation: {x: 0.28585342, y: 0.7212368, z: 0.26272964, w: 0.57365364}
+      scale: {x: 1.0039096, y: 0.9943021, z: 1.0018528}
+    - name: Thumb_Tip.L
+      parentName: Thumb.L
+      position: {x: 0.000000010244548, y: 0.051274903, z: -0.000000033527613}
+      rotation: {x: -0.016658194, y: -0.5769777, z: -0.02633136, w: 0.81616527}
+      scale: {x: 0.9943983, y: 0.98726875, z: 1.0189631}
+    - name: Thumb_Tip.L_end
+      parentName: Thumb_Tip.L
+      position: {x: -0, y: 0.040503517, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand_Slot.L
+      parentName: Hand.L
+      position: {x: -0.03188869, y: 0.05808109, z: -0.02112578}
+      rotation: {x: 0.3634853, y: -0.4905608, z: -0.46793994, w: 0.6389529}
+      scale: {x: 1.0019397, y: 1.0022207, z: 0.99593633}
+    - name: Hand_Slot.L_end
+      parentName: Hand_Slot.L
+      position: {x: -0, y: 0.06933273, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Clavicle.R
+      parentName: Spine_03
+      position: {x: 5.820766e-10, y: 0.123963594, z: 1.1641532e-10}
+      rotation: {x: 0.58960533, y: 0.4097529, z: 0.5578345, w: -0.41627976}
+      scale: {x: 0.99995434, y: 0.9999293, z: 1.0000435}
+    - name: Arm.R
+      parentName: Clavicle.R
+      position: {x: 0.000000011175871, y: 0.16694063, z: 0.000000041211024}
+      rotation: {x: 0.1923266, y: -0.088628665, z: -0.04981033, w: 0.9760504}
+      scale: {x: 0.9997506, y: 0.99940026, z: 1.001097}
+    - name: Forearm.R
+      parentName: Arm.R
+      position: {x: -0.000000037252903, y: 0.21311164, z: 0.000000074505806}
+      rotation: {x: 0.012010003, y: -0.78739786, z: 0.038890168, w: -0.6151}
+      scale: {x: 1.0000291, y: 0.9999834, z: 1.0001441}
+    - name: Hand.R
+      parentName: Forearm.R
+      position: {x: 0.0000000011059456, y: 0.24761197, z: 0.000000007450581}
+      rotation: {x: -0.07967663, y: 0.14751418, z: -0.033065856, w: 0.98529077}
+      scale: {x: 1.0024091, y: 1.0012964, z: 0.9963302}
+    - name: Fingers.R
+      parentName: Hand.R
+      position: {x: -0.000000028871, y: 0.08312189, z: 0.000000035390258}
+      rotation: {x: 0.032071427, y: -0.10177048, z: -0.035361484, w: 0.99366176}
+      scale: {x: 0.9970846, y: 0.9993387, z: 1.0036427}
+    - name: Fingertips.R
+      parentName: Fingers.R
+      position: {x: -0.000000020489097, y: 0.03612153, z: 0.000000018626451}
+      rotation: {x: -0.0062122336, y: 0.05649643, z: -0.037639894, w: 0.9976737}
+      scale: {x: 0.99931514, y: 0.99801964, z: 1.0026494}
+    - name: Fingertips.R_end
+      parentName: Fingertips.R
+      position: {x: -0, y: 0.04789295, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Thumb.R
+      parentName: Hand.R
+      position: {x: 0.00900122, y: 0.031886376, z: 0.041633226}
+      rotation: {x: -0.28667095, y: 0.72293264, z: 0.261885, w: -0.57149327}
+      scale: {x: 1.0038931, y: 0.994741, z: 1.0015855}
+    - name: Thumb_Tip.R
+      parentName: Thumb.R
+      position: {x: -0.00000005029142, y: 0.051275, z: -0.000000007450581}
+      rotation: {x: 0.016702391, y: -0.5769813, z: -0.026420275, w: -0.81615907}
+      scale: {x: 0.9946122, y: 0.9866744, z: 1.0191216}
+    - name: Thumb_Tip.R_end
+      parentName: Thumb_Tip.R
+      position: {x: -0, y: 0.040503427, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand_Slot.R
+      parentName: Hand.R
+      position: {x: 0.032013908, y: 0.05808112, z: -0.020935446}
+      rotation: {x: 0.36208817, y: 0.48865393, z: 0.46902174, w: 0.6404125}
+      scale: {x: 1.00188, y: 1.0023729, z: 0.99593586}
+    - name: Hand_Slot.R_end
+      parentName: Hand_Slot.R
+      position: {x: -0, y: 0.06933273, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Quad.L
+      parentName: Hips
+      position: {x: -0.016063469, y: 0.046592824, z: -0.075727336}
+      rotation: {x: -0.07531394, y: 0.7373099, z: 0.033630013, w: 0.6705005}
+      scale: {x: 0.99992675, y: 0.9999265, z: 0.99995947}
+    - name: Shin.L
+      parentName: Quad.L
+      position: {x: 0.00000002188608, y: 0.42485318, z: -0.000000058673322}
+      rotation: {x: -0.020414267, y: -0.04491508, z: -0.010245338, w: 0.99872965}
+      scale: {x: 1.000028, y: 1.0000644, z: 0.99998635}
+    - name: Foot.L
+      parentName: Shin.L
+      position: {x: 0.000000005122274, y: 0.4182783, z: -0.0000000018626451}
+      rotation: {x: 0.5395807, y: 0.033701587, z: 0.012072112, w: 0.8411725}
+      scale: {x: 1.0000641, y: 0.9999048, z: 1.0001372}
+    - name: Toes.L
+      parentName: Foot.L
+      position: {x: -0.0000000066356733, y: 0.13782153, z: -0.00000000448199}
+      rotation: {x: 0.23896292, y: 0.0011857449, z: 0.028312095, w: 0.97061515}
+      scale: {x: 1.0000314, y: 1.0008737, z: 0.99918985}
+    - name: Toes.L_end
+      parentName: Toes.L
+      position: {x: -0, y: 0.090083994, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Quad.R
+      parentName: Hips
+      position: {x: -0.016063431, y: 0.046592392, z: 0.07572724}
+      rotation: {x: -0.033632185, y: 0.6704997, z: 0.07531536, w: 0.73731047}
+      scale: {x: 1.0001009, y: 1.0000616, z: 1.0000021}
+    - name: Shin.R
+      parentName: Quad.R
+      position: {x: -9.313226e-10, y: 0.4248532, z: -0.00000005075708}
+      rotation: {x: -0.020409111, y: 0.044914305, z: 0.0102458615, w: 0.9987298}
+      scale: {x: 1.0001082, y: 1.0001049, z: 0.9999674}
+    - name: Foot.R
+      parentName: Shin.R
+      position: {x: -0.00000000273576, y: 0.41827846, z: -5.820766e-10}
+      rotation: {x: 0.5395786, y: -0.0337024, z: -0.0120742135, w: 0.8411738}
+      scale: {x: 1.0000291, y: 0.9998495, z: 1.0002677}
+    - name: Toes.R
+      parentName: Foot.R
+      position: {x: -2.3283064e-10, y: 0.13782148, z: 0.000000007450581}
+      rotation: {x: 0.23896277, y: -0.0011834985, z: -0.028312705, w: 0.9706152}
+      scale: {x: 1.0000373, y: 1.0026654, z: 0.9972862}
+    - name: Toes.R_end
+      parentName: Toes.R
+      position: {x: -0, y: 0.090083994, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Arm_Wrap_1A.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Arm_Wrap_1A.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Arm_Wrap_1B.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Arm_Wrap_1B.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Arm_Wrap_1C.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Arm_Wrap_1C.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Arm_Wrap_1D.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Arm_Wrap_1D.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Avatar_1A
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Avatar_1B
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Avatar_1C
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Avatar_1D
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Belt_1A
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Belt_1B
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Belt_1C
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Belt_1D
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Belt_2A
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Belt_2B
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Belt_2C
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Belt_2D
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Boot_1A.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Boot_1A.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Boot_1B.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Boot_1B.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Boot_1C.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Boot_1C.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Boot_1D.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Boot_1D.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Forearm_Wrap_1A.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Forearm_Wrap_1A.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Forearm_Wrap_1B.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Forearm_Wrap_1B.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Forearm_Wrap_1C.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Forearm_Wrap_1C.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Forearm_Wrap_1D.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Forearm_Wrap_1D.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Hair_1A
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Hair_1B
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Hair_1C
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Hair_1D
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Hair_2A
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Hair_2B
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Hair_2C
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Hair_2D
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Hair_3A
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Hair_3B
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Hair_3C
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Hair_3D
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Hair_4A
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Hair_4B
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Hair_4C
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Hair_4D
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Quad_Wrap_1A.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Quad_Wrap_1A.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Quad_Wrap_1B.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Quad_Wrap_1B.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Quad_Wrap_1C.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Quad_Wrap_1C.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Quad_Wrap_1D.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Quad_Wrap_1D.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Shin_Wrap_1A.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Shin_Wrap_1A.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Shin_Wrap_1B.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Shin_Wrap_1B.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Shin_Wrap_1C.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Shin_Wrap_1C.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Shin_Wrap_1D.L
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Shin_Wrap_1D.R
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Torso_1A
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Torso_1A_Addon
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Torso_1B
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Torso_1B_Addon
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Torso_1C
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Torso_1C_Addon
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Torso_1D
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Prehistoric_Female_Torso_1D_Addon
+      parentName: Prehistoric_Female_Avatar(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 1
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -2,18 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ground : MonoBehaviour
+public class Ground : Entity
 {
-    // Start is called before the first frame update
-    void Start() {}
-
-    public void Init(float worldSize)
+    public Ground(string objectType, string index, Genome motherGenome, Vector3 spawn)
+    : base(objectType, index, motherGenome, spawn, false)
     {
-        gameObject.GetComponent<Renderer> ().material.color = new Color(20f/255f, 150f/255f, 50f/255f);
-        gameObject.transform.localScale = new Vector3(worldSize, 1.0f, worldSize);
-        gameObject.transform.position = new Vector3(0, 0, 0);
+        body = new Body(this, spawn);
     }
 
-    // Update is called once per frame
-    void Update() {}
+    public override void UpdateEntity()
+    {
+        if (this.GetSpecies() == "Crabapple")
+        {
+            this.gameObject.GetComponent<MeshRenderer>().material.color = new Color(1f, 0.75f, .25f, 1f);
+        }
+    }
 }

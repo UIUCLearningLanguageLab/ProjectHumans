@@ -7,19 +7,16 @@ using System.Configuration;
 using System.Linq;
 using System.IO;
 using MathNet.Numerics.LinearAlgebra;
+using MathNet.Numerics.Distributions;
+using MathNet.Numerics.Random;
 using Random=UnityEngine.Random;
 
 public class Population {
-    // this is the initial number that will be spawned
-    public string name;
-    public int numGroups;
-    public float meanMembers;
-    public float standardMembers;
-    public float spawnDensity;
-    protected int updateRate;
-
-    public int GetUpdateRate() { return updateRate; }
-
+    string SpeciesName;
+    int numGroups, meanGroupSize;
+    float stdevGroupSize, stdevGroupX, stdevGroupZ, stdevEntityX, stdevEntityZ, meanGroupX, meanGroupZ;
+    World world;
+    public int popIndex;
     public Genome baseGenome;
     public string entityType;
     public bool isFirst = false;
@@ -31,61 +28,131 @@ public class Population {
     public  List<Entity> GetEntityList() { return entityList; }
     public List<string> GetEntityNames() { return new List<string>(entityDict.Keys); }
 
-    public Population(string passedSpeciesName, int groups, float mean, float std, float density, int refresh) {
-        name = passedSpeciesName;
+    public Population(World World, int popIndex, string passedSpeciesName, int numGroups, int meanGroupSize, float stdevGroupSize,
+        float meanGroupX, float meanGroupZ,  float stdevGroupX, float stedvGroupZ, 
+        float stdevEntityX, float stdevEntityZ) {
         baseGenome = new Genome();
-        numGroups = groups;
-        meanMembers = mean;
-        standardMembers = std;
-        spawnDensity = density;
-        updateRate = refresh;
-
-        ImportPopConfig();
-    }
-
-    public Population(string passedSpeciesName, int refresh = 1) {
-        name = passedSpeciesName;
-        baseGenome = new Genome();
-        updateRate = refresh;
         
+        this.world = World;
+        this.popIndex = popIndex;
+        this.SpeciesName = passedSpeciesName;
+        this.numGroups = numGroups;
+        this.meanGroupSize = meanGroupSize;
+        this.meanGroupX = meanGroupX;
+        this.meanGroupZ = meanGroupZ;
+        this.stdevGroupSize = stdevGroupSize;
+        this.stdevGroupX = stdevGroupX;
+        this.stdevGroupZ = stedvGroupZ;
+        this.stdevEntityX = stdevEntityX;
+        this.stdevEntityZ = stdevEntityZ;
         ImportPopConfig();
+        SpawnGroups();
+    }
+    public Population(string passedSpeciesName, int numGroups, int meanGroupSize, float stdevGroupSize,
+        float meanGroupX, float meanGroupZ, float stdevGroupX, float stedvGroupZ,
+        float stdevEntityX, float stdevEntityZ)
+    {
+        baseGenome = new Genome();
+
+        this.SpeciesName = passedSpeciesName;
+        this.numGroups = numGroups;
+        this.meanGroupSize = meanGroupSize;
+        this.meanGroupX = meanGroupX;
+        this.meanGroupZ = meanGroupZ;
+        this.stdevGroupSize = stdevGroupSize;
+        this.stdevGroupX = stdevGroupX;
+        this.stdevGroupZ = stedvGroupZ;
+        this.stdevEntityX = stdevEntityX;
+        this.stdevEntityZ = stdevEntityZ;
+        ImportPopConfig();
+        SpawnGroupsAfter();
     }
 
     public void UpdatePopulation() {
-        World.LogComment("Starting updating population: " + name);
+        World.LogComment("Starting updating population: " + SpeciesName);
         foreach(Entity individual in entityList) {
             individual.UpdateEntity();
         }
         World.LogComment("Population update completed.");
     }
+    public Entity AddEntity( Nullable<Vector3> passedSpawn, string index)
+    {
+        Vector3 spawn;
+        Genome motherGenome = new Genome();
+        motherGenome.InheritGenome(baseGenome, true);
 
-    public void ImportPopConfig() {
+        if (passedSpawn.HasValue)
+        {
+            spawn = (Vector3)passedSpawn;
+        }
+        else
+        {
+            spawn = CreateRandomPosition();
+        }
+
+        if (entityType == "item")
+        {
+            return new Item(SpeciesName, index, motherGenome, spawn);
+        }
+        else
+        {
+            Genome fatherGenome = new Genome();
+            fatherGenome.InheritGenome(baseGenome, true);
+
+            if (entityType == "plant")
+            {
+                return new Plant(SpeciesName, index, motherGenome, fatherGenome, spawn);
+            }
+            else
+            {
+                return new Animal(SpeciesName, index, motherGenome, fatherGenome, spawn);
+            }
+        }
+    }
+ 
+
+    public void ImportPopConfig()
+    {
         string line;
         string[] lineInfo;
-        string filename = name + ".config";
-
-        using (var reader = new StreamReader(@"Assets/Scripts/config/" + filename)) {
-            while ((line = reader.ReadLine()) != null) {
+        string filename = SpeciesName + ".config";
+        string[] worldSelectedFiles = Directory.GetFiles(@"Assets/Scripts/Config/Worlds/" + World.worldSelected, "*.config");
+        StreamReader reader = null;
+        if(worldSelectedFiles.Contains(filename))
+        {
+            reader = new StreamReader(@"Assets/Scripts/Config/Worlds/" + World.worldSelected + filename);
+        }
+        else
+        {
+            reader = new StreamReader(@"Assets/Scripts/Config/Worlds/Default/" + filename);
+        }
+        using (reader)
+        {
+            while ((line = reader.ReadLine()) != null)
+            {
                 lineInfo = line.Split(new[] { "=" }, StringSplitOptions.None);
                 string[] leftArray = lineInfo[0].Split(new[] { "." }, StringSplitOptions.None);
                 string[] rightArray = lineInfo[1].Split(new[] { "," }, StringSplitOptions.None);
 
-                if (leftArray[0] == "gene") { baseGenome.AddGeneToGenome(leftArray[1], rightArray); 
-                } else if (leftArray[0] == "constant") {
+                if (leftArray[0] == "gene")
+                {
+                    baseGenome.AddGeneToGenome(leftArray[1], rightArray);
+                }
+                else if (leftArray[0] == "constant")
+                {
                     baseGenome.AddConstantToGenome(leftArray[1], rightArray);
-                } else if (leftArray[0] == "quality") {
+                }
+                else if (leftArray[0] == "quality")
+                {
                     baseGenome.AddQualToGenome(leftArray[1], rightArray);
-                } else if (leftArray[0] == "object_type") {
+                }
+                else if (leftArray[0] == "object_type")
+                {
                     entityType = rightArray[0];
                     //Debug.Log("Saving object type for " + name + " as " + entityType);
-                } 
+                }
             }
-        } 
-    }
-
-    public void SaveEntity(Entity passed) {
-        entityList.Add(passed);
-        entityDict.Add(passed.GetName(), passed);
+        }
     }
 
     public void SaveGroup(Group passed) {
@@ -93,7 +160,41 @@ public class Population {
     }
 
     public string NameGroup() {
-        string toName = name + " Group " + groupDict.Count();
+        string toName = SpeciesName + " Group " + groupDict.Count();
         return toName;
+    }
+    public void SpawnGroups()
+    {
+        //Debug.Log("Trying to spawn clusters of " + SpeciesName);
+        for (int i = 0; i < numGroups; i++)
+        {
+            int groupSize = (int)new Normal(meanGroupSize, stdevGroupSize).Sample();
+            float groupX = (float)new Normal(meanGroupX, stdevGroupX).Sample();
+            float groupZ = (float)new Normal(meanGroupZ, stdevGroupZ).Sample();
+            //int clusterIndex = (int)Random.Range(0, ((numGroups - 1) * (numGroups - 1)));
+            Group toAdd = new Group(this, groupSize, groupX, groupZ, stdevEntityX, stdevEntityZ, world);
+            SaveGroup(toAdd);
+        }
+    }
+    public void SpawnGroupsAfter()
+    {
+        //Debug.Log("Trying to spawn clusters of " + SpeciesName);
+        for (int i = 0; i < numGroups; i++)
+        {
+            int groupSize = (int)new Normal(meanGroupSize, stdevGroupSize).Sample();
+            float groupX = (float)new Normal(meanGroupX, stdevGroupX).Sample();
+            float groupZ = (float)new Normal(meanGroupZ, stdevGroupZ).Sample();
+            //int clusterIndex = (int)Random.Range(0, ((numGroups - 1) * (numGroups - 1)));
+            Group toAdd = new Group(this, groupSize, groupX, groupZ, stdevEntityX, stdevEntityZ);
+            SaveGroup(toAdd);
+        }
+    }
+    public Vector3 CreateRandomPosition()
+    {
+        float xRan = Random.Range(world.minPosition, world.maxPosition);
+        float zRan = Random.Range(world.minPosition, world.maxPosition);
+        Vector3 newStartPosition = new Vector3(xRan, 0.75f, zRan);
+
+        return newStartPosition;
     }
 }
