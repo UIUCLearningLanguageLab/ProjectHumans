@@ -10,6 +10,8 @@ public class UIController : MonoBehaviour
     Transform NetworkVisualizationPanel;
     [SerializeField]
     NetworkVisualization networkVisualization;
+    [SerializeField]
+    Transform menu;
     public Entity selectedEntity;
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,7 @@ public class UIController : MonoBehaviour
     void Update()
     {
         SelectObject();
+        ShowMenu();
     }
     void SelectObject()
     {
@@ -50,6 +53,13 @@ public class UIController : MonoBehaviour
                 Debug.Log("No hit");
             }
             Debug.Log("Mouse is down");
+        }
+    }
+    void ShowMenu()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            menu.gameObject.SetActive(!menu.gameObject.activeSelf);
         }
     }
 }

@@ -44,14 +44,16 @@ public class World: MonoBehaviour {
             worldSelectionDD.options.Add(new TMP_Dropdown.OptionData() { text = new DirectoryInfo(folder).Name });
         }
         settings.Find("Title").GetComponent<TextMeshProUGUI>().text = new DirectoryInfo(Worldfolder[0]).Name;
-        string[] AIfiles = Directory.GetFiles(Application.streamingAssetsPath + "//AI/AIInUse/", "*.cs");
-        
+        //string[] AIfiles = Directory.GetFiles(Application.streamingAssetsPath + "//AI/AIInUse/", "*.cs");
 
-        
-        foreach (string file in AIfiles)
-        {
-            aISelectionDD.options.Add(new TMP_Dropdown.OptionData() { text = Path.GetFileNameWithoutExtension(file) });
-        }
+
+
+        //foreach (string file in AIfiles)
+        //{
+        //    aISelectionDD.options.Add(new TMP_Dropdown.OptionData() { text = Path.GetFileNameWithoutExtension(file) });
+        //}
+        aISelectionDD.options.Add(new TMP_Dropdown.OptionData() { text = "SimpleAI" });
+        aISelectionDD.options.Add(new TMP_Dropdown.OptionData() { text = "NeuralAI" });
         updateCounter = 0;
     }
     void Start()
@@ -112,7 +114,7 @@ public class World: MonoBehaviour {
 
         // WE NEED TO ADD ERROR CHECKING FOR SCREWED UP CONFIG FILES
         
-        using(var reader = new StreamReader(Path.Combine(Application.streamingAssetsPath, "Config/Worlds") + worldSelected + "/world.config")) {
+        using(var reader = new StreamReader(Application.streamingAssetsPath + "/Config/Worlds/" + worldSelected + "/world.config")) {
             while ((line = reader.ReadLine()) != null) {
                 
                 lineInfo = line.Split(new [] {"="}, StringSplitOptions.None);

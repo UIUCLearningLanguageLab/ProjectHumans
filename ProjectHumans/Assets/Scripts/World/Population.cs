@@ -120,11 +120,11 @@ public class Population {
         StreamReader reader = null;
         if(worldSelectedFiles.Contains(filename))
         {
-            reader = new StreamReader(@"Assets/Scripts/Config/Worlds/" + World.worldSelected + filename);
+            reader = new StreamReader(Application.streamingAssetsPath + "/Config/Worlds/" + World.worldSelected + filename);
         }
         else
         {
-            reader = new StreamReader(@"Assets/Scripts/Config/Worlds/Default/" + filename);
+            reader = new StreamReader(Application.streamingAssetsPath + "/Config/Worlds/Default/" + filename);
         }
         using (reader)
         {

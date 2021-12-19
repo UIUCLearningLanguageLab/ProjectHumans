@@ -44,4 +44,8 @@ public class ButtonFunctions : MonoBehaviour
             world.updateIsPaused = true;
         }
     }
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
