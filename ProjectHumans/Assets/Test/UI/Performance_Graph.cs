@@ -127,7 +127,7 @@ public class Performance_Graph : MonoBehaviour
     }
     public void ShowPerformanceGraphs()
     {
-        world.paused = true;
+        world.updateIsPaused = true;
         selectedEntity = uicontroller.selectedEntity;
         selectedAI = ((Animal)selectedEntity).GetAI();
         Dictionary<string, List<float>> valueDict = ((NeuralAI)selectedAI).errorDicts;

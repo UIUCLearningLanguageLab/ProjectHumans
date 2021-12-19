@@ -32,6 +32,16 @@ public class ButtonFunctions : MonoBehaviour
         {
             world.PauseGame();
         }
-        
+    }
+    public void PauseAndRusumeUpdate()
+    {
+        if (world.updateIsPaused)
+        {
+            world.updateIsPaused = false;
+        }
+        else
+        {
+            world.updateIsPaused = true;
+        }
     }
 }

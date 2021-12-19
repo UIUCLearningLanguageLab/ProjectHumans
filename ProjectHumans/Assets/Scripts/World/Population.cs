@@ -116,7 +116,7 @@ public class Population {
         string line;
         string[] lineInfo;
         string filename = SpeciesName + ".config";
-        string[] worldSelectedFiles = Directory.GetFiles(@"Assets/Scripts/Config/Worlds/" + World.worldSelected, "*.config");
+        string[] worldSelectedFiles = Directory.GetFiles(Path.Combine(Application.streamingAssetsPath, "Config/Worlds") + "/" + World.worldSelected, "*.config");
         StreamReader reader = null;
         if(worldSelectedFiles.Contains(filename))
         {

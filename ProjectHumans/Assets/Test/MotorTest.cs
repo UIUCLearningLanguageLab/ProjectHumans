@@ -17,17 +17,17 @@ public class MotorTest : MonoBehaviour
     {
         //TakeSteps(0f);
         //Look(new Quaternion(0, Oscilate(1, -1, 2), 0, 1));
-        //Look(-1, -1, 0.5f);
+        //Look(0, Oscilate(1, -1, 2), 0f);
         if (Input.GetKey(KeyCode.S))
         {
             SitDown();
         }
-        if (Input.GetKey(KeyCode.W))
-        {
-            //StandFromSit();
-            Lay();
-        }
-        //if(Input.GetKey(KeyCode.Q))
+        //if (Input.GetKey(KeyCode.W))
+        //{
+        //    //StandFromSit();
+        //    Lay();
+        //}
+        ////if(Input.GetKey(KeyCode.Q))
         //{
         //    SitUp();
         //}

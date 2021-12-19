@@ -17,7 +17,7 @@ public class World: MonoBehaviour {
     public static bool gameIsPaused;
     public static string aISelected;
     public static string worldSelected;
-    public bool paused;
+    public bool updateIsPaused;
     public Dictionary < string, float > worldConfigDict = new Dictionary < string, float > ();
     public Dictionary < string, Population > populationDict = new Dictionary < string, Population > ();
     public List<string> populationList = new List<string>();
@@ -38,12 +38,16 @@ public class World: MonoBehaviour {
         mainCam = GameObject.Find("Main Camera");
         worldSelectionDD = settings.Find("WorldSelection").GetComponent<TMP_Dropdown>();
         aISelectionDD = settings.Find("AISelection").GetComponent<TMP_Dropdown>();
-        string[] Worldfolder = Directory.GetFiles(@"Assets/Scripts/Config/Worlds/");
-        string[] AIfiles = Directory.GetFiles(@"Assets/Scripts/Entities/Animals/AI/AIInUse/", "*.cs");
+        string[] Worldfolder = Directory.GetDirectories(Application.streamingAssetsPath + "//Config/Worlds");
         foreach (string folder in Worldfolder)
         {
-            worldSelectionDD.options.Add(new TMP_Dropdown.OptionData() {text = Path.GetFileNameWithoutExtension(folder) });
+            worldSelectionDD.options.Add(new TMP_Dropdown.OptionData() { text = new DirectoryInfo(folder).Name });
         }
+        settings.Find("Title").GetComponent<TextMeshProUGUI>().text = new DirectoryInfo(Worldfolder[0]).Name;
+        string[] AIfiles = Directory.GetFiles(Application.streamingAssetsPath + "//AI/AIInUse/", "*.cs");
+        
+
+        
         foreach (string file in AIfiles)
         {
             aISelectionDD.options.Add(new TMP_Dropdown.OptionData() { text = Path.GetFileNameWithoutExtension(file) });
@@ -56,16 +60,20 @@ public class World: MonoBehaviour {
     }
     void Update()
     {
-        UpdateEntities();
+        if(!updateIsPaused)
+        {
+            UpdateEntities();
+        }
     }
     IEnumerator GetOptions()
     {
-        Debug.Log("getting information");
+        
         yield return new WaitUntil(() => gameIsPaused == false);
         LoadWorldConfig();
         worldSize = worldConfigDict["World_Size"];
         maxPosition = worldSize / 2;
         minPosition = -worldSize / 2;
+        updateIsPaused = true;
     }
     public void BuildTheScene()
     {
@@ -76,11 +84,13 @@ public class World: MonoBehaviour {
     {
         Time.timeScale = 0f;
         gameIsPaused = true;
+        Debug.Log("game is paused");
     }
     public void ResumeGame()
     {
         Time.timeScale = 1f;
         gameIsPaused = false;
+        Debug.Log("game is resumed");
     }
 
     void UpdateEntities()
@@ -102,7 +112,7 @@ public class World: MonoBehaviour {
 
         // WE NEED TO ADD ERROR CHECKING FOR SCREWED UP CONFIG FILES
         
-        using(var reader = new StreamReader(@"Assets/Scripts/Config/Worlds/" + worldSelected + "/world.config")) {
+        using(var reader = new StreamReader(Path.Combine(Application.streamingAssetsPath, "Config/Worlds") + worldSelected + "/world.config")) {
             while ((line = reader.ReadLine()) != null) {
                 
                 lineInfo = line.Split(new [] {"="}, StringSplitOptions.None);
