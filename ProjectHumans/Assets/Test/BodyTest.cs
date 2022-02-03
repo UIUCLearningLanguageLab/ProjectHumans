@@ -61,6 +61,7 @@ public class BodyTest : MonoBehaviour
         GroundCheck();
         SitCheck();
         LayCheck();
+        CheckHandsHolding();
     }
 
     void CheckHandsHolding()

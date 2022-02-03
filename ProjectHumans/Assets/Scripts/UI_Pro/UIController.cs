@@ -9,6 +9,8 @@ public class UIController : MonoBehaviour
     [SerializeField]
     Transform NetworkVisualizationPanel;
     [SerializeField]
+    Transform GeneralInfoPanel;
+    [SerializeField]
     NetworkVisualization networkVisualization;
     [SerializeField]
     Transform menu;
@@ -17,6 +19,7 @@ public class UIController : MonoBehaviour
     void Start()
     {
         NetworkVisualizationPanel.transform.localScale = new Vector3(1, 0, 1);
+        GeneralInfoPanel.transform.localScale = new Vector3(1, 0, 1);
     }
 
     // Update is called once per frame
@@ -36,9 +39,9 @@ public class UIController : MonoBehaviour
             if (hit)
             {
                 Debug.Log("Hit " + hitInfo.transform.gameObject.name);
-                if (hitInfo.transform.gameObject.tag == "Human")
+                if (hitInfo.transform.parent.gameObject.tag == "Human")
                 {
-                    NetworkVisualizationPanel.transform.localScale = new Vector3(1, 1, 1);
+                    GeneralInfoPanel.transform.localScale = new Vector3(1, 1, 1);
                     //NetworkVisualizationPanel.GetComponent<Performance_Graph>().enabled = true;
                     selectedEntity = world.entityDict[hitInfo.transform.gameObject.transform.root.name];
                     networkVisualization.switchEntity = true;

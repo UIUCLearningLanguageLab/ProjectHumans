@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 992630293019080347}
   - component: {fileID: 992630293019080344}
   - component: {fileID: 2110460071195420327}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GrassTerrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1598909292116724606}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GrassTerrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}

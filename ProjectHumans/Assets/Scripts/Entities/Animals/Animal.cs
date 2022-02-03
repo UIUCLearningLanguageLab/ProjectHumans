@@ -42,7 +42,6 @@ public class Animal : Entity {
         else
         {
             animalBody = new AnimalBody(this, spawn);
-            motorSystem = new SimpleMotorSystem(this);
         }
         body = animalBody;
         visualInputCamera = animalBody.GetGameObject().GetComponentInChildren<Camera>();
@@ -59,12 +58,12 @@ public class Animal : Entity {
         Vector<float> temp = ((AI)activeAI).ChooseAction().Column(0);
         GetMotorSystem().TakeAction(temp);
         action = "In progress!";
-
+        GetBody().UpdateBodyStates();
         IncreaseAge(1);
     }
-    public void ToggleBodyPart(string part, bool toggle) {
-        GetBody().GetSkeletonDict()[part].gameObject.SetActive(toggle);
-    }
+    //public void ToggleBodyPart(string part, bool toggle) {
+    //    GetBody().GetSkeletonDict()[part].gameObject.SetActive(toggle);
+    //}
     
     // getters and setters for body, drive system, motor system, sensory system, and action choice class
     public new AnimalBody  GetBody() { return animalBody; }

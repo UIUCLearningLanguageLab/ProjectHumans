@@ -6,40 +6,14 @@ using UnityEngine;
 
 public class PrimateBody : AnimalBody {
 
-    public Vector3 abAdjRight;
-    public Vector3 abAdjLeft;
-    public Vector3 footAdjRight;
-    public Vector3 footAdjLeft;
-
     public PrimateBody(Animal animal, Vector3 position) : base(animal, position) {
         thisAnimal = animal;
-        abAdjLeft = GetSkeleton("Hand_L").transform.position - GetSkeleton("Abdomen").transform.position; 
-        abAdjRight = GetSkeleton("Hand_R").transform.position - GetSkeleton("Abdomen").transform.position;
-
-        footAdjLeft = GetSkeleton("Foot_L").transform.position - GetSkeleton("Abdomen").transform.position; 
-        footAdjRight = GetSkeleton("Foot_R").transform.position - GetSkeleton("Abdomen").transform.position;  
-
-        LegList = new List<string>();
-        LegList.Add("Femur_R");
-        LegList.Add("Femur_L");
-
-        Color toSet = Color.black;
-        Recolor(toSet);
     }
 
     public override void InitGameObject(Vector3 pos) {
         string filePath;
-        string bodyPlan = "None";//World.anthroBody;
         thisAnimal = (Animal) thisEntity;
-        //filePath = "Prefabs/Human";
         filePath = "Prefabs/SimpleHuman" + thisAnimal.GetSex();
-        //filePath = "Prefabs/" + bodyPlan + thisAnimal.GetSex() + "Prefab";
-        // if (bodyPlan == "ComplexHuman") { 
-        //     float variant = thisAnimal.GetPhenotype().GetTraitDict()["variant"];
-        //     string label = "A";
-        //     if (variant == 1) { label = "B"; } 
-        //     filePath += label;
-        // }
 
         GameObject loadedPrefab = Resources.Load(filePath, typeof(GameObject)) as GameObject;
         
@@ -50,41 +24,80 @@ public class PrimateBody : AnimalBody {
         globalPos = this.gameObject.transform;
     }
 
-    public override void UpdateBodyStates() {
-        if (CheckSitting()) {
+    public override void UpdateBodyStates()
+    {
+        CheckGrounding();
+        CheckSitting();
+        CheckLaying();
+        CheckHandsHolding();
+    }
+    public override void CheckGrounding()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(limbDict["footL"].transform.position, Vector3.down, out hit, footDisToGround + 0.1f))
+        {
+            if (hit.transform.tag == "Ground")
+            {
+
+                stateDict["Standing"] = 1;
+            }
+        }
+        else if (Physics.Raycast(limbDict["footR"].transform.position, Vector3.down, out hit, footDisToGround + 0.1f))
+        {
+            if (hit.transform.tag == "Ground")
+            {
+                stateDict["Standing"] = 1;
+            }
+        }
+        else
+        {
+            stateDict["Standing"] = -1;
+        }
+    }
+    public override void CheckSitting() {
+        if (Physics.Raycast(abdomen.transform.position, -abdomen.transform.up, bodyHeight / 2 + 0.1f))
+        {
             SetState("sitting", 1f);
+            bodyPosWhileSitting = abdomen.transform.transform.localPosition;
         }
-        if (CheckLaying()) {
-            SetState("laying", 1f);
+        else
+        {
+            SetState("sitting", -1f);
         }
     }
-    
-    public override bool CheckSitting() {
 
-        return CheckCrouchingTop();
+    public override void CheckCrouching() 
+    { 
+    }
+    public override void CheckHandsHolding()
+    {
+        if (limbDict["handR"].transform.childCount > 0)
+        {
+            stateDict["RHHolding"] = 1;
+        }
+        else
+        {
+            stateDict["RHHolding"] = -1;
+        }
+        if (limbDict["handL"].transform.childCount > 0)
+        {
+            stateDict["LHHolding"] = 1;
+        }
+        else
+        {
+            stateDict["LHHolding"] = -1;
+        }
     }
 
-    public override bool CheckCrouching() { 
-        Debug.Log("Used wrong CheckCrounching");
-        return true;
-    }
-
-
-    public bool CheckCrouchingBottom() { 
-        Vector3 toSend = abdomen.transform.position;
-        double minCrouchHeight = GetHeight()/1.5 + 0.5;
-        //Debug.Log("Checking to see if more " + toSend.y + " " + minCrouchHeight);
-        return (toSend.y > minCrouchHeight);
-    }
-
-    public bool CheckCrouchingTop() { 
-        Vector3 toSend = abdomen.transform.position;
-        double minCrouchHeight = GetHeight()/1.5 + 0.5;
-        //Debug.Log("Checking to see if less " + toSend.y + " " + minCrouchHeight);
-        return (toSend.y < minCrouchHeight);
-    }
-
-    public override bool CheckLaying() {
-        return (abdomen.transform.position.y < 1f);
+    public override void CheckLaying() 
+    {
+        if (Physics.Raycast(abdomen.transform.position, -abdomen.transform.forward, bodyWidth / 2 + 0.1f))
+        {
+            stateDict["Laying"] = 1;
+        }
+        else
+        {
+            stateDict["Laying"] = -1;
+        }
     }
 }

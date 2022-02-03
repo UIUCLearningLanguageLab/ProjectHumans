@@ -36,23 +36,19 @@ public abstract class MotorSystem
         this.thisBody = thisAnimal.GetBody();
 
         stateLabelList = new List<string> {
-            "crouch",      // 0, negative is down 
-            "sit",         // 1, negative is down
-            "lay",         // 2 -1 or 1 (or 0 if not switched)
-            "stand",       // 3 -1 or 1 (or 0 if not switched)
-            "rotate",      // 4, now a proportion
-            "take steps",  // 5, now a proportion
-            "consume",     // 6, set to consumable if ongoing
-            "sleep",       // 7, awake/maintain/fall asleep
-            "rest",        // 8 -1 or 1 (or 0 if not switched)
-            "look",        // 9
-            "use hands",   // 10 -1 left / 1 right
-            "look vertically",   // 11 -1 or 1 (or 0 if not switched)
-            "look horizontally", // 12 -1 or 1 (or 0 if not switched)
-            "RP x",        // 13  -1 to 1, proportion of max range from start pos
-            "RP y",        // 14
-            "RP z",        // 15
-            
+            "take steps",   // 0
+            "rotate",       // 1
+            "sit down",     // 2
+            "sit up",       // 3
+            "stand up",     // 4
+            "crouch",       // 5
+            "lay down",     // 6
+            "sleep",        // 7
+            "rest",         // 8
+            "look",         // 9
+            "pick up",      // 10
+            "consume",      // 11
+            "index"
         };
         this.InitStates(stateLabelList);
         this.InitActionDict();
@@ -85,76 +81,58 @@ public abstract class MotorSystem
     }
 
     public void TakeAction(Vector<float> actions) {
-        skeletonInUse.Clear();
-        //Debug.Log(illigalAction);
-        TakeSteps();
-        
-        if (Input.GetKey(KeyCode.Return))
+        for (int i = 0; i < states.Count; i++)
         {
-            Lay();
-            //states[stateIndexDict["use hands"]] = -1;
-            //states[stateIndexDict["RP x"]] = -1f;
-            //states[stateIndexDict["RP y"]] = 0f;
-            //states[stateIndexDict["RP z"]] = -0.5f;
-            //UseHand();
+            states[i] = actions[i];
         }
-        if (Input.GetKeyDown(KeyCode.Backspace))
+        if (states[stateIndexDict["take steps"]] != 0)
         {
-            Reset();
-            //states[stateIndexDict["use hands"]] = -1;
-            //states[stateIndexDict["RP x"]] = 0f;
-            //states[stateIndexDict["RP y"]] = 0f;
-            //states[stateIndexDict["RP z"]] = 0f;
-            //UseHand();
+            TakeSteps();
         }
-        //for (int i = 0; i < states.Count; i++)
-        //{
-        //    states[i] = actions[i];
-        //}
-        //if (states[stateIndexDict["take steps"]] != 0)
-        //{
-        //    TakeSteps();
-        //}
-        //if (states[stateIndexDict["rotate"]] != 0)
-        //{
-        //    Rotate();
-        //}
-        //if (states[stateIndexDict["crouch"]] != 0)
-        //{
-        //    Crouch();
-        //}
-        //if (states[stateIndexDict["sit"]] != 0)
-        //{
-        //    Sit();
-        //}
-        //if (states[stateIndexDict["lay"]] != 0)
-        //{
-        //    Lay();
-        //}
-        //if (states[stateIndexDict["stand"]] != 0)
-        //{
-        //    Stand();
-        //}
-        //if (states[stateIndexDict["consume"]] != 0)
-        //{
-        //    Consume();
-        //}
-        //if (states[stateIndexDict["sleep"]] != 0)
-        //{
-        //    Sleep();
-        //}
-        //if (states[stateIndexDict["rest"]] != 0)
-        //{
-        //    Rest();
-        //}
-        //if (states[stateIndexDict["look"]] != 0)
-        //{
-        //    Look();
-        //}
-        //if (states[stateIndexDict["use hands"]] != 0)
-        //{
-        //    UseHand();
-        //}
+        if (states[stateIndexDict["rotate"]] != 0)
+        {
+            Rotate();
+        }
+        if (states[stateIndexDict["crouch"]] != 0)
+        {
+            Crouch();
+        }
+        if (states[stateIndexDict["sit down"]] != 0)
+        {
+            SitDown();
+        }
+        if (states[stateIndexDict["sit up"]] != 0)
+        {
+           SitUp();
+        }
+        if (states[stateIndexDict["lay down"]] != 0)
+        {
+            LayDown();
+        }
+        if (states[stateIndexDict["stand up"]] != 0)
+        {
+            StandUp();
+        }
+        if (states[stateIndexDict["consume"]] != 0)
+        {
+            Consume();
+        }
+        if (states[stateIndexDict["sleep"]] != 0)
+        {
+            Sleep();
+        }
+        if (states[stateIndexDict["rest"]] != 0)
+        {
+            Rest();
+        }
+        if (states[stateIndexDict["look"]] != 0)
+        {
+            Look();
+        }
+        if (states[stateIndexDict["pick up"]] != 0)
+        {
+            PickUp();
+        }
 
     }
 
@@ -176,30 +154,33 @@ public abstract class MotorSystem
     void InitActionDict() {
         actionList = new List<Action>();
 
-        actionList.Add(Crouch);
-        actionList.Add(Sit);
-        actionList.Add(Lay);
-        actionList.Add(Stand);
-        actionList.Add(Rotate);
         actionList.Add(TakeSteps);
-        actionList.Add(Consume);
+        actionList.Add(Rotate);
+        actionList.Add(SitDown);
+        actionList.Add(SitUp);
+        actionList.Add(StandUp);
+        actionList.Add(Crouch);
+        actionList.Add(LayDown);
         actionList.Add(Sleep);
         actionList.Add(Rest);
         actionList.Add(Look);
-        actionList.Add(UseHand);
+        actionList.Add(PickUp);
+        actionList.Add(Consume);
+
     }
 
-    public abstract void Crouch();
-    public abstract void Sit();
-    public abstract void Lay();
-    public abstract void Stand();
-    public abstract void Rotate();
     public abstract void TakeSteps();
-    public abstract void Consume();
+    public abstract void Rotate();
+    public abstract void SitDown();
+    public abstract void SitUp();
+    public abstract void StandUp();
+    public abstract void Crouch();
+    public abstract void LayDown();
     public abstract void Sleep();
     public abstract void Rest();
     public abstract void Look();
-    public abstract void UseHand();
+    public abstract void PickUp();
+    public abstract void Consume();
     public abstract void Collapse();
 
     public abstract void Reset();

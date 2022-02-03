@@ -5,229 +5,198 @@ using MathNet.Numerics.LinearAlgebra;
 using UnityEngine;
 using System.Linq;
 public class SimplePrimateMotorSystem : MotorSystem {
-   
-    Transform abdomenTrans;
-    Transform bodyTrans;
-    Transform leftEye;
-    Transform rightEye;
-    PrimateBody primateBody;
-    Vector3 goalPos;
-    int footUpdates = 0;
-    bool firstRight = true; // change this at some point like handedness
-    private float xMin = -1f, xMax = 1f;
-    private float timeValue = 0.0f;
-    ConfigurableJoint rightFemur;
-    ConfigurableJoint leftFemur;
-    ConfigurableJoint rightTibia;
-    ConfigurableJoint leftTibia;
-    ConfigurableJoint rightHumerus;
-    ConfigurableJoint leftHumerus;
-    ConfigurableJoint rightRadius;
-    ConfigurableJoint leftRadius;
-    
+    PrimateBody body;
+    Transform bodyTransform;
     public SimplePrimateMotorSystem(Animal animal) : base(animal) {
-        Debug.Log("A simple ape was born!");
-        bodyTrans = thisAnimal.GetGameObject().transform;
-        abdomenTrans = thisBody.GetSkeleton("Abdomen").transform;
-        leftEye = thisBody.head.transform.GetChild(0).GetChild(1);
-        rightEye = thisBody.head.transform.GetChild(0).GetChild(0);
-        primateBody = (PrimateBody)thisBody;
-        rightFemur = thisBody.GetSkeleton("Femur_R").GetComponent<ConfigurableJoint>();
-        leftFemur = thisBody.GetSkeleton("Femur_L").GetComponent<ConfigurableJoint>();
-        rightTibia = thisBody.GetSkeleton("Tibia_R").GetComponent<ConfigurableJoint>();
-        leftTibia = thisBody.GetSkeleton("Tibia_L").GetComponent<ConfigurableJoint>();
-        rightHumerus = thisBody.GetSkeleton("Humerus_R").GetComponent<ConfigurableJoint>();
-        leftHumerus = thisBody.GetSkeleton("Humerus_L").GetComponent<ConfigurableJoint>();
-        rightRadius = thisBody.GetSkeleton("Radius_R").GetComponent<ConfigurableJoint>();
-        leftRadius = thisBody.GetSkeleton("Radius_L").GetComponent<ConfigurableJoint>();
-        rightHand = thisBody.GetSkeleton("Hand_R").transform;
-        leftHand = thisBody.GetSkeleton("Hand_L").transform;
+        body = (PrimateBody)(animal.GetBody());
+        bodyTransform = body.GetGameObject().transform;
     }
-    public override void Consume() {
-        CheckActionLegality();
-        Debug.Log("consuming");
-        if(stateDict["consume"] == 1)
-        {
-            rightRadius.targetRotation = new Quaternion(3, 0, 0, 1);
-            skeletonInUse.Add(rightRadius.name);
-        }
-        else if(stateDict["consume"] == -1)
-        {
-            leftRadius.targetRotation = new Quaternion(-3, 0, 0, 1);
-            skeletonInUse.Add(leftRadius.name);
-        }
-    }
+
     public override void TakeSteps()
     {
-        CheckActionLegality();
-        //Debug.Log("taking steps");
         float stepRange = states[stateIndexDict["take steps"]] * thisAnimal.GetPhenotype().GetTrait("max_step");
-        bodyTrans.Translate(bodyTrans.forward * stepRange * Time.deltaTime, Space.World);
-        skeletonInUse.Add(rightFemur.name);
-        skeletonInUse.Add(leftFemur.name);
-        skeletonInUse.Add(rightTibia.name);
-        skeletonInUse.Add(leftTibia.name);
+        bodyTransform.Translate(bodyTransform.forward * stepRange, Space.World);
+        body.bpDict["armL"].targetRotation = Quaternion.Euler(Oscilate(-45f, 45f, stepRange * 1500), -50f, 0);
+        body.bpDict["armR"].targetRotation = Quaternion.Euler(Oscilate(45f, -45f, stepRange * 1500), 50f, 0);
+        body.bpDict["thighL"].targetRotation = Quaternion.Euler(Oscilate(15f, -15f, stepRange * 1500), 0, 0);
+        body.bpDict["thighR"].targetRotation = Quaternion.Euler(Oscilate(-15f, 15f, stepRange * 1500), 0, 0);
     }
+
     public override void Rotate()
     {
-        CheckActionLegality();
-        Debug.Log("rotatinig");
-        float degree = states[stateIndexDict["rotate"]];
-        float rotatingSpeed = degree * thisAnimal.GetPhenotype().GetTrait("max_rotation");
-        bodyTrans.Rotate(0, rotatingSpeed * Time.deltaTime, 0, Space.Self);
+        bodyTransform.Rotate(Vector3.up, states[stateIndexDict["rotate"]] * thisAnimal.GetPhenotype().GetTrait("max_rotation"), Space.Self);
     }
-    public override void Crouch() {
-        CheckActionLegality();
-        Debug.Log("crouching");
-        leftTibia.targetRotation = new Quaternion(-1, 0, 0, 1);
-        skeletonInUse.Add(leftTibia.name);
-        rightTibia.targetRotation = new Quaternion(-1, 0, 0, 1);
-        skeletonInUse.Add(rightTibia.name);
-        leftFemur.targetRotation = new Quaternion(0.5f, 0, 0, 1);
-        skeletonInUse.Add(leftFemur.name);
-        rightFemur.targetRotation = new Quaternion(0.5f, 0, 0, 1);
-        skeletonInUse.Add(rightFemur.name);
-
-        if (abdomenTrans.localPosition.y > -1.1)
+    public override void SitDown()
+    {
+        
+        if (body.GetStateDict()["sitting"] != 1)
         {
-            abdomenTrans.Translate(-abdomenTrans.up * 2 * Time.deltaTime, Space.Self);
+            body.abdomen.transform.Translate(-Vector3.up * 0.5f * Time.deltaTime, Space.Self);
+        }
+        body.bpDict["thighL"].targetRotation = Quaternion.Euler(-120, 0, 0);
+        body.bpDict["thighR"].targetRotation = Quaternion.Euler(-120, 0, 0);
+        body.bpDict["shinL"].targetRotation = Quaternion.Euler(40, 0, 0);
+        body.bpDict["shinR"].targetRotation = Quaternion.Euler(40, 0, 0);
+    }
+    public override void SitUp()
+    {
+        float angle = 0;
+        if (bodyTransform.eulerAngles.x < 359f)
+        {
+            angle = 0.5f;
         }
         else
         {
-            if (abdomenTrans.localRotation.x < 0.5)
+            if (body.GetStateDict()["Sitting"] != 1)
             {
-                abdomenTrans.Rotate(30 * Time.deltaTime, 0, 0);
-            }
-            else
-            {
-                isCrouching = true;
+                body.abdomen.transform.Translate(-Vector3.up * 3f * Time.deltaTime, Space.Self);
             }
         }
+        bodyTransform.Rotate(bodyTransform.right, angle, Space.Self);
+        body.bpDict["thighL"].targetRotation = Quaternion.Euler(-120, 0, 0);
+        body.bpDict["thighR"].targetRotation = Quaternion.Euler(-120, 0, 0);
+        body.bpDict["shinL"].targetRotation = Quaternion.Euler(40, 0, 0);
+        body.bpDict["shinR"].targetRotation = Quaternion.Euler(40, 0, 0);
     }
-    public override void Stand()
+    public override void StandUp()
     {
-        CheckActionLegality();
-        Debug.Log("standing");
-        if (abdomenTrans.localRotation.x > 0)
+        float angle = body.abdomen.transform.localEulerAngles.x;
+        angle = (angle > 180) ? angle - 360 : angle;
+        if (angle > 0)
         {
-            abdomenTrans.Rotate(-30 * Time.deltaTime, 0, 0);
+            body.abdomen.transform.Rotate(Vector3.right, -0.5f, Space.Self);
         }
-        leftTibia.targetRotation = new Quaternion(0, 0, 0, 1);
-        skeletonInUse.Add(leftTibia.name);
-        rightTibia.targetRotation = new Quaternion(0, 0, 0, 1);
-        skeletonInUse.Add(rightTibia.name);
-        leftFemur.targetRotation = new Quaternion(0, 0, 0, 1);
-        skeletonInUse.Add(leftFemur.name);
-        rightFemur.targetRotation = new Quaternion(0, 0, 0, 1);
-        skeletonInUse.Add(rightFemur.name);
-        if (abdomenTrans.localPosition.y < -0.2)
+        if (body.abdomen.transform.localPosition.y <= body.defaultBodyPosY + 0.01f)
         {
-            abdomenTrans.Translate(Vector3.up * 2 * Time.deltaTime, Space.Self);
+            body.abdomen.transform.Translate(Vector3.up * 0.5f * Time.deltaTime, Space.Self);
+        }
+        else
+        {
+            body.bpDict["thighL"].targetRotation = Quaternion.Euler(0, 0, 0);
+            body.bpDict["thighR"].targetRotation = Quaternion.Euler(0, 0, 0);
+            body.bpDict["shinL"].targetRotation = Quaternion.Euler(0, 0, 0);
+            body.bpDict["shinR"].targetRotation = Quaternion.Euler(0, 0, 0);
         }
     }
-    public override void UseHand()
+    public override void Crouch()
     {
-        CheckActionLegality();
-        Debug.Log("using hand");
-        float reach_x = states[stateIndexDict["RP x"]];
-        float reach_y = states[stateIndexDict["RP y"]];
-        float reach_z = states[stateIndexDict["RP z"]];
-        LayerMask layermask = ~(1 << 8 | 1 << 9);
-        if (states[stateIndexDict["use hands"]] == 1)
+        float angle = body.abdomen.transform.localEulerAngles.x;
+        angle = (angle > 180) ? angle - 360 : angle;
+        if (angle < 45)
         {
-            rightHumerus.targetRotation = new Quaternion(reach_x, reach_y, reach_z, 1);
-            skeletonInUse.Add(rightHumerus.name);
-            int maxColliders = 10;
-            Collider[] hitColliders = new Collider[maxColliders];
-            int numColliders = 0;//Physics.OverlapSphereNonAlloc(rightHand.position, 0.5f, hitColliders, layermask);
-            if (numColliders > 0)
-            {
-                hitColliders[0].transform.GetComponent<Rigidbody>().isKinematic = true;
-                hitColliders[0].transform.GetComponent<CapsuleCollider>().isTrigger = true;
-                hitColliders[0].transform.parent = rightHand;
-                rightHand.GetChild(0).localPosition = new Vector3(0, 0, 0);
-                reached = true;
-            }
+            body.abdomen.transform.Rotate(Vector3.right, 0.5f, Space.Self);
         }
-        if (states[stateIndexDict["use hands"]] == -1)
+        if (body.abdomen.transform.position.y > 0.7)
         {
-            leftHumerus.targetRotation = new Quaternion(reach_x, reach_y, reach_z, 1);
-            skeletonInUse.Add(leftHumerus.name);
-            int maxColliders = 10;
-            Collider[] hitColliders = new Collider[maxColliders];
-            int numColliders = Physics.OverlapSphereNonAlloc(leftHand.position, 0.5f, hitColliders, layermask);
-            if (numColliders > 0)
-            {
-                hitColliders[0].transform.GetComponent<Rigidbody>().isKinematic = true;
-                hitColliders[0].transform.GetComponent<CapsuleCollider>().isTrigger = true;
-                hitColliders[0].transform.parent = leftHand;
-                leftHand.GetChild(1).localPosition = new Vector3(0, 0, 0);
-                leftHand.GetChild(1).localRotation = Quaternion.Euler(283.640747f, 84.107254f, 138.337387f);
-                reached = true;
-            }
+            body.abdomen.transform.Translate(Vector3.up * -0.005f, Space.World);
         }
+        body.bpDict["thighL"].targetRotation = Quaternion.Euler(200, 0, 0);
+        body.bpDict["thighR"].targetRotation = Quaternion.Euler(200, 0, 0);
+        body.bpDict["shinL"].targetRotation = Quaternion.Euler(-200, 0, 0);
+        body.bpDict["shinR"].targetRotation = Quaternion.Euler(-200, 0, 0);
+        SetDefaultArmJoint();
     }
-    public override void Lay() {
-        CheckActionLegality();
-        Debug.Log("laying");
-        skeletonInUse.Add(rightFemur.name);
-        skeletonInUse.Add(leftFemur.name);
-        skeletonInUse.Add(rightTibia.name);
-        skeletonInUse.Add(leftTibia.name);
-        //abdomenTrans.localPosition = new Vector3(0, -0.84f, 0);
-        if (abdomenTrans.localRotation.x >= -0.7)
+    public override void LayDown()
+    {
+        float angle = 0;
+        if (bodyTransform.eulerAngles.x >= 0 && bodyTransform.eulerAngles.x <= 1)
         {
-            abdomenTrans.Rotate(-30 * Time.deltaTime, 0, 0);
+            angle = -0.5f;
         }
 
-        if (abdomenTrans.localPosition.y > -2.5)
+        if (bodyTransform.eulerAngles.x > 275)
         {
-            abdomenTrans.Translate(thisAnimal.GetGameObject().transform.right * 1 * Time.deltaTime, Space.Self);
+            angle = -0.5f;
+        }
+        bodyTransform.Rotate(bodyTransform.right, angle, Space.Self);
+        body.bpDict["thighL"].targetRotation = Quaternion.Euler(0, 0, 0);
+        body.bpDict["thighR"].targetRotation = Quaternion.Euler(0, 0, 0);
+        body.bpDict["shinL"].targetRotation = Quaternion.Euler(0, 0, 0);
+        body.bpDict["shinR"].targetRotation = Quaternion.Euler(0, 0, 0);
+    }
+    public override void PickUp()
+    {
+        int index = (int)states[stateIndexDict["index"]] * 10;
+
+        if (states[stateIndexDict["pick up"]] == 1)
+        {
+
+            if (body.GetStateDict()["RHHolding"] == -1)
+            {
+                
+                LayerMask layermask = ~(1 << 9 | 1 << 8);
+                int maxCollider = 20;
+                Collider[] hitColliders = new Collider[maxCollider];
+                int numColliders = Physics.OverlapSphereNonAlloc(body.bpDict["armR"].transform.position, 0.9f, hitColliders, layermask);
+                
+                if (hitColliders[index] != null)
+                {
+                    hitColliders[index].transform.GetComponent<Rigidbody>().isKinematic = true;
+                    hitColliders[index].transform.GetComponent<Collider>().isTrigger = true;
+                    hitColliders[index].transform.parent = body.bpDict["handR"].transform;
+                    body.bpDict["handR"].transform.GetChild(0).localPosition = new Vector3(0.102f, -0.12f, 0);
+                }
+            }
+        }
+        if (states[stateIndexDict["pick up"]] == -1)
+        {
+            if (body.GetStateDict()["LHHolding"] == -1)
+            {
+                LayerMask layermask = ~(1 << 9 | 1 << 8);
+                int maxCollider = 20;
+                Collider[] hitColliders = new Collider[maxCollider];
+                int numColliders = Physics.OverlapSphereNonAlloc(body.bpDict["armL"].transform.position, 0.9f, hitColliders, layermask);
+                if (hitColliders[index] != null)
+                {
+                    hitColliders[index].transform.GetComponent<Rigidbody>().isKinematic = true;
+                    hitColliders[index].transform.GetComponent<Collider>().isTrigger = true;
+                    hitColliders[index].transform.parent = body.bpDict["handL"].transform;
+                    body.bpDict["handL"].transform.GetChild(0).localPosition = new Vector3(0, -0.12f, 0);
+                }
+
+            }
         }
     }
-    public override void Look() {
-        CheckActionLegality();
-        Debug.Log("Looking");
-    }
-    public override void Rest() {
-        Debug.Log("resting");
-        Sit();
-    }
-    public override void Sit() {
-        CheckActionLegality();
-        Debug.Log("sitting");
-        leftFemur.targetRotation = new Quaternion(1.0f, 0, 0, 1);
-        skeletonInUse.Add(leftFemur.name);
-        rightFemur.targetRotation = new Quaternion(1.0f, 0, 0, 1);
-        skeletonInUse.Add(rightFemur.name);
-        if (abdomenTrans.localPosition.y > -2.0)
+    public override void Consume()
+    {
+        if(states[stateIndexDict["consume"]] == 1)
         {
-            abdomenTrans.Translate(-Vector3.up * 1 * Time.deltaTime, Space.Self);
+            GameObject.Destroy(body.bpDict["handR"].transform.GetChild(0).gameObject, 3);
+        }
+        if (states[stateIndexDict["consume"]] == -1)
+        {
+            GameObject.Destroy(body.bpDict["handL"].transform.GetChild(0).gameObject, 3);
         }
     }
-    public override void Sleep() {
-        CheckActionLegality();
-        Debug.Log("sleeping");
-        leftEye.localScale = new Vector3(0.4f, 0.0f, 0.4f);
-        rightEye.localScale = new Vector3(0.4f, 0.0f, 0.4f);
+    public override void Look()
+    {
+
+    }
+    public override void Rest()
+    {
+
+    }
+
+    public override void Sleep()
+    {
+
     }
     public override void Collapse()
     {
-        Debug.Log("collapsing");
-        abdomenTrans.GetComponent<Rigidbody>().isKinematic = false;
+
     }
     public override void Reset()
     {
-        Debug.Log("resetting");
-        abdomenTrans.GetComponent<Rigidbody>().isKinematic = true;
-        abdomenTrans.localPosition = new Vector3(0, -0.1f, 0);
-        abdomenTrans.localRotation = new Quaternion(0, 0, 0, 1);
-        foreach (GameObject x in thisAnimal.GetBody().GetSkeletonDict().Values)
-        {
-            if (x.GetComponent<ConfigurableJoint>() != null)
-            {
-                x.GetComponent<ConfigurableJoint>().targetRotation = new Quaternion(0,0,0,1);
-            }
-        }
+    }
+    float Oscilate(float startValue, float EndValue, float speed)
+    {
+        float oscilateRange = (EndValue - startValue) / 2;
+        float oscilateOffset = oscilateRange + startValue;
+        return oscilateOffset + Mathf.Sin(Time.time * speed) * oscilateRange;
+    }
+    public void SetDefaultArmJoint()
+    {
+        body.bpDict["armL"].targetRotation = Quaternion.Euler(0, -80, 0);
+        body.bpDict["armR"].targetRotation = Quaternion.Euler(0, 80, 0);
     }
 }

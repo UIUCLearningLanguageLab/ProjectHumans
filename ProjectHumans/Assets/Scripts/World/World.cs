@@ -69,7 +69,6 @@ public class World: MonoBehaviour {
     }
     IEnumerator GetOptions()
     {
-        
         yield return new WaitUntil(() => gameIsPaused == false);
         LoadWorldConfig();
         worldSize = worldConfigDict["World_Size"];
@@ -80,6 +79,7 @@ public class World: MonoBehaviour {
     public void BuildTheScene()
     {
         ResumeGame();
+        Debug.Log("game resumed");
         settings.transform.localScale = new Vector3(0, 0, 0);
     }
     public void PauseGame()

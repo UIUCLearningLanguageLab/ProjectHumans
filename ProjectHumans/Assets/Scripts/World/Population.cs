@@ -94,7 +94,7 @@ public class Population {
         {
             return new Item(SpeciesName, index, motherGenome, spawn);
         }
-        else
+        else 
         {
             Genome fatherGenome = new Genome();
             fatherGenome.InheritGenome(baseGenome, true);
@@ -105,7 +105,7 @@ public class Population {
             }
             else
             {
-                return new Animal(SpeciesName, index, motherGenome, fatherGenome, spawn);
+                return new Animal(SpeciesName, index, motherGenome, fatherGenome, new Vector3(spawn.x, 0.04f, spawn.y));
             }
         }
     }
