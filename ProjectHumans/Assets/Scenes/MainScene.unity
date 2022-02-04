@@ -10097,6 +10097,7 @@ MonoBehaviour:
   redVisualOutputContent: {fileID: 5692810879065982869}
   greenVisualOutputContent: {fileID: 5692810880247235721}
   blueVisualOutputContent: {fileID: 5692810879074035017}
+  visualInputWindow: {fileID: 5692810880300856400}
 --- !u!224 &1566787985858131129
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20899,7 +20900,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 224.05981, y: -130}
+  m_AnchoredPosition: {x: 238, y: -130}
   m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5692810880300856401
@@ -20914,7 +20915,7 @@ GameObject:
   - component: {fileID: 5692810880300856402}
   - component: {fileID: 5692810880300856403}
   m_Layer: 5
-  m_Name: VisualInput
+  m_Name: Visual Input Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

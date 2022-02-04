@@ -17,6 +17,7 @@ public class Animal : Entity {
     private static SensorySystem sensorySystem;
     private bool finishedUpdate = true;
     protected object activeAI;
+    protected SimpleAI simpleAI;
     protected string action;
 
     public static List<int> timeList = new List<int>();
@@ -50,20 +51,19 @@ public class Animal : Entity {
     void InitBrain() {
         Type type = Type.GetType(World.aISelected);
         activeAI = Activator.CreateInstance(type, this, GetBody(), GetDriveSystem(), GetMotorSystem(), GetSensorySystem(), GetPhenotype());
+        simpleAI = new SimpleAI(this, GetBody(), GetDriveSystem(), GetMotorSystem(), GetSensorySystem(), GetPhenotype());
     }
 
     public override void UpdateEntity() {
         GetDriveSystem().UpdateDrives();
         Matrix<float> visualInputMatrix = GetSensorySystem().GetVisualInput();
-        Vector<float> temp = ((AI)activeAI).ChooseAction().Column(0);
+        Vector<float> temp = simpleAI.ChooseAction().Column(0);
+        ((AI)activeAI).ChooseAction().Column(0);
         GetMotorSystem().TakeAction(temp);
         action = "In progress!";
         GetBody().UpdateBodyStates();
         IncreaseAge(1);
     }
-    //public void ToggleBodyPart(string part, bool toggle) {
-    //    GetBody().GetSkeletonDict()[part].gameObject.SetActive(toggle);
-    //}
     
     // getters and setters for body, drive system, motor system, sensory system, and action choice class
     public new AnimalBody  GetBody() { return animalBody; }

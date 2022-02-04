@@ -37,7 +37,8 @@ public class NetworkVisualization : MonoBehaviour
      ,actionOutputContent
      ,redVisualOutputContent
      ,greenVisualOutputContent
-     ,blueVisualOutputContent;
+     ,blueVisualOutputContent
+     ,visualInputWindow;
 
     List<RawImage> driveInputImages = new List<RawImage>();
     List<RawImage> bodyInputImages = new List<RawImage>();
@@ -71,6 +72,7 @@ public class NetworkVisualization : MonoBehaviour
         if(transform.GetChild(0).localScale.y == 1 && !switchEntity)
         {
             resetted = false;
+            visualInputWindow.GetComponent<RawImage>().texture = FPSCamera.targetTexture;
             Dictionary<string, Layer> networkLayerDict = ((NeuralAI)selectedAI).GetNetworkLayerDict();
             float[] inputRedColorArray = ConvertToColorArray(networkLayerDict["inputVisionRedLayer"].Output.Column(0));
             float[] inputGreenColorArray = ConvertToColorArray(networkLayerDict["inputVisionGreenLayer"].Output.Column(0));

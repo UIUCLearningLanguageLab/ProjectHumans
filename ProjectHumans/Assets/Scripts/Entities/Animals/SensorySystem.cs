@@ -7,7 +7,6 @@ using MathNet.Numerics.LinearAlgebra;
 public class SensorySystem {
 
     public Animal thisAnimal;
-
     public Camera visualInputCamera;
     Matrix<float> visualInputArray;
 
@@ -30,7 +29,7 @@ public class SensorySystem {
 
         if (visualInputCamera != null) {
             if (visualInputCamera.targetTexture == null) {
-                visualInputCamera.targetTexture = new RenderTexture(visualResolution, visualResolution, 24);
+                visualInputCamera.targetTexture = new RenderTexture(visualResolution, visualResolution, 24, RenderTextureFormat.ARGB32);
                 /* 24 is the depth buffer, or depth texture, is actually just a render texture that contains values of how far objects in the scene are from the camera.*/
             } else {
                 visualResolution = visualInputCamera.targetTexture.width;

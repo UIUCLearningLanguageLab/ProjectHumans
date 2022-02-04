@@ -76,6 +76,7 @@ public class SimplePrimateMotorSystem : MotorSystem {
             body.bpDict["thighR"].targetRotation = Quaternion.Euler(0, 0, 0);
             body.bpDict["shinL"].targetRotation = Quaternion.Euler(0, 0, 0);
             body.bpDict["shinR"].targetRotation = Quaternion.Euler(0, 0, 0);
+            SetDefaultArmJoint();
         }
     }
     public override void Crouch()
@@ -123,7 +124,7 @@ public class SimplePrimateMotorSystem : MotorSystem {
 
             if (body.GetStateDict()["RHHolding"] == -1)
             {
-                
+                body.bpDict["armR"].targetRotation = Quaternion.Euler(90, 20, 10);
                 LayerMask layermask = ~(1 << 9 | 1 << 8);
                 int maxCollider = 20;
                 Collider[] hitColliders = new Collider[maxCollider];
@@ -134,7 +135,8 @@ public class SimplePrimateMotorSystem : MotorSystem {
                     hitColliders[index].transform.GetComponent<Rigidbody>().isKinematic = true;
                     hitColliders[index].transform.GetComponent<Collider>().isTrigger = true;
                     hitColliders[index].transform.parent = body.bpDict["handR"].transform;
-                    body.bpDict["handR"].transform.GetChild(0).localPosition = new Vector3(0.102f, -0.12f, 0);
+                    body.bpDict["handR"].transform.GetChild(0).localPosition = new Vector3(0.108f, -0.064f, 0.047f);
+                    body.bpDict["handR"].transform.GetChild(0).localRotation = Quaternion.Euler(90, 0, 0);
                 }
             }
         }
@@ -142,6 +144,7 @@ public class SimplePrimateMotorSystem : MotorSystem {
         {
             if (body.GetStateDict()["LHHolding"] == -1)
             {
+                body.bpDict["armL"].targetRotation = Quaternion.Euler(90, -20, 10);
                 LayerMask layermask = ~(1 << 9 | 1 << 8);
                 int maxCollider = 20;
                 Collider[] hitColliders = new Collider[maxCollider];
@@ -151,7 +154,8 @@ public class SimplePrimateMotorSystem : MotorSystem {
                     hitColliders[index].transform.GetComponent<Rigidbody>().isKinematic = true;
                     hitColliders[index].transform.GetComponent<Collider>().isTrigger = true;
                     hitColliders[index].transform.parent = body.bpDict["handL"].transform;
-                    body.bpDict["handL"].transform.GetChild(0).localPosition = new Vector3(0, -0.12f, 0);
+                    body.bpDict["handL"].transform.GetChild(0).localPosition = new Vector3(0.0f, -0.032f, -0.078f);
+                    body.bpDict["handL"].transform.GetChild(0).localRotation = Quaternion.Euler(90, 0, 0);
                 }
 
             }

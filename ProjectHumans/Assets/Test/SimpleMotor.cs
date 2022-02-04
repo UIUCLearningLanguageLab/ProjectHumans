@@ -26,8 +26,9 @@ public class SimpleMotor : MonoBehaviour
         if (Input.GetKey(KeyCode.V))
         {
             //StandFromSit();
+            PickUp(0, -1);
             //DropDown(-1);
-            SitUp();
+            //SitUp();
             //StandFromSit();
         }
         if (Input.GetKey(KeyCode.S))
@@ -45,7 +46,8 @@ public class SimpleMotor : MonoBehaviour
         {
             if (body.bodyStateDict["RHHolding"] == -1)
             {
-                
+                body.bpDict["armR"].targetRotation = Quaternion.Euler(90, 20, 10);
+                //ConfigurableJointExtensions.SetTargetRotationLocal(body.bpDict["armR"], Quaternion.Euler(0, -150, 0), body.bpDict["armR"].transform.localRotation);
                 LayerMask layermask = ~(1 << 9 | 1 << 8);
                 int maxCollider = 20;
                 Collider[] hitColliders = new Collider[maxCollider];
@@ -55,7 +57,8 @@ public class SimpleMotor : MonoBehaviour
                     hitColliders[index].transform.GetComponent<Rigidbody>().isKinematic = true;
                     hitColliders[index].transform.GetComponent<CapsuleCollider>().isTrigger = true;
                     hitColliders[index].transform.parent = body.bpDict["handR"].transform;
-                    body.bpDict["handR"].transform.GetChild(0).localPosition = new Vector3(0.102f, -0.12f, 0);
+                    body.bpDict["handR"].transform.GetChild(0).localPosition = new Vector3(0.108f, -0.064f, 0);
+                    body.bpDict["handR"].transform.GetChild(0).localRotation = Quaternion.Euler(90 ,0 ,0);
                 }
             }
         }
@@ -63,6 +66,7 @@ public class SimpleMotor : MonoBehaviour
         {
             if(body.bodyStateDict["LHHolding"] == -1)
             {
+                body.bpDict["armL"].targetRotation = Quaternion.Euler(90, -20, 10);
                 LayerMask layermask = ~(1 << 9 | 1 << 8);
                 int maxCollider = 20;
                 Collider[] hitColliders = new Collider[maxCollider];
